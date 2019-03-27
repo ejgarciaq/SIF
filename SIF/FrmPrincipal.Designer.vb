@@ -26,15 +26,15 @@ Partial Class FrmPrincipal
         Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FacturacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FacturacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.FacturacionToolStripMenuItem, Me.InventarioToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FacturacionToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.ArchivoToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
@@ -45,8 +45,8 @@ Partial Class FrmPrincipal
         '
         Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.EmpresaToolStripMenuItem})
         Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
-        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
-        Me.ArchivoToolStripMenuItem.Text = "Archivo"
+        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(95, 20)
+        Me.ArchivoToolStripMenuItem.Text = "Configuracion"
         '
         'UsuariosToolStripMenuItem
         '
@@ -60,11 +60,11 @@ Partial Class FrmPrincipal
         Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
-        'InventarioToolStripMenuItem
+        'EmpresaToolStripMenuItem
         '
-        Me.InventarioToolStripMenuItem.Name = "InventarioToolStripMenuItem"
-        Me.InventarioToolStripMenuItem.Size = New System.Drawing.Size(72, 20)
-        Me.InventarioToolStripMenuItem.Text = "Inventario"
+        Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
+        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EmpresaToolStripMenuItem.Text = "Empresa"
         '
         'FacturacionToolStripMenuItem
         '
@@ -72,11 +72,11 @@ Partial Class FrmPrincipal
         Me.FacturacionToolStripMenuItem.Size = New System.Drawing.Size(81, 20)
         Me.FacturacionToolStripMenuItem.Text = "Facturacion"
         '
-        'EmpresaToolStripMenuItem
+        'InventarioToolStripMenuItem
         '
-        Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
-        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.EmpresaToolStripMenuItem.Text = "Empresa"
+        Me.InventarioToolStripMenuItem.Name = "InventarioToolStripMenuItem"
+        Me.InventarioToolStripMenuItem.Size = New System.Drawing.Size(72, 20)
+        Me.InventarioToolStripMenuItem.Text = "Inventario"
         '
         'FrmPrincipal
         '
