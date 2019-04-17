@@ -27,12 +27,14 @@ Partial Class login
         Me.TBusuario = New System.Windows.Forms.TextBox()
         Me.TBclave = New System.Windows.Forms.TextBox()
         Me.BTIngresar = New System.Windows.Forms.Button()
+        Me.CB1 = New System.Windows.Forms.CheckBox()
+        Me.BTNcerrar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(41, 30)
+        Me.Label1.Location = New System.Drawing.Point(12, 19)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(43, 13)
         Me.Label1.TabIndex = 0
@@ -41,7 +43,7 @@ Partial Class login
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(41, 68)
+        Me.Label2.Location = New System.Drawing.Point(12, 48)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(34, 13)
         Me.Label2.TabIndex = 1
@@ -49,33 +51,55 @@ Partial Class login
         '
         'TBusuario
         '
-        Me.TBusuario.Location = New System.Drawing.Point(110, 23)
+        Me.TBusuario.Location = New System.Drawing.Point(76, 16)
         Me.TBusuario.Name = "TBusuario"
         Me.TBusuario.Size = New System.Drawing.Size(171, 20)
         Me.TBusuario.TabIndex = 2
         '
         'TBclave
         '
-        Me.TBclave.Location = New System.Drawing.Point(110, 65)
+        Me.TBclave.Location = New System.Drawing.Point(76, 45)
         Me.TBclave.Name = "TBclave"
-        Me.TBclave.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TBclave.Size = New System.Drawing.Size(171, 20)
         Me.TBclave.TabIndex = 3
         '
         'BTIngresar
         '
-        Me.BTIngresar.Location = New System.Drawing.Point(110, 94)
+        Me.BTIngresar.Location = New System.Drawing.Point(36, 98)
         Me.BTIngresar.Name = "BTIngresar"
         Me.BTIngresar.Size = New System.Drawing.Size(75, 23)
         Me.BTIngresar.TabIndex = 4
         Me.BTIngresar.Text = "Ingresar"
         Me.BTIngresar.UseVisualStyleBackColor = True
         '
+        'CB1
+        '
+        Me.CB1.AutoSize = True
+        Me.CB1.Checked = True
+        Me.CB1.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CB1.Location = New System.Drawing.Point(76, 72)
+        Me.CB1.Name = "CB1"
+        Me.CB1.Size = New System.Drawing.Size(91, 17)
+        Me.CB1.TabIndex = 5
+        Me.CB1.Text = "Mostrar Clave"
+        Me.CB1.UseVisualStyleBackColor = True
+        '
+        'BTNcerrar
+        '
+        Me.BTNcerrar.Location = New System.Drawing.Point(141, 98)
+        Me.BTNcerrar.Name = "BTNcerrar"
+        Me.BTNcerrar.Size = New System.Drawing.Size(75, 23)
+        Me.BTNcerrar.TabIndex = 6
+        Me.BTNcerrar.Text = "Cerrar"
+        Me.BTNcerrar.UseVisualStyleBackColor = True
+        '
         'login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(329, 129)
+        Me.ClientSize = New System.Drawing.Size(261, 133)
+        Me.Controls.Add(Me.BTNcerrar)
+        Me.Controls.Add(Me.CB1)
         Me.Controls.Add(Me.BTIngresar)
         Me.Controls.Add(Me.TBclave)
         Me.Controls.Add(Me.TBusuario)
@@ -97,4 +121,6 @@ Partial Class login
     Friend WithEvents TBusuario As TextBox
     Friend WithEvents TBclave As TextBox
     Friend WithEvents BTIngresar As Button
+    Friend WithEvents CB1 As CheckBox
+    Friend WithEvents BTNcerrar As Button
 End Class
