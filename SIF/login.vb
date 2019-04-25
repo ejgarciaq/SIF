@@ -1,9 +1,9 @@
 ﻿Imports MySql.Data.MySqlClient
 
+
 Public Class login
     Private Sub BTIngresar_Click(sender As Object, e As EventArgs) Handles BTIngresar.Click
         Dim Rsdatos As New DataSet
-
         If Trim(TBusuario.Text) = "" Or Trim(TBclave.Text) = "" Then
             MsgBox("Por favor ingrese sus datos de acceso!", vbExclamation, "Campos vacíos encontrados")
         Else
@@ -40,4 +40,11 @@ Public Class login
     Private Sub BTNcerrar_Click(sender As Object, e As EventArgs) Handles BTNcerrar.Click
         Me.Close()
     End Sub
+
+    Private Sub TBclave_TextChanged(sender As Object, e As EventArgs) Handles TBclave.TextChanged
+
+    End Sub
+
+
+
 End Class
