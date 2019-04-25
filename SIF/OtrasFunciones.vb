@@ -28,8 +28,8 @@
 
 
         Next
-        '(existeNumero) And (existeLetraMayuscula) And
-        Return ((caracteresEspeciales))
+        '( And (caracteresEspeciales)
+        Return (existeNumero) And (existeLetraMayuscula))
 
     End Function
 End Module
