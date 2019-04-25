@@ -4,16 +4,24 @@ Public Class Funciones
 
     Function ObtenerDatos(conString As String)
         con.Conectar()
-        Dim com As New MySqlCommand(conString, con.Conex)
+        Dim da As New MySqlDataAdapter(conString, con.Conex)
+        Dim ds As New DataSet
+        da.Fill(ds)
         con.Desconectar()
-        Return False
+        Return ds
     End Function
 
     Function IngresarDatos(conString As String)
         con.Conectar()
         Dim com As New MySqlCommand(conString, con.Conex)
-        con.Desconectar()
-        Return False
+        Dim rows As Integer
+        Try
+            rows = com.ExecuteNonQuery
+            con.Desconectar()
+        Catch ex As MySqlException
+            MsgBox(ex.Message)
+        End Try
+        Return rows
     End Function
 
     Function VerificarDatos(conString As String)

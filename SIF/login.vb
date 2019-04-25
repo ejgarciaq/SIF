@@ -1,7 +1,4 @@
-﻿
-
-
-Public Class login
+﻿Public Class login
     Dim us As New Logica.Usuario
 
     Private Sub BTIngresar_Click(sender As Object, e As EventArgs) Handles BTIngresar.Click
@@ -9,7 +6,7 @@ Public Class login
         If Trim(TBusuario.Text) = "" Or Trim(TBclave.Text) = "" Then
             MsgBox("Por favor ingrese sus datos de acceso!", vbExclamation, "Campos vacíos encontrados")
         Else
-            If us.verificarUsuario(TBusuario.Text, TBclave.Text) Then
+            If us.VerificarUsuario(TBusuario.Text, TBclave.Text) Then
                 MsgBox("Acceso satisfactorio", vbInformation, "inicio de sesión exitoso")
                 FrmPrincipal.Show()
                 Me.Hide()
@@ -37,7 +34,5 @@ Public Class login
     Private Sub TBclave_TextChanged(sender As Object, e As EventArgs) Handles TBclave.TextChanged
 
     End Sub
-
-
 
 End Class

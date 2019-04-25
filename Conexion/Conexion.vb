@@ -5,7 +5,6 @@ Public Class Conexion
     Sub Conectar()
         Try
             con.Open()
-            MsgBox("logro logrado")
         Catch ex As MySqlException
             con.Close()
         End Try

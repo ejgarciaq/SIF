@@ -9,4 +9,8 @@
         Usuarios.MdiParent = Me
         Usuarios.Show()
     End Sub
+
+    Private Sub FrmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.FormClosing
+        Me.Dispose()
+    End Sub
 End Class
