@@ -5,9 +5,10 @@ Public Class Funciones
     Function ObtenerDatos(conString As String)
         con.Conectar()
         Dim da As New MySqlDataAdapter(conString, con.Conex)
-        Dim ds As New DataSet
-        da.Fill(ds)
-        Return ds
+        Dim dt As New DataTable
+        da.Fill(dt)
+        con.Desconectar()
+        Return dt
     End Function
 
     Function IngresarDatos(conString As String)
@@ -18,7 +19,8 @@ Public Class Funciones
             rows = com.ExecuteNonQuery
             con.Desconectar()
         Catch ex As MySqlException
-        MsgBox(ex.Message)
+            MsgBox(ex.Message)
+            con.Desconectar()
         End Try
         Return rows
     End Function

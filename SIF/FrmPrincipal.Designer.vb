@@ -30,6 +30,9 @@ Partial Class FrmPrincipal
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpresaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FacturasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,12 +49,14 @@ Partial Class FrmPrincipal
         '
         'FacturacionToolStripMenuItem
         '
+        Me.FacturacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CajaToolStripMenuItem, Me.FacturasToolStripMenuItem})
         Me.FacturacionToolStripMenuItem.Name = "FacturacionToolStripMenuItem"
         Me.FacturacionToolStripMenuItem.Size = New System.Drawing.Size(96, 24)
         Me.FacturacionToolStripMenuItem.Text = "Facturacion"
         '
         'InventarioToolStripMenuItem
         '
+        Me.InventarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem})
         Me.InventarioToolStripMenuItem.Name = "InventarioToolStripMenuItem"
         Me.InventarioToolStripMenuItem.Size = New System.Drawing.Size(87, 24)
         Me.InventarioToolStripMenuItem.Text = "Inventario"
@@ -66,26 +71,44 @@ Partial Class FrmPrincipal
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(141, 26)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'ClientesToolStripMenuItem
         '
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(141, 26)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'EmpresaToolStripMenuItem
         '
         Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
-        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(141, 26)
-        Me.EmpresaToolStripMenuItem.Text = "Empresa"
+        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.EmpresaToolStripMenuItem.Text = "Empresas"
         '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(50, 24)
         Me.SalirToolStripMenuItem.Text = "Salir"
+        '
+        'ProductosToolStripMenuItem
+        '
+        Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
+        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.ProductosToolStripMenuItem.Text = "Productos"
+        '
+        'CajaToolStripMenuItem
+        '
+        Me.CajaToolStripMenuItem.Name = "CajaToolStripMenuItem"
+        Me.CajaToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.CajaToolStripMenuItem.Text = "Caja"
+        '
+        'FacturasToolStripMenuItem
+        '
+        Me.FacturasToolStripMenuItem.Name = "FacturasToolStripMenuItem"
+        Me.FacturasToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.FacturasToolStripMenuItem.Text = "Facturas"
         '
         'FrmPrincipal
         '
@@ -95,7 +118,7 @@ Partial Class FrmPrincipal
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmPrincipal"
         Me.ShowIcon = False
         Me.Text = "Sistema de Inventario y Facturación"
@@ -115,4 +138,7 @@ Partial Class FrmPrincipal
     Friend WithEvents FacturacionToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EmpresaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CajaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FacturasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ProductosToolStripMenuItem As ToolStripMenuItem
 End Class
