@@ -4,35 +4,31 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DFC8BCC0-88BF-47CD-B968-2EF49C095CE2}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <StartupObject>SIF.My.MyApplication</StartupObject>
-    <RootNamespace>SIF</RootNamespace>
-    <AssemblyName>SIF</AssemblyName>
+    <ProjectGuid>{34D970EB-D11F-4C61-9DB6-60475EFCB143}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Logica</RootNamespace>
+    <AssemblyName>Logica</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>SIF.xml</DocumentationFile>
+    <DocumentationFile>Logica.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>SIF.xml</DocumentationFile>
+    <DocumentationFile>Logica.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -50,9 +46,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,33 +58,12 @@
     <Import Include="System.Collections" />
     <Import Include="System.Collections.Generic" />
     <Import Include="System.Data" />
-    <Import Include="System.Drawing" />
     <Import Include="System.Diagnostics" />
-    <Import Include="System.Windows.Forms" />
     <Import Include="System.Linq" />
     <Import Include="System.Xml.Linq" />
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmPrincipal.Designer.vb">
-      <DependentUpon>FrmPrincipal.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPrincipal.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmUsuarios.Designer.vb">
-      <DependentUpon>FrmUsuarios.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmUsuarios.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="login.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="login.Designer.vb">
-      <DependentUpon>login.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -107,17 +79,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Usuario.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FrmPrincipal.resx">
-      <DependentUpon>FrmPrincipal.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmUsuarios.resx">
-      <DependentUpon>FrmUsuarios.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
-      <DependentUpon>login.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -135,12 +99,11 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Logica\Logica.vbproj">
-      <Project>{34d970eb-d11f-4c61-9db6-60475efcb143}</Project>
-      <Name>Logica</Name>
+    <ProjectReference Include="..\Conexion\Conexion.vbproj">
+      <Project>{a51520ed-3398-43b9-872a-1fdf37699352}</Project>
+      <Name>Conexion</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
