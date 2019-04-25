@@ -7,7 +7,6 @@ Public Class Funciones
         Dim da As New MySqlDataAdapter(conString, con.Conex)
         Dim ds As New DataSet
         da.Fill(ds)
-        con.Desconectar()
         Return ds
     End Function
 
@@ -19,7 +18,7 @@ Public Class Funciones
             rows = com.ExecuteNonQuery
             con.Desconectar()
         Catch ex As MySqlException
-            MsgBox(ex.Message)
+        MsgBox(ex.Message)
         End Try
         Return rows
     End Function

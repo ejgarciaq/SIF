@@ -17,13 +17,7 @@
     End Function
 
     Function IngresarUsuario(id As String, rol As String, nombre As String, intentos As String, pass As String, cambio As Boolean)
-        Dim act As Byte
-        If cambio Then
-            act = 0
-        Else
-            act = 1
-        End If
-        sql = "INSERT INTO usuarios_table VALUES ('" & id & "','" & rol & "','" & nombre & "','" & intentos & "','" & pass & "','" & act & "')"
+        sql = "INSERT INTO usuarios_table VALUES ('" & id & "','" & rol & "','" & nombre & "','" & intentos & "','" & pass & "'," & cambio & ")"
         Return con.IngresarDatos(sql)
     End Function
 
