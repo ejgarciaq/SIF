@@ -1,30 +1,23 @@
-﻿Imports MySql.Data.MySqlClient
+﻿
 
 
 Public Class login
+    Dim us As New Logica.Usuario
+
     Private Sub BTIngresar_Click(sender As Object, e As EventArgs) Handles BTIngresar.Click
         Dim Rsdatos As New DataSet
         If Trim(TBusuario.Text) = "" Or Trim(TBclave.Text) = "" Then
             MsgBox("Por favor ingrese sus datos de acceso!", vbExclamation, "Campos vacíos encontrados")
         Else
-            CerraConexion()
-            Conectar()
-            Dim mysql = "SELECT * FROM usuarios_table WHERE USR_NOMBRE = '" & TBusuario.Text & "' AND USR_PASSWORD = '" & TBclave.Text & "'"
-            cmd = New MySqlCommand(mysql, cnn)
-            Dim dr As MySqlDataReader = cmd.ExecuteReader
-            Try
-                If dr.Read = False Then
-                    MsgBox("acceso fallido! No Registrado", vbCritical, "inicio de sesión fallido")
-                    TBusuario.Clear()
-                    TBclave.Clear()
-                Else
-                    MsgBox("Acceso satisfactorio", vbInformation, "inicio de sesión exitoso")
-                    FrmPrincipal.Show()
-                    Me.Hide()
-                End If
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            End Try
+            If us.verificarUsuario(TBusuario.Text, TBclave.Text) Then
+                MsgBox("Acceso satisfactorio", vbInformation, "inicio de sesión exitoso")
+                FrmPrincipal.Show()
+                Me.Hide()
+            Else
+                MsgBox("acceso fallido! No Registrado", vbCritical, "inicio de sesión fallido")
+                TBusuario.Clear()
+                TBclave.Clear()
+            End If
         End If
 
     End Sub
