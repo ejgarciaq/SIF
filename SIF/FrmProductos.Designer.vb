@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmProductos
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,17 +20,17 @@ Partial Class FrmProductos
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmProductos))
         Me.DGVusuarios = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.cbEstado = New System.Windows.Forms.CheckBox()
+        Me.cbprodEst = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TBuserIntentos = New System.Windows.Forms.TextBox()
-        Me.TBuserID = New System.Windows.Forms.TextBox()
+        Me.TBprodCan = New System.Windows.Forms.TextBox()
+        Me.TBprodID = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TBuserName = New System.Windows.Forms.TextBox()
+        Me.TBprodCat = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -38,9 +38,9 @@ Partial Class FrmProductos
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TBuserPass = New System.Windows.Forms.TextBox()
-        Me.CBuserRol = New System.Windows.Forms.ComboBox()
-        Me.TBuserPassConf = New System.Windows.Forms.TextBox()
+        Me.TBprodUni = New System.Windows.Forms.TextBox()
+        Me.CBprodPre = New System.Windows.Forms.ComboBox()
+        Me.TBprodNom = New System.Windows.Forms.TextBox()
         CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -49,18 +49,21 @@ Partial Class FrmProductos
         '
         Me.DGVusuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGVusuarios.Location = New System.Drawing.Point(413, 11)
+        Me.DGVusuarios.Location = New System.Drawing.Point(540, 12)
+        Me.DGVusuarios.Margin = New System.Windows.Forms.Padding(4)
         Me.DGVusuarios.Name = "DGVusuarios"
         Me.DGVusuarios.Size = New System.Drawing.Size(657, 264)
+        Me.DGVusuarios.Size = New System.Drawing.Size(684, 325)
         Me.DGVusuarios.TabIndex = 19
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.cbEstado)
+        Me.GroupBox1.Controls.Add(Me.cbprodEst)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.TBuserIntentos)
-        Me.GroupBox1.Controls.Add(Me.TBuserID)
+        Me.GroupBox1.Controls.Add(Me.TBprodCan)
+        Me.GroupBox1.Controls.Add(Me.TBprodID)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TBuserName)
+        Me.GroupBox1.Controls.Add(Me.TBprodCat)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Label2)
@@ -68,51 +71,53 @@ Partial Class FrmProductos
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.TBuserPass)
-        Me.GroupBox1.Controls.Add(Me.CBuserRol)
-        Me.GroupBox1.Controls.Add(Me.TBuserPassConf)
-        Me.GroupBox1.Location = New System.Drawing.Point(9, 10)
+        Me.GroupBox1.Controls.Add(Me.TBprodUni)
+        Me.GroupBox1.Controls.Add(Me.CBprodPre)
+        Me.GroupBox1.Controls.Add(Me.TBprodNom)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(378, 265)
         Me.GroupBox1.TabIndex = 20
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Usuarios"
+        Me.GroupBox1.Text = "Productos"
         '
-        'cbEstado
+        'cbprodEst
         '
-        Me.cbEstado.AutoSize = True
-        Me.cbEstado.Checked = True
-        Me.cbEstado.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.cbEstado.Location = New System.Drawing.Point(282, 99)
-        Me.cbEstado.Margin = New System.Windows.Forms.Padding(2)
-        Me.cbEstado.Name = "cbEstado"
-        Me.cbEstado.Size = New System.Drawing.Size(56, 17)
-        Me.cbEstado.TabIndex = 7
-        Me.cbEstado.Text = "Activo"
-        Me.cbEstado.UseVisualStyleBackColor = True
+        Me.cbprodEst.AutoSize = True
+        Me.cbprodEst.Checked = True
+        Me.cbprodEst.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.cbprodEst.Location = New System.Drawing.Point(141, 217)
+        Me.cbprodEst.Name = "cbprodEst"
+        Me.cbprodEst.Size = New System.Drawing.Size(68, 21)
+        Me.cbprodEst.TabIndex = 7
+        Me.cbprodEst.Text = "Activo"
+        Me.cbprodEst.UseVisualStyleBackColor = True
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(12, 99)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(52, 13)
+        Me.Label7.Size = New System.Drawing.Size(64, 17)
         Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Categoria"
+        Me.Label7.Text = "Cantidad"
         '
-        'TBuserIntentos
+        'TBprodCan
         '
-        Me.TBuserIntentos.Location = New System.Drawing.Point(71, 96)
-        Me.TBuserIntentos.Name = "TBuserIntentos"
-        Me.TBuserIntentos.Size = New System.Drawing.Size(160, 20)
-        Me.TBuserIntentos.TabIndex = 5
+        Me.TBprodCan.Location = New System.Drawing.Point(141, 150)
+        Me.TBprodCan.Margin = New System.Windows.Forms.Padding(4)
+        Me.TBprodCan.Name = "TBprodCan"
+        Me.TBprodCan.Size = New System.Drawing.Size(353, 22)
+        Me.TBprodCan.TabIndex = 5
         '
-        'TBuserID
+        'TBprodID
         '
-        Me.TBuserID.Location = New System.Drawing.Point(71, 18)
-        Me.TBuserID.Name = "TBuserID"
-        Me.TBuserID.Size = New System.Drawing.Size(130, 20)
-        Me.TBuserID.TabIndex = 1
+        Me.TBprodID.Location = New System.Drawing.Point(141, 23)
+        Me.TBprodID.Margin = New System.Windows.Forms.Padding(4)
+        Me.TBprodID.Name = "TBprodID"
+        Me.TBprodID.Size = New System.Drawing.Size(353, 22)
+        Me.TBprodID.TabIndex = 1
         '
         'Label6
         '
@@ -123,21 +128,22 @@ Partial Class FrmProductos
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "ID"
         '
-        'TBuserName
+        'TBprodCat
         '
-        Me.TBuserName.Location = New System.Drawing.Point(71, 44)
-        Me.TBuserName.Name = "TBuserName"
-        Me.TBuserName.Size = New System.Drawing.Size(301, 20)
-        Me.TBuserName.TabIndex = 2
+        Me.TBprodCat.Location = New System.Drawing.Point(141, 54)
+        Me.TBprodCat.Margin = New System.Windows.Forms.Padding(4)
+        Me.TBprodCat.Name = "TBprodCat"
+        Me.TBprodCat.Size = New System.Drawing.Size(353, 22)
+        Me.TBprodCat.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(12, 47)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.Size = New System.Drawing.Size(69, 17)
         Me.Label1.TabIndex = 12
-        Me.Label1.Text = "Nombre"
+        Me.Label1.Text = "Categoria"
         '
         'Button2
         '
@@ -153,9 +159,9 @@ Partial Class FrmProductos
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(12, 73)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 13)
+        Me.Label2.Size = New System.Drawing.Size(53, 17)
         Me.Label2.TabIndex = 13
-        Me.Label2.Text = "Cantidad"
+        Me.Label2.Text = "Unidad"
         '
         'BTNguardar
         '
@@ -171,18 +177,18 @@ Partial Class FrmProductos
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(168, 73)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(74, 13)
+        Me.Label3.Size = New System.Drawing.Size(58, 17)
         Me.Label3.TabIndex = 14
-        Me.Label3.Text = "Precio Unidad"
+        Me.Label3.Text = "Nombre"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(207, 22)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(40, 13)
+        Me.Label4.Size = New System.Drawing.Size(48, 17)
         Me.Label4.TabIndex = 16
-        Me.Label4.Text = "Estado"
+        Me.Label4.Text = "Precio"
         '
         'Label5
         '
@@ -193,28 +199,31 @@ Partial Class FrmProductos
         Me.Label5.TabIndex = 17
         Me.Label5.Text = "Estado"
         '
-        'TBuserPass
+        'TBprodUni
         '
-        Me.TBuserPass.Location = New System.Drawing.Point(71, 70)
-        Me.TBuserPass.Name = "TBuserPass"
-        Me.TBuserPass.Size = New System.Drawing.Size(91, 20)
-        Me.TBuserPass.TabIndex = 3
+        Me.TBprodUni.Location = New System.Drawing.Point(141, 86)
+        Me.TBprodUni.Margin = New System.Windows.Forms.Padding(4)
+        Me.TBprodUni.Name = "TBprodUni"
+        Me.TBprodUni.Size = New System.Drawing.Size(353, 22)
+        Me.TBprodUni.TabIndex = 3
         '
-        'CBuserRol
+        'CBprodPre
         '
-        Me.CBuserRol.FormattingEnabled = True
-        Me.CBuserRol.Items.AddRange(New Object() {"1", "2"})
-        Me.CBuserRol.Location = New System.Drawing.Point(253, 19)
-        Me.CBuserRol.Name = "CBuserRol"
-        Me.CBuserRol.Size = New System.Drawing.Size(119, 21)
-        Me.CBuserRol.TabIndex = 6
+        Me.CBprodPre.FormattingEnabled = True
+        Me.CBprodPre.Items.AddRange(New Object() {"1", "2"})
+        Me.CBprodPre.Location = New System.Drawing.Point(141, 180)
+        Me.CBprodPre.Margin = New System.Windows.Forms.Padding(4)
+        Me.CBprodPre.Name = "CBprodPre"
+        Me.CBprodPre.Size = New System.Drawing.Size(353, 24)
+        Me.CBprodPre.TabIndex = 6
         '
-        'TBuserPassConf
+        'TBprodNom
         '
-        Me.TBuserPassConf.Location = New System.Drawing.Point(248, 70)
-        Me.TBuserPassConf.Name = "TBuserPassConf"
-        Me.TBuserPassConf.Size = New System.Drawing.Size(124, 20)
-        Me.TBuserPassConf.TabIndex = 4
+        Me.TBprodNom.Location = New System.Drawing.Point(141, 118)
+        Me.TBprodNom.Margin = New System.Windows.Forms.Padding(4)
+        Me.TBprodNom.Name = "TBprodNom"
+        Me.TBprodNom.Size = New System.Drawing.Size(353, 22)
+        Me.TBprodNom.TabIndex = 4
         '
         'FrmProductos
         '
@@ -237,12 +246,12 @@ Partial Class FrmProductos
 
     Friend WithEvents DGVusuarios As DataGridView
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents cbEstado As CheckBox
+    Friend WithEvents cbprodEst As CheckBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TBuserIntentos As TextBox
-    Friend WithEvents TBuserID As TextBox
+    Friend WithEvents TBprodCan As TextBox
+    Friend WithEvents TBprodID As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TBuserName As TextBox
+    Friend WithEvents TBprodCat As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Label2 As Label
@@ -250,7 +259,7 @@ Partial Class FrmProductos
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TBuserPass As TextBox
-    Friend WithEvents CBuserRol As ComboBox
-    Friend WithEvents TBuserPassConf As TextBox
+    Friend WithEvents TBprodUni As TextBox
+    Friend WithEvents CBprodPre As ComboBox
+    Friend WithEvents TBprodNom As TextBox
 End Class

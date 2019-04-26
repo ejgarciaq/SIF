@@ -20,10 +20,10 @@
     End Sub
 
     Private Sub CB1_CheckedChanged(sender As Object, e As EventArgs) Handles CB1.CheckedChanged
-        If TBclave.UseSystemPasswordChar = False Then
-            TBclave.UseSystemPasswordChar = True
-        Else
+        If TBclave.UseSystemPasswordChar Then
             TBclave.UseSystemPasswordChar = False
+        Else
+            TBclave.UseSystemPasswordChar = True
         End If
     End Sub
 

@@ -47,10 +47,10 @@ Partial Class FrmCaja
         'DGVusuarios
         '
         Me.DGVusuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVusuarios.Location = New System.Drawing.Point(552, 13)
+        Me.DGVusuarios.Location = New System.Drawing.Point(548, 14)
         Me.DGVusuarios.Margin = New System.Windows.Forms.Padding(4)
         Me.DGVusuarios.Name = "DGVusuarios"
-        Me.DGVusuarios.Size = New System.Drawing.Size(861, 325)
+        Me.DGVusuarios.Size = New System.Drawing.Size(676, 325)
         Me.DGVusuarios.TabIndex = 21
         '
         'GroupBox1
