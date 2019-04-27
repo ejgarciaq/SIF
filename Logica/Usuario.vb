@@ -1,26 +1,30 @@
 ﻿Public Class Usuario
     Dim con As New Conexion.Funciones
     Dim sql As String
+    Dim sql2 As String
 
     'Se utiliza para validar si un usuario existe utilizando el nombre y la contraseña
     Function VerificarUsuario(usuario As String, contrasena As String)
-        sql = "SELECT * FROM usuarios_table WHERE USR_NOMBRE = '" & usuario & "' AND USR_PASSWORD = '" & contrasena & "'"
+        sql = "select * from usuario t1 join rol t2 on t1.ROL_IDROL = t2.ROL_IDROL where t1.USU_USERNAME = '" + usuario + "' and t1.USU_PASSWORD = '" + contrasena + "' and t2.ROL_DESCRIPCION = 'Administrador';"
+        sql2 = "select * from usuario t1 join rol t2 on t1.ROL_IDROL = t2.ROL_IDROL where t1.USU_USERNAME = '" + usuario + "' and t1.USU_PASSWORD = '" + contrasena + "' and t2.ROL_DESCRIPCION = 'Vendedor';"
         If (con.VerificarDatos(sql)) Then
-            Return True
+            Return 1
+        ElseIf (con.VerificarDatos(sql2)) Then
+            Return 2
         Else
-            Return False
+            Return 3
         End If
     End Function
 
     'Solicita los usuarios existentes y se obtiene una tabla(DataTable) para mostrar
     Function ConsultaUsuario()
-        sql = "SELECT *  FROM usuarios_table"
+        sql = "SELECT *  FROM usuario"
         Return con.ObtenerDatos(sql)
     End Function
 
     'Ingresa un usuario nuevo con los datos respectivos
     Function IngresarUsuario(id As String, rol As String, nombre As String, intentos As String, pass As String, cambio As Boolean)
-        sql = "INSERT INTO usuarios_table VALUES ('" & id & "','" & rol & "','" & nombre & "','" & intentos & "','" & pass & "'," & cambio & ")"
+        sql = "INSERT INTO usuario VALUES ('" & id & "','" & rol & "','" & nombre & "','" & intentos & "','" & pass & "'," & cambio & ")"
         Return con.IngresarDatos(sql)
     End Function
 
