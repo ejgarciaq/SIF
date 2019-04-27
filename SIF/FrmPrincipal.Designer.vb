@@ -74,8 +74,9 @@ Partial Class FrmPrincipal
         '
         'ProductosToolStripMenuItem
         '
+        Me.ProductosToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.inventario
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
-        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
         Me.ProductosToolStripMenuItem.Text = "Productos"
         '
         'ArchivoToolStripMenuItem
@@ -89,21 +90,21 @@ Partial Class FrmPrincipal
         '
         Me.UsuariosToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.usuarios
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'ClientesToolStripMenuItem
         '
         Me.ClientesToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.clientes
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'EmpresaToolStripMenuItem
         '
         Me.EmpresaToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.empresas
         Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
-        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
+        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.EmpresaToolStripMenuItem.Text = "Locales"
         '
         'SalirToolStripMenuItem
