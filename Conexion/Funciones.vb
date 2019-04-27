@@ -26,10 +26,10 @@ Public Class Funciones
     End Function
 
     Function VerificarDatos(conString As String)
-        con.Conectar()
         Dim cmd As New MySqlCommand(conString, con.Conex)
-        Dim dr As MySqlDataReader = cmd.ExecuteReader
         Try
+            con.Conectar()
+            Dim dr As MySqlDataReader = cmd.ExecuteReader
             If dr.Read = False Then
                 Return False
             Else
