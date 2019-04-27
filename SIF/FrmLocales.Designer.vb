@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class FrmEmpresas
+Partial Class FrmLocales
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,51 +22,51 @@ Partial Class FrmEmpresas
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmEmpresas))
-        Me.DGVusuarios = New System.Windows.Forms.DataGridView()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmLocales))
+        Me.DGVlocales = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.cbEstado = New System.Windows.Forms.CheckBox()
+        Me.cbLocalEstado = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TBuserIntentos = New System.Windows.Forms.TextBox()
-        Me.TBuserID = New System.Windows.Forms.TextBox()
+        Me.tbLocalAddress = New System.Windows.Forms.TextBox()
+        Me.tbLocalId = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TBuserName = New System.Windows.Forms.TextBox()
+        Me.tbLocalName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.BTNguardar = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TBuserPass = New System.Windows.Forms.TextBox()
-        Me.TBuserPassConf = New System.Windows.Forms.TextBox()
-        CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tbLocalPhone = New System.Windows.Forms.TextBox()
+        Me.tbLocalMail = New System.Windows.Forms.TextBox()
+        CType(Me.DGVlocales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'DGVusuarios
+        'DGVlocales
         '
-        Me.DGVusuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVusuarios.Location = New System.Drawing.Point(412, 11)
-        Me.DGVusuarios.Name = "DGVusuarios"
-        Me.DGVusuarios.Size = New System.Drawing.Size(646, 264)
-        Me.DGVusuarios.TabIndex = 21
+        Me.DGVlocales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVlocales.Location = New System.Drawing.Point(412, 11)
+        Me.DGVlocales.Name = "DGVlocales"
+        Me.DGVlocales.Size = New System.Drawing.Size(646, 264)
+        Me.DGVlocales.TabIndex = 21
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.cbEstado)
+        Me.GroupBox1.Controls.Add(Me.cbLocalEstado)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.TBuserIntentos)
-        Me.GroupBox1.Controls.Add(Me.TBuserID)
+        Me.GroupBox1.Controls.Add(Me.tbLocalAddress)
+        Me.GroupBox1.Controls.Add(Me.tbLocalId)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TBuserName)
+        Me.GroupBox1.Controls.Add(Me.tbLocalName)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.BTNguardar)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.TBuserPass)
-        Me.GroupBox1.Controls.Add(Me.TBuserPassConf)
+        Me.GroupBox1.Controls.Add(Me.tbLocalPhone)
+        Me.GroupBox1.Controls.Add(Me.tbLocalMail)
         Me.GroupBox1.Location = New System.Drawing.Point(8, 10)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(378, 265)
@@ -74,18 +74,18 @@ Partial Class FrmEmpresas
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Dato de Locales"
         '
-        'cbEstado
+        'cbLocalEstado
         '
-        Me.cbEstado.AutoSize = True
-        Me.cbEstado.Checked = True
-        Me.cbEstado.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.cbEstado.Location = New System.Drawing.Point(106, 149)
-        Me.cbEstado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.cbEstado.Name = "cbEstado"
-        Me.cbEstado.Size = New System.Drawing.Size(56, 17)
-        Me.cbEstado.TabIndex = 7
-        Me.cbEstado.Text = "Activo"
-        Me.cbEstado.UseVisualStyleBackColor = True
+        Me.cbLocalEstado.AutoSize = True
+        Me.cbLocalEstado.Checked = True
+        Me.cbLocalEstado.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.cbLocalEstado.Location = New System.Drawing.Point(106, 149)
+        Me.cbLocalEstado.Margin = New System.Windows.Forms.Padding(2)
+        Me.cbLocalEstado.Name = "cbLocalEstado"
+        Me.cbLocalEstado.Size = New System.Drawing.Size(56, 17)
+        Me.cbLocalEstado.TabIndex = 7
+        Me.cbLocalEstado.Text = "Activo"
+        Me.cbLocalEstado.UseVisualStyleBackColor = True
         '
         'Label7
         '
@@ -96,19 +96,19 @@ Partial Class FrmEmpresas
         Me.Label7.TabIndex = 15
         Me.Label7.Text = "Dirección"
         '
-        'TBuserIntentos
+        'tbLocalAddress
         '
-        Me.TBuserIntentos.Location = New System.Drawing.Point(106, 122)
-        Me.TBuserIntentos.Name = "TBuserIntentos"
-        Me.TBuserIntentos.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserIntentos.TabIndex = 5
+        Me.tbLocalAddress.Location = New System.Drawing.Point(106, 122)
+        Me.tbLocalAddress.Name = "tbLocalAddress"
+        Me.tbLocalAddress.Size = New System.Drawing.Size(266, 20)
+        Me.tbLocalAddress.TabIndex = 5
         '
-        'TBuserID
+        'tbLocalId
         '
-        Me.TBuserID.Location = New System.Drawing.Point(106, 19)
-        Me.TBuserID.Name = "TBuserID"
-        Me.TBuserID.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserID.TabIndex = 1
+        Me.tbLocalId.Location = New System.Drawing.Point(106, 19)
+        Me.tbLocalId.Name = "tbLocalId"
+        Me.tbLocalId.Size = New System.Drawing.Size(266, 20)
+        Me.tbLocalId.TabIndex = 1
         '
         'Label6
         '
@@ -119,12 +119,12 @@ Partial Class FrmEmpresas
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "ID"
         '
-        'TBuserName
+        'tbLocalName
         '
-        Me.TBuserName.Location = New System.Drawing.Point(106, 44)
-        Me.TBuserName.Name = "TBuserName"
-        Me.TBuserName.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserName.TabIndex = 2
+        Me.tbLocalName.Location = New System.Drawing.Point(106, 44)
+        Me.tbLocalName.Name = "tbLocalName"
+        Me.tbLocalName.Size = New System.Drawing.Size(266, 20)
+        Me.tbLocalName.TabIndex = 2
         '
         'Label1
         '
@@ -180,53 +180,53 @@ Partial Class FrmEmpresas
         Me.Label5.TabIndex = 17
         Me.Label5.Text = "Estado"
         '
-        'TBuserPass
+        'tbLocalPhone
         '
-        Me.TBuserPass.Location = New System.Drawing.Point(106, 70)
-        Me.TBuserPass.Name = "TBuserPass"
-        Me.TBuserPass.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserPass.TabIndex = 3
+        Me.tbLocalPhone.Location = New System.Drawing.Point(106, 70)
+        Me.tbLocalPhone.Name = "tbLocalPhone"
+        Me.tbLocalPhone.Size = New System.Drawing.Size(266, 20)
+        Me.tbLocalPhone.TabIndex = 3
         '
-        'TBuserPassConf
+        'tbLocalMail
         '
-        Me.TBuserPassConf.Location = New System.Drawing.Point(106, 96)
-        Me.TBuserPassConf.Name = "TBuserPassConf"
-        Me.TBuserPassConf.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserPassConf.TabIndex = 4
+        Me.tbLocalMail.Location = New System.Drawing.Point(106, 96)
+        Me.tbLocalMail.Name = "tbLocalMail"
+        Me.tbLocalMail.Size = New System.Drawing.Size(266, 20)
+        Me.tbLocalMail.TabIndex = 4
         '
-        'FrmEmpresas
+        'FrmLocales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1066, 286)
-        Me.Controls.Add(Me.DGVusuarios)
+        Me.Controls.Add(Me.DGVlocales)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Name = "FrmEmpresas"
+        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Name = "FrmLocales"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Locales"
-        CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGVlocales, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents DGVusuarios As DataGridView
+    Friend WithEvents DGVlocales As DataGridView
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents cbEstado As CheckBox
+    Friend WithEvents cbLocalEstado As CheckBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TBuserIntentos As TextBox
-    Friend WithEvents TBuserID As TextBox
+    Friend WithEvents tbLocalAddress As TextBox
+    Friend WithEvents tbLocalId As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TBuserName As TextBox
+    Friend WithEvents tbLocalName As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents BTNguardar As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TBuserPass As TextBox
-    Friend WithEvents TBuserPassConf As TextBox
+    Friend WithEvents tbLocalPhone As TextBox
+    Friend WithEvents tbLocalMail As TextBox
 End Class

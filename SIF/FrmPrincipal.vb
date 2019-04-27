@@ -1,7 +1,7 @@
 ﻿Public Class FrmPrincipal
     Dim Usuarios As New FrmUsuarios
     Dim Clientes As New FrmClientes
-    Dim Empresas As New FrmEmpresas
+    Dim Empresas As New FrmLocales
     Dim Productos As New FrmProductos
     Dim Facturas As New FrmFacturas
     Dim Caja As New FrmCaja
@@ -33,7 +33,7 @@
         If Empresas.Visible Then
             MsgBox("La ventana ya ha sido mostrada.")
         Else
-            Empresas = New FrmEmpresas
+            Empresas = New FrmLocales
             Empresas.MdiParent = Me
             Empresas.Show()
         End If

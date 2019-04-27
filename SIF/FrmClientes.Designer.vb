@@ -25,7 +25,8 @@ Partial Class FrmClientes
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmClientes))
         Me.DGVusuarios = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.cbEstado = New System.Windows.Forms.CheckBox()
+        Me.TBclienteTotalCompra = New System.Windows.Forms.TextBox()
+        Me.cbClienteEstado = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TBclienteCorreo = New System.Windows.Forms.TextBox()
         Me.TBclienteID = New System.Windows.Forms.TextBox()
@@ -40,7 +41,6 @@ Partial Class FrmClientes
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TBclienteDIreccion = New System.Windows.Forms.TextBox()
         Me.TBclienteTelefono = New System.Windows.Forms.TextBox()
-        Me.TBclienteTotalCompra = New System.Windows.Forms.TextBox()
         CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -56,7 +56,7 @@ Partial Class FrmClientes
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.TBclienteTotalCompra)
-        Me.GroupBox1.Controls.Add(Me.cbEstado)
+        Me.GroupBox1.Controls.Add(Me.cbClienteEstado)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.TBclienteCorreo)
         Me.GroupBox1.Controls.Add(Me.TBclienteID)
@@ -78,18 +78,25 @@ Partial Class FrmClientes
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos de Clientes"
         '
-        'cbEstado
+        'TBclienteTotalCompra
         '
-        Me.cbEstado.AutoSize = True
-        Me.cbEstado.Checked = True
-        Me.cbEstado.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.cbEstado.Location = New System.Drawing.Point(106, 176)
-        Me.cbEstado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.cbEstado.Name = "cbEstado"
-        Me.cbEstado.Size = New System.Drawing.Size(56, 17)
-        Me.cbEstado.TabIndex = 7
-        Me.cbEstado.Text = "Activo"
-        Me.cbEstado.UseVisualStyleBackColor = True
+        Me.TBclienteTotalCompra.Location = New System.Drawing.Point(106, 148)
+        Me.TBclienteTotalCompra.Name = "TBclienteTotalCompra"
+        Me.TBclienteTotalCompra.Size = New System.Drawing.Size(266, 20)
+        Me.TBclienteTotalCompra.TabIndex = 18
+        '
+        'cbClienteEstado
+        '
+        Me.cbClienteEstado.AutoSize = True
+        Me.cbClienteEstado.Checked = True
+        Me.cbClienteEstado.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.cbClienteEstado.Location = New System.Drawing.Point(106, 176)
+        Me.cbClienteEstado.Margin = New System.Windows.Forms.Padding(2)
+        Me.cbClienteEstado.Name = "cbClienteEstado"
+        Me.cbClienteEstado.Size = New System.Drawing.Size(56, 17)
+        Me.cbClienteEstado.TabIndex = 7
+        Me.cbClienteEstado.Text = "Activo"
+        Me.cbClienteEstado.UseVisualStyleBackColor = True
         '
         'Label7
         '
@@ -207,13 +214,6 @@ Partial Class FrmClientes
         Me.TBclienteTelefono.Size = New System.Drawing.Size(266, 20)
         Me.TBclienteTelefono.TabIndex = 4
         '
-        'TBclienteTotalCompra
-        '
-        Me.TBclienteTotalCompra.Location = New System.Drawing.Point(106, 148)
-        Me.TBclienteTotalCompra.Name = "TBclienteTotalCompra"
-        Me.TBclienteTotalCompra.Size = New System.Drawing.Size(266, 20)
-        Me.TBclienteTotalCompra.TabIndex = 18
-        '
         'FrmClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -222,7 +222,7 @@ Partial Class FrmClientes
         Me.Controls.Add(Me.DGVusuarios)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmClientes"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Clientes"
@@ -235,7 +235,7 @@ Partial Class FrmClientes
 
     Friend WithEvents DGVusuarios As DataGridView
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents cbEstado As CheckBox
+    Friend WithEvents cbClienteEstado As CheckBox
     Friend WithEvents Label7 As Label
     Friend WithEvents TBclienteCorreo As TextBox
     Friend WithEvents TBclienteID As TextBox
