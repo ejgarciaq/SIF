@@ -31,7 +31,7 @@ Partial Class FrmCategorias
         Me.Label6 = New System.Windows.Forms.Label()
         Me.tbCatDescrip = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnCattBorrar = New System.Windows.Forms.Button()
+        Me.btnCatBorrar = New System.Windows.Forms.Button()
         Me.btnCatGuardar = New System.Windows.Forms.Button()
         CType(Me.DGVcategoria, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -40,9 +40,9 @@ Partial Class FrmCategorias
         'DGVcategoria
         '
         Me.DGVcategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVcategoria.Location = New System.Drawing.Point(428, 12)
+        Me.DGVcategoria.Location = New System.Drawing.Point(396, 12)
         Me.DGVcategoria.Name = "DGVcategoria"
-        Me.DGVcategoria.Size = New System.Drawing.Size(401, 260)
+        Me.DGVcategoria.Size = New System.Drawing.Size(433, 260)
         Me.DGVcategoria.TabIndex = 26
         '
         'GroupBox1
@@ -53,7 +53,7 @@ Partial Class FrmCategorias
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.tbCatDescrip)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.btnCattBorrar)
+        Me.GroupBox1.Controls.Add(Me.btnCatBorrar)
         Me.GroupBox1.Controls.Add(Me.btnCatGuardar)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
@@ -116,14 +116,14 @@ Partial Class FrmCategorias
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Descripción"
         '
-        'btnCattBorrar
+        'btnCatBorrar
         '
-        Me.btnCattBorrar.Location = New System.Drawing.Point(103, 96)
-        Me.btnCattBorrar.Name = "btnCattBorrar"
-        Me.btnCattBorrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCattBorrar.TabIndex = 9
-        Me.btnCattBorrar.Text = "Borrar"
-        Me.btnCattBorrar.UseVisualStyleBackColor = True
+        Me.btnCatBorrar.Location = New System.Drawing.Point(103, 96)
+        Me.btnCatBorrar.Name = "btnCatBorrar"
+        Me.btnCatBorrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCatBorrar.TabIndex = 9
+        Me.btnCatBorrar.Text = "Borrar"
+        Me.btnCatBorrar.UseVisualStyleBackColor = True
         '
         'btnCatGuardar
         '
@@ -160,6 +160,6 @@ Partial Class FrmCategorias
     Friend WithEvents Label6 As Label
     Friend WithEvents tbCatDescrip As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents btnCattBorrar As Button
+    Friend WithEvents btnCatBorrar As Button
     Friend WithEvents btnCatGuardar As Button
 End Class

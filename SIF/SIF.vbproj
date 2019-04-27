@@ -97,6 +97,12 @@
     <Compile Include="FrmEstados.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmFormaPag.Designer.vb">
+      <DependentUpon>FrmFormaPag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFormaPag.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmLocales.Designer.vb">
       <DependentUpon>FrmLocales.vb</DependentUpon>
     </Compile>
@@ -175,6 +181,9 @@
     <EmbeddedResource Include="FrmEstados.resx">
       <DependentUpon>FrmEstados.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmFormaPag.resx">
+      <DependentUpon>FrmFormaPag.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLocales.resx">
       <DependentUpon>FrmLocales.vb</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +235,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\inventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\categorias.ico" />
+    <Content Include="Resources\categorias.png" />
+    <None Include="Resources\ud1.png" />
+    <None Include="Resources\roles1.png" />
+    <None Include="Resources\FormasPago1.png" />
+    <None Include="Resources\facturas1.png" />
+    <None Include="Resources\Estado1.png" />
+    <None Include="Resources\categorias1.png" />
+    <Content Include="Resources\clientes.ico" />
+    <Content Include="Resources\clientes.png" />
+    <Content Include="Resources\empresas.ico" />
+    <Content Include="Resources\empresas.png" />
+    <Content Include="Resources\Estado.ico" />
+    <Content Include="Resources\Estado.png" />
+    <Content Include="Resources\facturas.ico" />
+    <Content Include="Resources\facturas.png" />
+    <Content Include="Resources\FormasPago.ico" />
+    <Content Include="Resources\FormasPago.png" />
+    <Content Include="Resources\inventario.ico" />
+    <Content Include="Resources\roles.ico" />
+    <Content Include="Resources\roles.png" />
+    <Content Include="Resources\ud.ico" />
+    <Content Include="Resources\ud.png" />
+    <Content Include="Resources\usuarios.ico" />
+    <Content Include="Resources\usuarios.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

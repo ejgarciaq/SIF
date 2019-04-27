@@ -22,248 +22,233 @@ Partial Class FrmFacturas
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DGVusuarios = New System.Windows.Forms.DataGridView()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmFacturas))
+        Me.DGVfacturas = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.cbEstado = New System.Windows.Forms.CheckBox()
+        Me.cbFacEstado = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TBuserIntentos = New System.Windows.Forms.TextBox()
-        Me.TBuserID = New System.Windows.Forms.TextBox()
+        Me.TBFacFecha = New System.Windows.Forms.TextBox()
+        Me.TBfacID = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TBuserName = New System.Windows.Forms.TextBox()
+        Me.TBfacLocal = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnFacBorrar = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.BTNguardar = New System.Windows.Forms.Button()
+        Me.btnFacGuardar = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TBuserPass = New System.Windows.Forms.TextBox()
-        Me.CBuserRol = New System.Windows.Forms.ComboBox()
-        Me.TBuserPassConf = New System.Windows.Forms.TextBox()
-        CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TBfacIdClient = New System.Windows.Forms.TextBox()
+        Me.tbFacClientName = New System.Windows.Forms.TextBox()
+        Me.tbFacTotal = New System.Windows.Forms.TextBox()
+        CType(Me.DGVfacturas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'DGVusuarios
+        'DGVfacturas
         '
-        Me.DGVusuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVusuarios.Location = New System.Drawing.Point(543, 14)
-        Me.DGVusuarios.Margin = New System.Windows.Forms.Padding(4)
-        Me.DGVusuarios.Name = "DGVusuarios"
-        Me.DGVusuarios.Size = New System.Drawing.Size(681, 325)
-        Me.DGVusuarios.TabIndex = 21
+        Me.DGVfacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVfacturas.Location = New System.Drawing.Point(407, 11)
+        Me.DGVfacturas.Name = "DGVfacturas"
+        Me.DGVfacturas.Size = New System.Drawing.Size(511, 264)
+        Me.DGVfacturas.TabIndex = 21
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.cbEstado)
+        Me.GroupBox1.Controls.Add(Me.tbFacTotal)
+        Me.GroupBox1.Controls.Add(Me.cbFacEstado)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.TBuserIntentos)
-        Me.GroupBox1.Controls.Add(Me.TBuserID)
+        Me.GroupBox1.Controls.Add(Me.TBFacFecha)
+        Me.GroupBox1.Controls.Add(Me.TBfacID)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TBuserName)
+        Me.GroupBox1.Controls.Add(Me.TBfacLocal)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.btnFacBorrar)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.BTNguardar)
+        Me.GroupBox1.Controls.Add(Me.btnFacGuardar)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.TBuserPass)
-        Me.GroupBox1.Controls.Add(Me.CBuserRol)
-        Me.GroupBox1.Controls.Add(Me.TBuserPassConf)
-        Me.GroupBox1.Location = New System.Drawing.Point(14, 12)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Controls.Add(Me.TBfacIdClient)
+        Me.GroupBox1.Controls.Add(Me.tbFacClientName)
+        Me.GroupBox1.Location = New System.Drawing.Point(10, 10)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox1.Size = New System.Drawing.Size(504, 326)
+        Me.GroupBox1.Size = New System.Drawing.Size(378, 265)
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Usuarios"
         '
-        'cbEstado
+        'cbFacEstado
         '
-        Me.cbEstado.AutoSize = True
-        Me.cbEstado.Checked = True
-        Me.cbEstado.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.cbEstado.Location = New System.Drawing.Point(141, 217)
-        Me.cbEstado.Name = "cbEstado"
-        Me.cbEstado.Size = New System.Drawing.Size(68, 21)
-        Me.cbEstado.TabIndex = 7
-        Me.cbEstado.Text = "Activo"
-        Me.cbEstado.UseVisualStyleBackColor = True
+        Me.cbFacEstado.AutoSize = True
+        Me.cbFacEstado.Checked = True
+        Me.cbFacEstado.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.cbFacEstado.Location = New System.Drawing.Point(106, 176)
+        Me.cbFacEstado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cbFacEstado.Name = "cbFacEstado"
+        Me.cbFacEstado.Size = New System.Drawing.Size(56, 17)
+        Me.cbFacEstado.TabIndex = 7
+        Me.cbFacEstado.Text = "Activo"
+        Me.cbFacEstado.UseVisualStyleBackColor = True
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(12, 154)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(9, 125)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(58, 17)
+        Me.Label7.Size = New System.Drawing.Size(37, 13)
         Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Intentos"
+        Me.Label7.Text = "Fecha"
         '
-        'TBuserIntentos
+        'TBFacFecha
         '
-        Me.TBuserIntentos.Location = New System.Drawing.Point(141, 150)
-        Me.TBuserIntentos.Margin = New System.Windows.Forms.Padding(4)
-        Me.TBuserIntentos.Name = "TBuserIntentos"
-        Me.TBuserIntentos.Size = New System.Drawing.Size(353, 22)
-        Me.TBuserIntentos.TabIndex = 5
+        Me.TBFacFecha.Location = New System.Drawing.Point(106, 122)
+        Me.TBFacFecha.Name = "TBFacFecha"
+        Me.TBFacFecha.Size = New System.Drawing.Size(266, 20)
+        Me.TBFacFecha.TabIndex = 5
         '
-        'TBuserID
+        'TBfacID
         '
-        Me.TBuserID.Location = New System.Drawing.Point(141, 23)
-        Me.TBuserID.Margin = New System.Windows.Forms.Padding(4)
-        Me.TBuserID.Name = "TBuserID"
-        Me.TBuserID.Size = New System.Drawing.Size(353, 22)
-        Me.TBuserID.TabIndex = 1
+        Me.TBfacID.Location = New System.Drawing.Point(106, 19)
+        Me.TBfacID.Name = "TBfacID"
+        Me.TBfacID.Size = New System.Drawing.Size(266, 20)
+        Me.TBfacID.TabIndex = 1
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(16, 27)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(12, 22)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(21, 17)
+        Me.Label6.Size = New System.Drawing.Size(18, 13)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "ID"
         '
-        'TBuserName
+        'TBfacLocal
         '
-        Me.TBuserName.Location = New System.Drawing.Point(141, 54)
-        Me.TBuserName.Margin = New System.Windows.Forms.Padding(4)
-        Me.TBuserName.Name = "TBuserName"
-        Me.TBuserName.Size = New System.Drawing.Size(353, 22)
-        Me.TBuserName.TabIndex = 2
+        Me.TBfacLocal.Location = New System.Drawing.Point(106, 44)
+        Me.TBfacLocal.Name = "TBfacLocal"
+        Me.TBfacLocal.Size = New System.Drawing.Size(266, 20)
+        Me.TBfacLocal.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(16, 58)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(12, 47)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 17)
+        Me.Label1.Size = New System.Drawing.Size(33, 13)
         Me.Label1.TabIndex = 12
-        Me.Label1.Text = "Nombre"
+        Me.Label1.Text = "Local"
         '
-        'Button2
+        'btnFacBorrar
         '
-        Me.Button2.Location = New System.Drawing.Point(141, 281)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(100, 28)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Borrar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnFacBorrar.Location = New System.Drawing.Point(93, 236)
+        Me.btnFacBorrar.Name = "btnFacBorrar"
+        Me.btnFacBorrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnFacBorrar.TabIndex = 9
+        Me.btnFacBorrar.Text = "Borrar"
+        Me.btnFacBorrar.UseVisualStyleBackColor = True
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(16, 90)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(12, 73)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(43, 17)
+        Me.Label2.Size = New System.Drawing.Size(53, 13)
         Me.Label2.TabIndex = 13
-        Me.Label2.Text = "Clave"
+        Me.Label2.Text = "ID Cliente"
         '
-        'BTNguardar
+        'btnFacGuardar
         '
-        Me.BTNguardar.Location = New System.Drawing.Point(24, 281)
-        Me.BTNguardar.Margin = New System.Windows.Forms.Padding(4)
-        Me.BTNguardar.Name = "BTNguardar"
-        Me.BTNguardar.Size = New System.Drawing.Size(100, 28)
-        Me.BTNguardar.TabIndex = 8
-        Me.BTNguardar.Text = "Guardar"
-        Me.BTNguardar.UseVisualStyleBackColor = True
+        Me.btnFacGuardar.Location = New System.Drawing.Point(12, 236)
+        Me.btnFacGuardar.Name = "btnFacGuardar"
+        Me.btnFacGuardar.Size = New System.Drawing.Size(75, 23)
+        Me.btnFacGuardar.TabIndex = 8
+        Me.btnFacGuardar.Text = "Guardar"
+        Me.btnFacGuardar.UseVisualStyleBackColor = True
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(16, 122)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(12, 99)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(108, 17)
+        Me.Label3.Size = New System.Drawing.Size(39, 13)
         Me.Label3.TabIndex = 14
-        Me.Label3.Text = "Confirmar Clave"
+        Me.Label3.Text = "Cliente"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(16, 183)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(12, 149)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(29, 17)
+        Me.Label4.Size = New System.Drawing.Size(82, 13)
         Me.Label4.TabIndex = 16
-        Me.Label4.Text = "Rol"
+        Me.Label4.Text = "Total Facturado"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(16, 217)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(12, 176)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 17)
+        Me.Label5.Size = New System.Drawing.Size(40, 13)
         Me.Label5.TabIndex = 17
         Me.Label5.Text = "Estado"
         '
-        'TBuserPass
+        'TBfacIdClient
         '
-        Me.TBuserPass.Location = New System.Drawing.Point(141, 86)
-        Me.TBuserPass.Margin = New System.Windows.Forms.Padding(4)
-        Me.TBuserPass.Name = "TBuserPass"
-        Me.TBuserPass.Size = New System.Drawing.Size(353, 22)
-        Me.TBuserPass.TabIndex = 3
+        Me.TBfacIdClient.Location = New System.Drawing.Point(106, 70)
+        Me.TBfacIdClient.Name = "TBfacIdClient"
+        Me.TBfacIdClient.Size = New System.Drawing.Size(266, 20)
+        Me.TBfacIdClient.TabIndex = 3
         '
-        'CBuserRol
+        'tbFacClientName
         '
-        Me.CBuserRol.FormattingEnabled = True
-        Me.CBuserRol.Items.AddRange(New Object() {"1", "2"})
-        Me.CBuserRol.Location = New System.Drawing.Point(141, 180)
-        Me.CBuserRol.Margin = New System.Windows.Forms.Padding(4)
-        Me.CBuserRol.Name = "CBuserRol"
-        Me.CBuserRol.Size = New System.Drawing.Size(353, 24)
-        Me.CBuserRol.TabIndex = 6
+        Me.tbFacClientName.Location = New System.Drawing.Point(106, 96)
+        Me.tbFacClientName.Name = "tbFacClientName"
+        Me.tbFacClientName.Size = New System.Drawing.Size(266, 20)
+        Me.tbFacClientName.TabIndex = 4
         '
-        'TBuserPassConf
+        'tbFacTotal
         '
-        Me.TBuserPassConf.Location = New System.Drawing.Point(141, 118)
-        Me.TBuserPassConf.Margin = New System.Windows.Forms.Padding(4)
-        Me.TBuserPassConf.Name = "TBuserPassConf"
-        Me.TBuserPassConf.Size = New System.Drawing.Size(353, 22)
-        Me.TBuserPassConf.TabIndex = 4
+        Me.tbFacTotal.Location = New System.Drawing.Point(106, 151)
+        Me.tbFacTotal.Name = "tbFacTotal"
+        Me.tbFacTotal.Size = New System.Drawing.Size(266, 20)
+        Me.tbFacTotal.TabIndex = 18
         '
         'FrmFacturas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1237, 352)
-        Me.Controls.Add(Me.DGVusuarios)
+        Me.ClientSize = New System.Drawing.Size(928, 286)
+        Me.Controls.Add(Me.DGVfacturas)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FrmFacturas"
-        Me.Text = "FrmFacturas"
-        CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Facturas"
+        CType(Me.DGVfacturas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents DGVusuarios As DataGridView
+    Friend WithEvents DGVfacturas As DataGridView
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents cbEstado As CheckBox
+    Friend WithEvents cbFacEstado As CheckBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TBuserIntentos As TextBox
-    Friend WithEvents TBuserID As TextBox
+    Friend WithEvents TBFacFecha As TextBox
+    Friend WithEvents TBfacID As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TBuserName As TextBox
+    Friend WithEvents TBfacLocal As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnFacBorrar As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents BTNguardar As Button
+    Friend WithEvents btnFacGuardar As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TBuserPass As TextBox
-    Friend WithEvents CBuserRol As ComboBox
-    Friend WithEvents TBuserPassConf As TextBox
+    Friend WithEvents TBfacIdClient As TextBox
+    Friend WithEvents tbFacClientName As TextBox
+    Friend WithEvents tbFacTotal As TextBox
 End Class
