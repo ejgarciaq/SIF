@@ -13,6 +13,7 @@
                 TBclave.UseSystemPasswordChar = False
             End If
             rol = us.VerificarUsuario(TBusuario.Text, TBclave.Text)
+            TBclave.UseSystemPasswordChar = True
             If (rol = 1) Then
                 admin = True
                 principal.isAdmin(admin)
