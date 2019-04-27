@@ -104,7 +104,7 @@ Partial Class FrmPrincipal
         Me.EmpresaToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.empresas
         Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
         Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
-        Me.EmpresaToolStripMenuItem.Text = "Empresas"
+        Me.EmpresaToolStripMenuItem.Text = "Locales"
         '
         'SalirToolStripMenuItem
         '

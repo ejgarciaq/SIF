@@ -72,7 +72,7 @@ Partial Class FrmEmpresas
         Me.GroupBox1.Size = New System.Drawing.Size(378, 265)
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Dato de las Empresas"
+        Me.GroupBox1.Text = "Dato de Locales"
         '
         'cbEstado
         '
@@ -205,7 +205,7 @@ Partial Class FrmEmpresas
         Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FrmEmpresas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Empresas"
+        Me.Text = "Locales"
         CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

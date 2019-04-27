@@ -161,13 +161,13 @@ Partial Class FrmUsuarios
         Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox1.Enabled = False
         Me.RichTextBox1.HideSelection = False
-        Me.RichTextBox1.Location = New System.Drawing.Point(233, 176)
+        Me.RichTextBox1.Location = New System.Drawing.Point(226, 176)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
-        Me.RichTextBox1.Size = New System.Drawing.Size(139, 62)
+        Me.RichTextBox1.Size = New System.Drawing.Size(146, 75)
         Me.RichTextBox1.TabIndex = 18
         Me.RichTextBox1.Text = "Requisitos para la clave:" & Global.Microsoft.VisualBasic.ChrW(10) & " - Mínimo 8 caracteres" & Global.Microsoft.VisualBasic.ChrW(10) & " - Mínimo 1 letra mayúscula" & Global.Microsoft.VisualBasic.ChrW(10) & " - M" &
-    "ínimo un numero"
+    "ínimo 1 numero" & Global.Microsoft.VisualBasic.ChrW(10) & " - Mínimo 1 carácter especial"
         '
         'cbEstado
         '
