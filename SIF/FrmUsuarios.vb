@@ -10,18 +10,18 @@ Public Class FrmUsuarios
     End Sub
 
     Private Sub BTNguardar_Click(sender As Object, e As EventArgs) Handles BTNguardar.Click
-        Dim cambio As Boolean = cbEstado.Checked
-        Dim isValid As Boolean = us.IsPasswordValid(TBuserPass.Text)
+
+        Dim isValid As Boolean = us.IsPasswordValid(tbPassword.Text)
         If (Not (isValid)) Then
-            If Not TBuserPass.Text = TBuserPassConf.Text Then
-                TBuserPass.Clear()
-                TBuserPassConf.Clear()
+            If Not tbPassword.Text = tbPasswordConf.Text Then
+                tbPassword.Clear()
+                tbPasswordConf.Clear()
                 MessageBox.Show("Contraseña no permitida.")
                 Return
             End If
         End If
         Try
-            If us.IngresarUsuario(TBuserID.Text, CBuserRol.Text, TBuserName.Text, TBuserIntentos.Text, TBuserPass.Text, cambio) > 0 Then
+            If us.IngresarUsuario(tbId.Text, tbNombre.Text, tbApellido1.Text, tbApellido2.Text, tbUserName.Text, tbPassword.Text, cbRol.Text) > 0 Then
                 MsgBox("Registrado correctamente")
             End If
             DGVusuarios.DataSource = us.ConsultaUsuario
@@ -39,7 +39,7 @@ Public Class FrmUsuarios
         'CBuserEstado.Text = ""
     End Sub
 
-    Private Sub TBuserPass_TextChanged(sender As Object, e As EventArgs) Handles TBuserPass.TextChanged
+    Private Sub TBuserPass_TextChanged(sender As Object, e As EventArgs) Handles tbPassword.TextChanged
 
     End Sub
 

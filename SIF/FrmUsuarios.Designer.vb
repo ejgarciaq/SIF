@@ -27,21 +27,23 @@ Partial Class FrmUsuarios
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TBuserName = New System.Windows.Forms.TextBox()
-        Me.TBuserPass = New System.Windows.Forms.TextBox()
-        Me.TBuserPassConf = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.tbNombre = New System.Windows.Forms.TextBox()
+        Me.tbPassword = New System.Windows.Forms.TextBox()
+        Me.tbPasswordConf = New System.Windows.Forms.TextBox()
         Me.BTNguardar = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
-        Me.cbEstado = New System.Windows.Forms.CheckBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TBuserIntentos = New System.Windows.Forms.TextBox()
-        Me.TBuserID = New System.Windows.Forms.TextBox()
+        Me.tbId = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.CBuserRol = New System.Windows.Forms.ComboBox()
+        Me.cbRol = New System.Windows.Forms.ComboBox()
         Me.DGVusuarios = New System.Windows.Forms.DataGridView()
+        Me.tbApellido1 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.tbApellido2 = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.tbUserName = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -49,109 +51,113 @@ Partial Class FrmUsuarios
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 47)
+        Me.Label1.Location = New System.Drawing.Point(16, 58)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.Size = New System.Drawing.Size(58, 17)
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Nombre"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 73)
+        Me.Label2.Location = New System.Drawing.Point(16, 196)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(34, 13)
+        Me.Label2.Size = New System.Drawing.Size(43, 17)
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Clave"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 99)
+        Me.Label3.Location = New System.Drawing.Point(16, 228)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(81, 13)
+        Me.Label3.Size = New System.Drawing.Size(108, 17)
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Confirmar Clave"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 149)
+        Me.Label4.Location = New System.Drawing.Point(16, 270)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(23, 13)
+        Me.Label4.Size = New System.Drawing.Size(29, 17)
         Me.Label4.TabIndex = 16
         Me.Label4.Text = "Rol"
         '
-        'TBuserName
+        'tbNombre
         '
-        Me.TBuserName.Location = New System.Drawing.Point(106, 44)
-        Me.TBuserName.Name = "TBuserName"
-        Me.TBuserName.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserName.TabIndex = 2
+        Me.tbNombre.Location = New System.Drawing.Point(141, 54)
+        Me.tbNombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbNombre.Name = "tbNombre"
+        Me.tbNombre.Size = New System.Drawing.Size(353, 22)
+        Me.tbNombre.TabIndex = 2
         '
-        'TBuserPass
+        'tbPassword
         '
-        Me.TBuserPass.Location = New System.Drawing.Point(106, 70)
-        Me.TBuserPass.Name = "TBuserPass"
-        Me.TBuserPass.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserPass.TabIndex = 3
+        Me.tbPassword.Location = New System.Drawing.Point(141, 192)
+        Me.tbPassword.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbPassword.Name = "tbPassword"
+        Me.tbPassword.Size = New System.Drawing.Size(353, 22)
+        Me.tbPassword.TabIndex = 3
         '
-        'TBuserPassConf
+        'tbPasswordConf
         '
-        Me.TBuserPassConf.Location = New System.Drawing.Point(106, 96)
-        Me.TBuserPassConf.Name = "TBuserPassConf"
-        Me.TBuserPassConf.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserPassConf.TabIndex = 4
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(12, 176)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(40, 13)
-        Me.Label5.TabIndex = 17
-        Me.Label5.Text = "Estado"
+        Me.tbPasswordConf.Location = New System.Drawing.Point(141, 224)
+        Me.tbPasswordConf.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbPasswordConf.Name = "tbPasswordConf"
+        Me.tbPasswordConf.Size = New System.Drawing.Size(353, 22)
+        Me.tbPasswordConf.TabIndex = 4
         '
         'BTNguardar
         '
-        Me.BTNguardar.Location = New System.Drawing.Point(18, 228)
+        Me.BTNguardar.Location = New System.Drawing.Point(24, 387)
+        Me.BTNguardar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.BTNguardar.Name = "BTNguardar"
-        Me.BTNguardar.Size = New System.Drawing.Size(75, 23)
+        Me.BTNguardar.Size = New System.Drawing.Size(100, 28)
         Me.BTNguardar.TabIndex = 8
         Me.BTNguardar.Text = "Guardar"
         Me.BTNguardar.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(106, 228)
+        Me.Button2.Location = New System.Drawing.Point(141, 387)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(100, 28)
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "Borrar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.tbUserName)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.tbApellido2)
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.tbApellido1)
+        Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.RichTextBox1)
-        Me.GroupBox1.Controls.Add(Me.cbEstado)
-        Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.TBuserIntentos)
-        Me.GroupBox1.Controls.Add(Me.TBuserID)
+        Me.GroupBox1.Controls.Add(Me.tbId)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TBuserName)
+        Me.GroupBox1.Controls.Add(Me.tbNombre)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.BTNguardar)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.TBuserPass)
-        Me.GroupBox1.Controls.Add(Me.CBuserRol)
-        Me.GroupBox1.Controls.Add(Me.TBuserPassConf)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Controls.Add(Me.tbPassword)
+        Me.GroupBox1.Controls.Add(Me.cbRol)
+        Me.GroupBox1.Controls.Add(Me.tbPasswordConf)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 15)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(378, 265)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(504, 480)
         Me.GroupBox1.TabIndex = 18
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos de Usuarios"
@@ -161,84 +167,115 @@ Partial Class FrmUsuarios
         Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.RichTextBox1.Enabled = False
         Me.RichTextBox1.HideSelection = False
-        Me.RichTextBox1.Location = New System.Drawing.Point(226, 176)
+        Me.RichTextBox1.Location = New System.Drawing.Point(301, 323)
+        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
-        Me.RichTextBox1.Size = New System.Drawing.Size(146, 75)
+        Me.RichTextBox1.Size = New System.Drawing.Size(195, 92)
         Me.RichTextBox1.TabIndex = 18
         Me.RichTextBox1.Text = "Requisitos para la clave:" & Global.Microsoft.VisualBasic.ChrW(10) & " - Mínimo 8 caracteres" & Global.Microsoft.VisualBasic.ChrW(10) & " - Mínimo 1 letra mayúscula" & Global.Microsoft.VisualBasic.ChrW(10) & " - M" &
     "ínimo 1 numero" & Global.Microsoft.VisualBasic.ChrW(10) & " - Mínimo 1 carácter especial"
         '
-        'cbEstado
+        'tbId
         '
-        Me.cbEstado.AutoSize = True
-        Me.cbEstado.Checked = True
-        Me.cbEstado.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.cbEstado.Location = New System.Drawing.Point(106, 176)
-        Me.cbEstado.Margin = New System.Windows.Forms.Padding(2)
-        Me.cbEstado.Name = "cbEstado"
-        Me.cbEstado.Size = New System.Drawing.Size(56, 17)
-        Me.cbEstado.TabIndex = 7
-        Me.cbEstado.Text = "Activo"
-        Me.cbEstado.UseVisualStyleBackColor = True
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(9, 125)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(45, 13)
-        Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Intentos"
-        '
-        'TBuserIntentos
-        '
-        Me.TBuserIntentos.Location = New System.Drawing.Point(106, 122)
-        Me.TBuserIntentos.Name = "TBuserIntentos"
-        Me.TBuserIntentos.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserIntentos.TabIndex = 5
-        '
-        'TBuserID
-        '
-        Me.TBuserID.Location = New System.Drawing.Point(106, 19)
-        Me.TBuserID.Name = "TBuserID"
-        Me.TBuserID.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserID.TabIndex = 1
+        Me.tbId.Location = New System.Drawing.Point(141, 23)
+        Me.tbId.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbId.Name = "tbId"
+        Me.tbId.Size = New System.Drawing.Size(353, 22)
+        Me.tbId.TabIndex = 1
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(12, 22)
+        Me.Label6.Location = New System.Drawing.Point(16, 27)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(18, 13)
+        Me.Label6.Size = New System.Drawing.Size(21, 17)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "ID"
         '
-        'CBuserRol
+        'cbRol
         '
-        Me.CBuserRol.FormattingEnabled = True
-        Me.CBuserRol.Items.AddRange(New Object() {"1", "2"})
-        Me.CBuserRol.Location = New System.Drawing.Point(106, 146)
-        Me.CBuserRol.Name = "CBuserRol"
-        Me.CBuserRol.Size = New System.Drawing.Size(266, 21)
-        Me.CBuserRol.TabIndex = 6
+        Me.cbRol.FormattingEnabled = True
+        Me.cbRol.Items.AddRange(New Object() {"1", "2"})
+        Me.cbRol.Location = New System.Drawing.Point(141, 267)
+        Me.cbRol.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbRol.Name = "cbRol"
+        Me.cbRol.Size = New System.Drawing.Size(353, 24)
+        Me.cbRol.TabIndex = 6
         '
         'DGVusuarios
         '
         Me.DGVusuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVusuarios.Location = New System.Drawing.Point(416, 13)
+        Me.DGVusuarios.Location = New System.Drawing.Point(555, 16)
+        Me.DGVusuarios.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DGVusuarios.Name = "DGVusuarios"
-        Me.DGVusuarios.Size = New System.Drawing.Size(502, 264)
+        Me.DGVusuarios.Size = New System.Drawing.Size(669, 325)
         Me.DGVusuarios.TabIndex = 10
+        '
+        'tbApellido1
+        '
+        Me.tbApellido1.Location = New System.Drawing.Point(141, 87)
+        Me.tbApellido1.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbApellido1.Name = "tbApellido1"
+        Me.tbApellido1.Size = New System.Drawing.Size(353, 22)
+        Me.tbApellido1.TabIndex = 19
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(16, 91)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(66, 17)
+        Me.Label8.TabIndex = 20
+        Me.Label8.Text = "Apellido1"
+        '
+        'tbApellido2
+        '
+        Me.tbApellido2.Location = New System.Drawing.Point(141, 124)
+        Me.tbApellido2.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbApellido2.Name = "tbApellido2"
+        Me.tbApellido2.Size = New System.Drawing.Size(353, 22)
+        Me.tbApellido2.TabIndex = 21
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(16, 128)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(66, 17)
+        Me.Label9.TabIndex = 22
+        Me.Label9.Text = "Apellido2"
+        '
+        'tbUserName
+        '
+        Me.tbUserName.Location = New System.Drawing.Point(141, 157)
+        Me.tbUserName.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbUserName.Name = "tbUserName"
+        Me.tbUserName.Size = New System.Drawing.Size(353, 22)
+        Me.tbUserName.TabIndex = 23
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(16, 161)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(75, 17)
+        Me.Label10.TabIndex = 24
+        Me.Label10.Text = "UserName"
         '
         'FrmUsuarios
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(928, 286)
+        Me.ClientSize = New System.Drawing.Size(1237, 548)
         Me.Controls.Add(Me.DGVusuarios)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FrmUsuarios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Usuarios"
@@ -253,19 +290,21 @@ Partial Class FrmUsuarios
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TBuserName As TextBox
-    Friend WithEvents TBuserPass As TextBox
-    Friend WithEvents TBuserPassConf As TextBox
-    Friend WithEvents Label5 As Label
+    Friend WithEvents tbNombre As TextBox
+    Friend WithEvents tbPassword As TextBox
+    Friend WithEvents tbPasswordConf As TextBox
     Friend WithEvents BTNguardar As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents DGVusuarios As DataGridView
-    Friend WithEvents TBuserID As TextBox
+    Friend WithEvents tbId As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents TBuserIntentos As TextBox
-    Friend WithEvents CBuserRol As ComboBox
-    Friend WithEvents cbEstado As CheckBox
+    Friend WithEvents cbRol As ComboBox
     Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents tbApellido2 As TextBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents tbApellido1 As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents tbUserName As TextBox
+    Friend WithEvents Label10 As Label
 End Class
