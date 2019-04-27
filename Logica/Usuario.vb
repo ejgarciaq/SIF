@@ -1,14 +1,18 @@
 ﻿Public Class Usuario
     Dim con As New Conexion.Funciones
     Dim sql As String
+    Dim sql2 As String
 
     'Se utiliza para validar si un usuario existe utilizando el nombre y la contraseña
     Function VerificarUsuario(usuario As String, contrasena As String)
-        sql = "SELECT * FROM usuario WHERE USU_USERNAME = '" & usuario & "' AND USU_PASSWORD = '" & contrasena & "'"
+        sql = "select * from usuario t1 join rol t2 on t1.ROL_IDROL = t2.ROL_IDROL where t1.USU_USERNAME = '" + usuario + "' and t1.USU_PASSWORD = '" + contrasena + "' and t2.ROL_DESCRIPCION = 'Administrador';"
+        sql2 = "select * from usuario t1 join rol t2 on t1.ROL_IDROL = t2.ROL_IDROL where t1.USU_USERNAME = '" + usuario + "' and t1.USU_PASSWORD = '" + contrasena + "' and t2.ROL_DESCRIPCION = 'Vendedor';"
         If (con.VerificarDatos(sql)) Then
-            Return True
+            Return 1
+        ElseIf (con.VerificarDatos(sql2)) Then
+            Return 2
         Else
-            Return False
+            Return 3
         End If
     End Function
 

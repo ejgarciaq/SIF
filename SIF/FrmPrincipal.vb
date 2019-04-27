@@ -69,4 +69,11 @@
         End If
     End Sub
 
+    Sub isAdmin(i As Boolean)
+        If i Then
+            tsConfiguracion.Visible = True
+        Else
+            tsConfiguracion.Visible = False
+        End If
+    End Sub
 End Class

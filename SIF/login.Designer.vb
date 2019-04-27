@@ -54,7 +54,7 @@ Partial Class login
         'TBusuario
         '
         Me.TBusuario.Location = New System.Drawing.Point(101, 20)
-        Me.TBusuario.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TBusuario.Margin = New System.Windows.Forms.Padding(4)
         Me.TBusuario.Name = "TBusuario"
         Me.TBusuario.Size = New System.Drawing.Size(227, 22)
         Me.TBusuario.TabIndex = 2
@@ -62,15 +62,16 @@ Partial Class login
         'TBclave
         '
         Me.TBclave.Location = New System.Drawing.Point(101, 55)
-        Me.TBclave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TBclave.Margin = New System.Windows.Forms.Padding(4)
         Me.TBclave.Name = "TBclave"
         Me.TBclave.Size = New System.Drawing.Size(227, 22)
         Me.TBclave.TabIndex = 3
+        Me.TBclave.UseSystemPasswordChar = True
         '
         'BTIngresar
         '
         Me.BTIngresar.Location = New System.Drawing.Point(48, 121)
-        Me.BTIngresar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BTIngresar.Margin = New System.Windows.Forms.Padding(4)
         Me.BTIngresar.Name = "BTIngresar"
         Me.BTIngresar.Size = New System.Drawing.Size(100, 28)
         Me.BTIngresar.TabIndex = 4
@@ -81,7 +82,7 @@ Partial Class login
         '
         Me.CB1.AutoSize = True
         Me.CB1.Location = New System.Drawing.Point(101, 89)
-        Me.CB1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CB1.Margin = New System.Windows.Forms.Padding(4)
         Me.CB1.Name = "CB1"
         Me.CB1.Size = New System.Drawing.Size(117, 21)
         Me.CB1.TabIndex = 5
@@ -91,7 +92,7 @@ Partial Class login
         'BTNcerrar
         '
         Me.BTNcerrar.Location = New System.Drawing.Point(188, 121)
-        Me.BTNcerrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BTNcerrar.Margin = New System.Windows.Forms.Padding(4)
         Me.BTNcerrar.Name = "BTNcerrar"
         Me.BTNcerrar.Size = New System.Drawing.Size(100, 28)
         Me.BTNcerrar.TabIndex = 6
@@ -110,7 +111,7 @@ Partial Class login
         Me.Controls.Add(Me.TBusuario)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "login"
