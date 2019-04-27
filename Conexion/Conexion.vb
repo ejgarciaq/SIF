@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Conexion
 
-    Dim con As New MySqlConnection("server=localhost;user id=root;password=@dirael1981.;database=sif_db")
+    Dim con As New MySqlConnection("server=localhost;user id=root;password=T4rtaro1981;database=sif_db")
     Sub Conectar()
         Try
             con.Open()
