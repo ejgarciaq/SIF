@@ -9,11 +9,7 @@
             MsgBox("Por favor ingrese sus datos de acceso!", vbExclamation, "Campos vacíos encontrados")
         Else
             Dim rol As Int16
-            If True Then
-                TBclave.UseSystemPasswordChar = False
-            End If
-            rol = us.VerificarUsuario(TBusuario.Text, TBclave.Text)
-            TBclave.UseSystemPasswordChar = True
+            rol = us.VerificarUsuario(TBusuario.Text, TBclave.Text.ToString)
             If (rol = 1) Then
                 admin = True
                 principal.isAdmin(admin)
