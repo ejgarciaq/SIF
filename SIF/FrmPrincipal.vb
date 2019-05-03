@@ -118,6 +118,16 @@
     End Sub
 
     Private Sub CategoriasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CategoriasToolStripMenuItem.Click
+        If FormasPago.Visible = True Then
+            MsgBox("La ventana ya ha sido mostrada.")
+        Else
+            FormasPago = New FrmFormaPag
+            FormasPago.MdiParent = Me
+            FormasPago.Show()
+        End If
+    End Sub
+
+    Private Sub FacturacionToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles FacturacionToolStripMenuItem1.Click
         If Categorias.Visible = True Then
             MsgBox("La ventana ya ha sido mostrada.")
         Else
@@ -125,10 +135,6 @@
             Categorias.MdiParent = Me
             Categorias.Show()
         End If
-    End Sub
-
-    Private Sub FacturacionToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles FacturacionToolStripMenuItem1.Click
-
     End Sub
     Private Sub FormasDePAgoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FormasDePAgoToolStripMenuItem.Click
         If Categorias.Visible = True Then

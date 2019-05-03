@@ -86,7 +86,7 @@ Partial Class FrmRoles
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(17, 18)
+        Me.Label6.Location = New System.Drawing.Point(12, 18)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(18, 13)
         Me.Label6.TabIndex = 11

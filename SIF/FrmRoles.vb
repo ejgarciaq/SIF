@@ -21,9 +21,7 @@
 
 
     Private Sub btnRolesBorrar_Click(sender As Object, e As EventArgs) Handles btnRolesBorrar.Click
-        ':::Creamos la variable Sql que guardar la instruccion de tipo SQL
-        Dim Sql As String = "Delete * From Clientes Where Id=" & tbID.Text & ""
-        Obj.operaciones(DGTabla, Sql)
+
     End Sub
 
     Private Sub CbRolEstado_CheckedChanged(sender As Object, e As EventArgs) Handles cbRolEstado.CheckedChanged
