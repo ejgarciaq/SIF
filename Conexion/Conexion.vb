@@ -9,7 +9,7 @@ Public Class Conexion
             con.Close()
         End Try
     End Sub
-    'fhfjhgh
+
     Sub Desconectar()
         Try
             con.Close()

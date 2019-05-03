@@ -9,8 +9,8 @@
     End Function
 
     'Ingresa un estado nuevo con los datos respectivos
-    Function IngresarEstado(id As String, EstDes As String, cbEstado As Boolean)
-        sql = "INSERT INTO `sif_db`.`estado` (`EST_IDESTADO`, `EST_DESCRIPCION`, `EST_ACTIVO`) VALUES (" + id + ", '" + EstDes + "', true);"
+    Function IngresarEstado(id As String, EstDes As String, cbEstEstado As Boolean)
+        sql = "INSERT INTO `sif_db`.`estado` (`EST_IDESTADO`, `EST_DESCRIPCION`, `EST_ACTIVO`) VALUES (" + id + ", " + EstDes + ", " + cbEstEstado + ");"
         con.IngresarDatos(sql)
         Return con.IngresarDatos(sql)
     End Function
