@@ -31,7 +31,7 @@ Partial Class FrmUsuarios
         Me.tbPassword = New System.Windows.Forms.TextBox()
         Me.tbPasswordConf = New System.Windows.Forms.TextBox()
         Me.BTNguardar = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnUserBorrar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.tbUserName = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -114,14 +114,14 @@ Partial Class FrmUsuarios
         Me.BTNguardar.Text = "Guardar"
         Me.BTNguardar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnUserBorrar
         '
-        Me.Button2.Location = New System.Drawing.Point(103, 223)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Borrar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnUserBorrar.Location = New System.Drawing.Point(103, 223)
+        Me.btnUserBorrar.Name = "btnUserBorrar"
+        Me.btnUserBorrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnUserBorrar.TabIndex = 9
+        Me.btnUserBorrar.Text = "Borrar"
+        Me.btnUserBorrar.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
@@ -136,7 +136,7 @@ Partial Class FrmUsuarios
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.tbNombre)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.btnUserBorrar)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.BTNguardar)
         Me.GroupBox1.Controls.Add(Me.Label3)
@@ -271,7 +271,7 @@ Partial Class FrmUsuarios
     Friend WithEvents tbPassword As TextBox
     Friend WithEvents tbPasswordConf As TextBox
     Friend WithEvents BTNguardar As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnUserBorrar As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents DGVusuarios As DataGridView
     Friend WithEvents tbID As TextBox

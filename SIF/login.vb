@@ -10,7 +10,7 @@
         Else
             Dim rol As Int16
             If True Then
-                TBclave.UseSystemPasswordChar = False
+                TBclave.UseSystemPasswordChar = True
             End If
             rol = us.VerificarUsuario(TBusuario.Text, TBclave.Text)
             TBclave.UseSystemPasswordChar = True
@@ -48,4 +48,8 @@
     Function obtenerAdmin()
         Return admin
     End Function
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
