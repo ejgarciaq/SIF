@@ -238,6 +238,8 @@
     <None Include="Resources\inventario.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\caja.png" />
+    <None Include="Resources\caja-registradora.png" />
     <Content Include="Resources\categorias.ico" />
     <Content Include="Resources\categorias.png" />
     <None Include="Resources\ud1.png" />
