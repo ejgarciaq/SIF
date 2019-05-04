@@ -22,8 +22,12 @@ Partial Class FrmCaja
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmCaja))
         Me.DGVusuarios = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TBuserID = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -35,9 +39,7 @@ Partial Class FrmCaja
         Me.Label4 = New System.Windows.Forms.Label()
         Me.CBuserRol = New System.Windows.Forms.ComboBox()
         Me.TBuserPassConf = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.DirectoryEntry1 = New System.DirectoryServices.DirectoryEntry()
         CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -45,9 +47,9 @@ Partial Class FrmCaja
         'DGVusuarios
         '
         Me.DGVusuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVusuarios.Location = New System.Drawing.Point(10, 310)
+        Me.DGVusuarios.Location = New System.Drawing.Point(10, 179)
         Me.DGVusuarios.Name = "DGVusuarios"
-        Me.DGVusuarios.Size = New System.Drawing.Size(507, 264)
+        Me.DGVusuarios.Size = New System.Drawing.Size(507, 443)
         Me.DGVusuarios.TabIndex = 21
         '
         'GroupBox1
@@ -68,15 +70,42 @@ Partial Class FrmCaja
         Me.GroupBox1.Controls.Add(Me.TBuserPassConf)
         Me.GroupBox1.Location = New System.Drawing.Point(10, 10)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1172, 265)
+        Me.GroupBox1.Size = New System.Drawing.Size(507, 163)
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Usuarios"
         '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"1", "2"})
+        Me.ComboBox3.Location = New System.Drawing.Point(92, 99)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(409, 21)
+        Me.ComboBox3.TabIndex = 19
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"1", "2"})
+        Me.ComboBox2.Location = New System.Drawing.Point(310, 47)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(191, 21)
+        Me.ComboBox2.TabIndex = 18
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"1", "2"})
+        Me.ComboBox1.Location = New System.Drawing.Point(92, 74)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(409, 21)
+        Me.ComboBox1.TabIndex = 17
+        '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(220, 50)
+        Me.Label7.Location = New System.Drawing.Point(267, 50)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(43, 13)
         Me.Label7.TabIndex = 15
@@ -86,7 +115,7 @@ Partial Class FrmCaja
         '
         Me.TBuserID.Location = New System.Drawing.Point(92, 21)
         Me.TBuserID.Name = "TBuserID"
-        Me.TBuserID.Size = New System.Drawing.Size(122, 20)
+        Me.TBuserID.Size = New System.Drawing.Size(169, 20)
         Me.TBuserID.TabIndex = 1
         '
         'Label6
@@ -109,7 +138,7 @@ Partial Class FrmCaja
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(106, 228)
+        Me.Button2.Location = New System.Drawing.Point(94, 127)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 9
@@ -119,7 +148,7 @@ Partial Class FrmCaja
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 98)
+        Me.Label2.Location = New System.Drawing.Point(12, 79)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 13
@@ -127,7 +156,7 @@ Partial Class FrmCaja
         '
         'BTNguardar
         '
-        Me.BTNguardar.Location = New System.Drawing.Point(18, 228)
+        Me.BTNguardar.Location = New System.Drawing.Point(6, 127)
         Me.BTNguardar.Name = "BTNguardar"
         Me.BTNguardar.Size = New System.Drawing.Size(75, 23)
         Me.BTNguardar.TabIndex = 8
@@ -137,7 +166,7 @@ Partial Class FrmCaja
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(220, 24)
+        Me.Label3.Location = New System.Drawing.Point(267, 24)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(37, 13)
         Me.Label3.TabIndex = 14
@@ -146,7 +175,7 @@ Partial Class FrmCaja
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(15, 125)
+        Me.Label4.Location = New System.Drawing.Point(12, 102)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(50, 13)
         Me.Label4.TabIndex = 16
@@ -158,54 +187,28 @@ Partial Class FrmCaja
         Me.CBuserRol.Items.AddRange(New Object() {"1", "2"})
         Me.CBuserRol.Location = New System.Drawing.Point(92, 47)
         Me.CBuserRol.Name = "CBuserRol"
-        Me.CBuserRol.Size = New System.Drawing.Size(122, 21)
+        Me.CBuserRol.Size = New System.Drawing.Size(169, 21)
         Me.CBuserRol.TabIndex = 6
         '
         'TBuserPassConf
         '
-        Me.TBuserPassConf.Location = New System.Drawing.Point(263, 21)
+        Me.TBuserPassConf.Location = New System.Drawing.Point(310, 21)
         Me.TBuserPassConf.Name = "TBuserPassConf"
-        Me.TBuserPassConf.Size = New System.Drawing.Size(158, 20)
+        Me.TBuserPassConf.Size = New System.Drawing.Size(191, 20)
         Me.TBuserPassConf.TabIndex = 4
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"1", "2"})
-        Me.ComboBox1.Location = New System.Drawing.Point(92, 95)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(266, 21)
-        Me.ComboBox1.TabIndex = 17
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"1", "2"})
-        Me.ComboBox2.Location = New System.Drawing.Point(92, 71)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(266, 21)
-        Me.ComboBox2.TabIndex = 18
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"1", "2"})
-        Me.ComboBox3.Location = New System.Drawing.Point(92, 119)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(266, 21)
-        Me.ComboBox3.TabIndex = 19
         '
         'FrmCaja
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1453, 634)
+        Me.ClientSize = New System.Drawing.Size(533, 634)
         Me.Controls.Add(Me.DGVusuarios)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmCaja"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FrmCaja"
+        Me.Text = "Caja"
         CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -229,4 +232,5 @@ Partial Class FrmCaja
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents DirectoryEntry1 As DirectoryServices.DirectoryEntry
 End Class
