@@ -4,4 +4,6 @@
         DGVclientes.DataSource = us.ConsultaCliente
         DGVclientes.Refresh()
     End Sub
+
+
 End Class
