@@ -30,7 +30,7 @@ Partial Class FrmRoles
         Me.Label6 = New System.Windows.Forms.Label()
         Me.tbRolDescrip = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnRolesBorrar = New System.Windows.Forms.Button()
         Me.BTNguardar = New System.Windows.Forms.Button()
         Me.DGVroles = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
@@ -45,7 +45,7 @@ Partial Class FrmRoles
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.tbRolDescrip)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.btnRolesBorrar)
         Me.GroupBox1.Controls.Add(Me.BTNguardar)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
@@ -86,7 +86,7 @@ Partial Class FrmRoles
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(17, 18)
+        Me.Label6.Location = New System.Drawing.Point(12, 18)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(18, 13)
         Me.Label6.TabIndex = 11
@@ -108,14 +108,14 @@ Partial Class FrmRoles
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Descripción"
         '
-        'Button2
+        'btnRolesBorrar
         '
-        Me.Button2.Location = New System.Drawing.Point(103, 96)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Borrar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnRolesBorrar.Location = New System.Drawing.Point(103, 96)
+        Me.btnRolesBorrar.Name = "btnRolesBorrar"
+        Me.btnRolesBorrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnRolesBorrar.TabIndex = 9
+        Me.btnRolesBorrar.Text = "Borrar"
+        Me.btnRolesBorrar.UseVisualStyleBackColor = True
         '
         'BTNguardar
         '
@@ -131,14 +131,14 @@ Partial Class FrmRoles
         Me.DGVroles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGVroles.Location = New System.Drawing.Point(428, 12)
         Me.DGVroles.Name = "DGVroles"
-        Me.DGVroles.Size = New System.Drawing.Size(401, 260)
+        Me.DGVroles.Size = New System.Drawing.Size(382, 260)
         Me.DGVroles.TabIndex = 20
         '
         'FrmRoles
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(847, 278)
+        Me.ClientSize = New System.Drawing.Size(822, 278)
         Me.Controls.Add(Me.DGVroles)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -157,7 +157,7 @@ Partial Class FrmRoles
     Friend WithEvents Label6 As Label
     Friend WithEvents tbRolDescrip As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnRolesBorrar As Button
     Friend WithEvents BTNguardar As Button
     Friend WithEvents DGVroles As DataGridView
     Friend WithEvents cbRolEstado As CheckBox

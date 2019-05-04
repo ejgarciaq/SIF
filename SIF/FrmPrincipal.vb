@@ -5,6 +5,12 @@
     Dim Productos As New FrmProductos
     Dim Facturas As New FrmFacturas
     Dim Caja As New FrmCaja
+    Dim Roles As New FrmRoles
+    Dim Unidades As New FrmUnidades
+    Dim Estados As New FrmEstados
+    Dim Categorias As New FrmCategorias
+    Dim FormasPago As New FrmFormaPag
+
     Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
         End
     End Sub
@@ -77,7 +83,67 @@
         End If
     End Sub
 
-    Private Sub FrmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Closed
-        End
+    Private Sub RolToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RolToolStripMenuItem.Click
+        If Roles.Visible = True Then
+            MsgBox("La ventana ya ha sido mostrada.")
+        Else
+            Roles = New FrmRoles
+            Roles.MdiParent = Me
+            Roles.Show()
+        End If
     End Sub
+
+    Private Sub ProductosToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ProductosToolStripMenuItem1.Click
+
+    End Sub
+
+    Private Sub UnidadesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UnidadesToolStripMenuItem.Click
+        If Unidades.Visible = True Then
+            MsgBox("La ventana ya ha sido mostrada.")
+        Else
+            Unidades = New FrmUnidades
+            Unidades.MdiParent = Me
+            Unidades.Show()
+        End If
+    End Sub
+
+    Private Sub EstadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EstadosToolStripMenuItem.Click
+        If Estados.Visible = True Then
+            MsgBox("La ventana ya ha sido mostrada.")
+        Else
+            Estados = New FrmEstados
+            Estados.MdiParent = Me
+            Estados.Show()
+        End If
+    End Sub
+
+    Private Sub CategoriasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CategoriasToolStripMenuItem.Click
+        If FormasPago.Visible = True Then
+            MsgBox("La ventana ya ha sido mostrada.")
+        Else
+            FormasPago = New FrmFormaPag
+            FormasPago.MdiParent = Me
+            FormasPago.Show()
+        End If
+    End Sub
+
+    Private Sub FacturacionToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles FacturacionToolStripMenuItem1.Click
+        If Categorias.Visible = True Then
+            MsgBox("La ventana ya ha sido mostrada.")
+        Else
+            Categorias = New FrmCategorias
+            Categorias.MdiParent = Me
+            Categorias.Show()
+        End If
+    End Sub
+    Private Sub FormasDePAgoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FormasDePAgoToolStripMenuItem.Click
+        If Categorias.Visible = True Then
+            MsgBox("La ventana ya ha sido mostrada.")
+        Else
+            Categorias = New FrmCategorias
+            Categorias.MdiParent = Me
+            Categorias.Show()
+        End If
+    End Sub
+
 End Class

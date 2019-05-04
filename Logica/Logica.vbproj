@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Cliente.vb" />
     <Compile Include="Empresa.vb" />
+    <Compile Include="Estado.vb" />
     <Compile Include="Factura.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -83,7 +84,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Producto.vb" />
-    <Compile Include="Rol.vb" />
+    <Compile Include="Roles.vb" />
     <Compile Include="Usuario.vb" />
   </ItemGroup>
   <ItemGroup>

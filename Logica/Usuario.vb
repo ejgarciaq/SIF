@@ -82,8 +82,7 @@
                     existeLetraMayuscula = True
                 End If
 
-
-            Next
+        Next
         If (existeNumero) And (existeLetraMayuscula) And (caracteresEspeciales) Then
             Return True
         Else

@@ -23,7 +23,7 @@ Partial Class FrmClientes
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmClientes))
-        Me.DGVusuarios = New System.Windows.Forms.DataGridView()
+        Me.DGVclientes = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TBclienteTotalCompra = New System.Windows.Forms.TextBox()
         Me.cbClienteEstado = New System.Windows.Forms.CheckBox()
@@ -41,17 +41,17 @@ Partial Class FrmClientes
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TBclienteDIreccion = New System.Windows.Forms.TextBox()
         Me.TBclienteTelefono = New System.Windows.Forms.TextBox()
-        CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGVclientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'DGVusuarios
+        'DGVclientes
         '
-        Me.DGVusuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVusuarios.Location = New System.Drawing.Point(416, 11)
-        Me.DGVusuarios.Name = "DGVusuarios"
-        Me.DGVusuarios.Size = New System.Drawing.Size(646, 264)
-        Me.DGVusuarios.TabIndex = 21
+        Me.DGVclientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVclientes.Location = New System.Drawing.Point(416, 11)
+        Me.DGVclientes.Name = "DGVclientes"
+        Me.DGVclientes.Size = New System.Drawing.Size(646, 264)
+        Me.DGVclientes.TabIndex = 21
         '
         'GroupBox1
         '
@@ -219,21 +219,21 @@ Partial Class FrmClientes
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1075, 286)
-        Me.Controls.Add(Me.DGVusuarios)
+        Me.Controls.Add(Me.DGVclientes)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmClientes"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Clientes"
-        CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGVclientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents DGVusuarios As DataGridView
+    Friend WithEvents DGVclientes As DataGridView
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents cbClienteEstado As CheckBox
     Friend WithEvents Label7 As Label
