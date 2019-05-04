@@ -49,126 +49,144 @@ Partial Class FrmPrincipal
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FacturacionToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.tsConfiguracion, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(800, 24)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1067, 28)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'FacturacionToolStripMenuItem
         '
         Me.FacturacionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CajaToolStripMenuItem, Me.FacturasToolStripMenuItem})
+        Me.FacturacionToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.facturas
         Me.FacturacionToolStripMenuItem.Name = "FacturacionToolStripMenuItem"
-        Me.FacturacionToolStripMenuItem.Size = New System.Drawing.Size(81, 20)
+        Me.FacturacionToolStripMenuItem.Size = New System.Drawing.Size(116, 24)
         Me.FacturacionToolStripMenuItem.Text = "Facturacion"
         '
         'CajaToolStripMenuItem
         '
+        Me.CajaToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.FormasPago
         Me.CajaToolStripMenuItem.Name = "CajaToolStripMenuItem"
-        Me.CajaToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
+        Me.CajaToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.CajaToolStripMenuItem.Text = "Caja"
         '
         'FacturasToolStripMenuItem
         '
+        Me.FacturasToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.facturas
         Me.FacturasToolStripMenuItem.Name = "FacturasToolStripMenuItem"
-        Me.FacturasToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
+        Me.FacturasToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.FacturasToolStripMenuItem.Text = "Facturas"
         '
         'InventarioToolStripMenuItem
         '
         Me.InventarioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem})
+        Me.InventarioToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.inventario
         Me.InventarioToolStripMenuItem.Name = "InventarioToolStripMenuItem"
-        Me.InventarioToolStripMenuItem.Size = New System.Drawing.Size(72, 20)
+        Me.InventarioToolStripMenuItem.Size = New System.Drawing.Size(107, 24)
         Me.InventarioToolStripMenuItem.Text = "Inventario"
         '
         'ProductosToolStripMenuItem
         '
+        Me.ProductosToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.inventario
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
-        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
+        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.ProductosToolStripMenuItem.Text = "Productos"
         '
         'tsConfiguracion
         '
         Me.tsConfiguracion.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.EmpresaToolStripMenuItem, Me.ProductosToolStripMenuItem1, Me.FacturacionToolStripMenuItem1})
+        Me.tsConfiguracion.Image = Global.SIF.My.Resources.Resources.categorias
         Me.tsConfiguracion.Name = "tsConfiguracion"
-        Me.tsConfiguracion.Size = New System.Drawing.Size(95, 20)
+        Me.tsConfiguracion.Size = New System.Drawing.Size(134, 24)
         Me.tsConfiguracion.Text = "Configuracion"
         '
         'UsuariosToolStripMenuItem
         '
         Me.UsuariosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RolToolStripMenuItem})
+        Me.UsuariosToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.usuarios
         Me.UsuariosToolStripMenuItem.Name = "UsuariosToolStripMenuItem"
-        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UsuariosToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.UsuariosToolStripMenuItem.Text = "Usuarios"
         '
         'RolToolStripMenuItem
         '
+        Me.RolToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.roles
         Me.RolToolStripMenuItem.Name = "RolToolStripMenuItem"
-        Me.RolToolStripMenuItem.Size = New System.Drawing.Size(102, 22)
+        Me.RolToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.RolToolStripMenuItem.Text = "Roles"
         '
         'ClientesToolStripMenuItem
         '
+        Me.ClientesToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.clientes
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'EmpresaToolStripMenuItem
         '
+        Me.EmpresaToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.empresas
         Me.EmpresaToolStripMenuItem.Name = "EmpresaToolStripMenuItem"
-        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EmpresaToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.EmpresaToolStripMenuItem.Text = "Locales"
         '
         'ProductosToolStripMenuItem1
         '
         Me.ProductosToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UnidadesToolStripMenuItem, Me.EstadosToolStripMenuItem, Me.CategoriasToolStripMenuItem})
+        Me.ProductosToolStripMenuItem1.Image = Global.SIF.My.Resources.Resources.inventario
         Me.ProductosToolStripMenuItem1.Name = "ProductosToolStripMenuItem1"
-        Me.ProductosToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.ProductosToolStripMenuItem1.Size = New System.Drawing.Size(216, 26)
         Me.ProductosToolStripMenuItem1.Text = "Productos"
         '
         'UnidadesToolStripMenuItem
         '
+        Me.UnidadesToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.ud
         Me.UnidadesToolStripMenuItem.Name = "UnidadesToolStripMenuItem"
-        Me.UnidadesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.UnidadesToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.UnidadesToolStripMenuItem.Text = "Unidades"
         '
         'EstadosToolStripMenuItem
         '
+        Me.EstadosToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.Estado
         Me.EstadosToolStripMenuItem.Name = "EstadosToolStripMenuItem"
-        Me.EstadosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EstadosToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.EstadosToolStripMenuItem.Text = "Estados"
         '
         'CategoriasToolStripMenuItem
         '
+        Me.CategoriasToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.categorias
         Me.CategoriasToolStripMenuItem.Name = "CategoriasToolStripMenuItem"
-        Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.CategoriasToolStripMenuItem.Text = "Categorias"
         '
         'FacturacionToolStripMenuItem1
         '
         Me.FacturacionToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FormasDePAgoToolStripMenuItem})
+        Me.FacturacionToolStripMenuItem1.Image = Global.SIF.My.Resources.Resources.facturas
         Me.FacturacionToolStripMenuItem1.Name = "FacturacionToolStripMenuItem1"
-        Me.FacturacionToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.FacturacionToolStripMenuItem1.Size = New System.Drawing.Size(216, 26)
         Me.FacturacionToolStripMenuItem1.Text = "Facturacion"
         '
         'FormasDePAgoToolStripMenuItem
         '
+        Me.FormasDePAgoToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.FormasPago
         Me.FormasDePAgoToolStripMenuItem.Name = "FormasDePAgoToolStripMenuItem"
-        Me.FormasDePAgoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FormasDePAgoToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.FormasDePAgoToolStripMenuItem.Text = "Formas de Pago"
         '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(50, 24)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'FrmPrincipal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmPrincipal"
         Me.ShowIcon = False
         Me.Text = "Sistema de Inventario y Facturación"

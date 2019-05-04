@@ -2,16 +2,6 @@
     Dim con As New Conexion.Funciones
     Dim sql As String
 
-    'Se utiliza para validar si un Producto existe utilizando el nombre y la contraseña
-    Function VerificarProducto(Producto As String)
-        sql = "SELECT * FROM Productos_table WHERE PRO_IDPRODUCTO = '" & Producto & "'"
-        If (con.VerificarDatos(sql)) Then
-            Return True
-        Else
-            Return False
-        End If
-    End Function
-
     'Solicita los Productos existentes y se obtiene una tabla(DataTable) para mostrar
     Function ConsultaProducto()
         sql = "SELECT *  FROM Productos_table"

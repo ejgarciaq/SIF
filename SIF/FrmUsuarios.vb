@@ -29,21 +29,5 @@ Public Class FrmUsuarios
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        'CerraConexion()
-        'TBuserID.Clear()
-        'TBuserName.Clear()
-        'TBuserIntentos.Clear()
-        'TBuserPass.Clear()
-        'TBuserPassConf.Clear()
-        'CBuserRol.Text = ""
-        'CBuserEstado.Text = ""
     End Sub
-
-    Private Sub TBuserPass_TextChanged(sender As Object, e As EventArgs) Handles tbPassword.TextChanged
-
-    End Sub
-
-
-
-
 End Class
