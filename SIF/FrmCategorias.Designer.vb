@@ -25,6 +25,7 @@ Partial Class FrmCategorias
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmCategorias))
         Me.DGVcategoria = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnCatCerrar = New System.Windows.Forms.Button()
         Me.cbCatEstado = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbCatID = New System.Windows.Forms.TextBox()
@@ -33,7 +34,6 @@ Partial Class FrmCategorias
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnCatBorrar = New System.Windows.Forms.Button()
         Me.btnCatGuardar = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DGVcategoria, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -48,7 +48,7 @@ Partial Class FrmCategorias
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.btnCatCerrar)
         Me.GroupBox1.Controls.Add(Me.cbCatEstado)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.tbCatID)
@@ -64,13 +64,22 @@ Partial Class FrmCategorias
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Categoria"
         '
+        'btnCatCerrar
+        '
+        Me.btnCatCerrar.Location = New System.Drawing.Point(297, 96)
+        Me.btnCatCerrar.Name = "btnCatCerrar"
+        Me.btnCatCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCatCerrar.TabIndex = 20
+        Me.btnCatCerrar.Text = "Cerrar"
+        Me.btnCatCerrar.UseVisualStyleBackColor = True
+        '
         'cbCatEstado
         '
         Me.cbCatEstado.AutoSize = True
         Me.cbCatEstado.Checked = True
         Me.cbCatEstado.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbCatEstado.Location = New System.Drawing.Point(106, 66)
-        Me.cbCatEstado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cbCatEstado.Margin = New System.Windows.Forms.Padding(2)
         Me.cbCatEstado.Name = "cbCatEstado"
         Me.cbCatEstado.Size = New System.Drawing.Size(56, 17)
         Me.cbCatEstado.TabIndex = 18
@@ -136,15 +145,6 @@ Partial Class FrmCategorias
         Me.btnCatGuardar.Text = "Guardar"
         Me.btnCatGuardar.UseVisualStyleBackColor = True
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(297, 96)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 20
-        Me.Button1.Text = "Borrar"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'FrmCategorias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -174,5 +174,5 @@ Partial Class FrmCategorias
     Friend WithEvents Label1 As Label
     Friend WithEvents btnCatBorrar As Button
     Friend WithEvents btnCatGuardar As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnCatCerrar As Button
 End Class

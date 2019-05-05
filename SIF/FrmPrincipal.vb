@@ -4,7 +4,7 @@
     Dim Empresas As New FrmLocales
     Dim Productos As New FrmProductos
     Dim Facturas As New FrmFacturas
-    Dim Caja As New FrmCaja
+    Dim Caja As New Caja
     Dim Roles As New FrmRoles
     Dim Unidades As New FrmUnidades
     Dim Estados As New FrmEstados
@@ -59,7 +59,7 @@
         If Caja.Visible Then
             MsgBox("La ventana ya ha sido mostrada.")
         Else
-            Caja = New FrmCaja
+            Caja = New Caja
             Caja.MdiParent = Me
             Caja.Show()
         End If

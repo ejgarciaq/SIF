@@ -1,4 +1,4 @@
-﻿Public Class FrmCaja
+﻿Public Class Caja
     Dim us As New Logica.Usuario
     Dim em As New Logica.Local
     Dim cl As New Logica.Cliente
@@ -19,5 +19,9 @@
         cbCliente.DisplayMember = "CLI_IDPERSONA"
 
         lbProducto.DataSource = pr.ConsultaProductos
+    End Sub
+
+    Private Sub BtnCajaCerrar_Click(sender As Object, e As EventArgs) Handles btnCajaCerrar.Click
+        Me.Close()
     End Sub
 End Class

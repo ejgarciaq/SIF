@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class FrmCaja
+Partial Class Caja
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -40,6 +40,7 @@ Partial Class FrmCaja
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.lbProducto = New System.Windows.Forms.ListBox()
+        Me.btnCajaCerrar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,11 +58,9 @@ Partial Class FrmCaja
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 12)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Location = New System.Drawing.Point(10, 10)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
-        Me.GroupBox1.Size = New System.Drawing.Size(392, 225)
+        Me.GroupBox1.Size = New System.Drawing.Size(294, 183)
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Caja"
@@ -69,135 +68,152 @@ Partial Class FrmCaja
         'tpFecha
         '
         Me.tpFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.tpFecha.Location = New System.Drawing.Point(180, 192)
+        Me.tpFecha.Location = New System.Drawing.Point(135, 156)
+        Me.tpFecha.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.tpFecha.MinDate = New Date(2010, 12, 31, 0, 0, 0, 0)
         Me.tpFecha.Name = "tpFecha"
-        Me.tpFecha.Size = New System.Drawing.Size(180, 22)
+        Me.tpFecha.Size = New System.Drawing.Size(136, 20)
         Me.tpFecha.TabIndex = 4
         Me.tpFecha.Value = New Date(2019, 5, 4, 19, 43, 32, 0)
         '
         'cbUsuario
         '
         Me.cbUsuario.FormattingEnabled = True
-        Me.cbUsuario.Location = New System.Drawing.Point(180, 151)
+        Me.cbUsuario.Location = New System.Drawing.Point(135, 123)
+        Me.cbUsuario.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cbUsuario.Name = "cbUsuario"
-        Me.cbUsuario.Size = New System.Drawing.Size(180, 24)
+        Me.cbUsuario.Size = New System.Drawing.Size(136, 21)
         Me.cbUsuario.TabIndex = 3
         '
         'cbCliente
         '
         Me.cbCliente.FormattingEnabled = True
-        Me.cbCliente.Location = New System.Drawing.Point(180, 109)
+        Me.cbCliente.Location = New System.Drawing.Point(135, 89)
+        Me.cbCliente.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cbCliente.Name = "cbCliente"
-        Me.cbCliente.Size = New System.Drawing.Size(180, 24)
+        Me.cbCliente.Size = New System.Drawing.Size(136, 21)
         Me.cbCliente.TabIndex = 2
         '
         'cbEmpresa
         '
         Me.cbEmpresa.FormattingEnabled = True
-        Me.cbEmpresa.Location = New System.Drawing.Point(180, 64)
+        Me.cbEmpresa.Location = New System.Drawing.Point(135, 52)
+        Me.cbEmpresa.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.cbEmpresa.Name = "cbEmpresa"
-        Me.cbEmpresa.Size = New System.Drawing.Size(180, 24)
+        Me.cbEmpresa.Size = New System.Drawing.Size(136, 21)
         Me.cbEmpresa.TabIndex = 1
         '
         'tbFactura
         '
-        Me.tbFactura.Location = New System.Drawing.Point(180, 22)
+        Me.tbFactura.Location = New System.Drawing.Point(135, 18)
+        Me.tbFactura.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.tbFactura.Name = "tbFactura"
-        Me.tbFactura.Size = New System.Drawing.Size(180, 22)
+        Me.tbFactura.Size = New System.Drawing.Size(136, 20)
         Me.tbFactura.TabIndex = 0
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(84, 197)
+        Me.Label5.Location = New System.Drawing.Point(38, 162)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(47, 17)
+        Me.Label5.Size = New System.Drawing.Size(37, 13)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Fecha"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(57, 154)
+        Me.Label4.Location = New System.Drawing.Point(38, 126)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(74, 17)
+        Me.Label4.Size = New System.Drawing.Size(57, 13)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "ID Usuario"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(63, 112)
+        Me.Label3.Location = New System.Drawing.Point(38, 92)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(68, 17)
+        Me.Label3.Size = New System.Drawing.Size(53, 13)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "ID Cliente"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(50, 67)
+        Me.Label2.Location = New System.Drawing.Point(38, 55)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(81, 17)
+        Me.Label2.Size = New System.Drawing.Size(62, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "ID Empresa"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(58, 25)
+        Me.Label1.Location = New System.Drawing.Point(38, 18)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(73, 17)
+        Me.Label1.Size = New System.Drawing.Size(57, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ID Factura"
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.btnCajaCerrar)
         Me.GroupBox2.Controls.Add(Me.NumericUpDown1)
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.lbProducto)
-        Me.GroupBox2.Location = New System.Drawing.Point(13, 251)
+        Me.GroupBox2.Location = New System.Drawing.Point(10, 204)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(392, 218)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(294, 177)
         Me.GroupBox2.TabIndex = 23
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Productos"
         '
         'NumericUpDown1
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(180, 116)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(136, 69)
+        Me.NumericUpDown1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.NumericUpDown1.Maximum = New Decimal(New Integer() {0, 0, 0, 0})
         Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(61, 22)
+        Me.NumericUpDown1.Size = New System.Drawing.Size(46, 20)
         Me.NumericUpDown1.TabIndex = 1
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(177, 67)
+        Me.Label7.Location = New System.Drawing.Point(133, 54)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(64, 17)
+        Me.Label7.Size = New System.Drawing.Size(49, 13)
         Me.Label7.TabIndex = 4
         Me.Label7.Text = "Cantidad"
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(269, 134)
+        Me.Button2.Location = New System.Drawing.Point(202, 102)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(56, 19)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Finalizar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(269, 67)
+        Me.Button1.Location = New System.Drawing.Point(202, 69)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(56, 19)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Agregar"
         Me.Button1.UseVisualStyleBackColor = True
@@ -205,31 +221,42 @@ Partial Class FrmCaja
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(8, 29)
+        Me.Label6.Location = New System.Drawing.Point(6, 24)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(223, 17)
+        Me.Label6.Size = New System.Drawing.Size(168, 13)
         Me.Label6.TabIndex = 1
         Me.Label6.Text = "Seleccione un producto a agregar"
         '
         'lbProducto
         '
         Me.lbProducto.FormattingEnabled = True
-        Me.lbProducto.ItemHeight = 16
-        Me.lbProducto.Location = New System.Drawing.Point(11, 58)
+        Me.lbProducto.Location = New System.Drawing.Point(8, 47)
+        Me.lbProducto.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.lbProducto.Name = "lbProducto"
-        Me.lbProducto.Size = New System.Drawing.Size(141, 148)
+        Me.lbProducto.Size = New System.Drawing.Size(107, 121)
         Me.lbProducto.TabIndex = 0
         '
-        'FrmCaja
+        'btnCajaCerrar
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.btnCajaCerrar.Location = New System.Drawing.Point(202, 136)
+        Me.btnCajaCerrar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCajaCerrar.Name = "btnCajaCerrar"
+        Me.btnCajaCerrar.Size = New System.Drawing.Size(56, 19)
+        Me.btnCajaCerrar.TabIndex = 5
+        Me.btnCajaCerrar.Text = "Cerrar"
+        Me.btnCajaCerrar.UseVisualStyleBackColor = True
+        '
+        'Caja
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(421, 481)
+        Me.ClientSize = New System.Drawing.Size(316, 391)
         Me.ControlBox = False
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Name = "FrmCaja"
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Name = "Caja"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "FrmCaja"
         Me.GroupBox1.ResumeLayout(False)
@@ -258,4 +285,5 @@ Partial Class FrmCaja
     Friend WithEvents Label6 As Label
     Friend WithEvents lbProducto As ListBox
     Friend WithEvents tpFecha As DateTimePicker
+    Friend WithEvents btnCajaCerrar As Button
 End Class
