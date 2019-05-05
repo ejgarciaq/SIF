@@ -25,6 +25,7 @@ Partial Class FrmEstados
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmEstados))
         Me.DGVestados = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnestadoCerrar = New System.Windows.Forms.Button()
         Me.cbEstEstado = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbEstID = New System.Windows.Forms.TextBox()
@@ -33,7 +34,6 @@ Partial Class FrmEstados
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnEstBorrar = New System.Windows.Forms.Button()
         Me.btnEstguardar = New System.Windows.Forms.Button()
-        Me.btnestadoCerrar = New System.Windows.Forms.Button()
         CType(Me.DGVestados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -63,6 +63,15 @@ Partial Class FrmEstados
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Estados"
+        '
+        'btnestadoCerrar
+        '
+        Me.btnestadoCerrar.Location = New System.Drawing.Point(297, 96)
+        Me.btnestadoCerrar.Name = "btnestadoCerrar"
+        Me.btnestadoCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnestadoCerrar.TabIndex = 20
+        Me.btnestadoCerrar.Text = "Cerrar"
+        Me.btnestadoCerrar.UseVisualStyleBackColor = True
         '
         'cbEstEstado
         '
@@ -136,20 +145,12 @@ Partial Class FrmEstados
         Me.btnEstguardar.Text = "Guardar"
         Me.btnEstguardar.UseVisualStyleBackColor = True
         '
-        'btnestadoCerrar
-        '
-        Me.btnestadoCerrar.Location = New System.Drawing.Point(297, 96)
-        Me.btnestadoCerrar.Name = "btnestadoCerrar"
-        Me.btnestadoCerrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnestadoCerrar.TabIndex = 20
-        Me.btnestadoCerrar.Text = "Cerrar"
-        Me.btnestadoCerrar.UseVisualStyleBackColor = True
-        '
         'FrmEstados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(839, 285)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DGVestados)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

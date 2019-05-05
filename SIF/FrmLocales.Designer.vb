@@ -25,6 +25,7 @@ Partial Class FrmLocales
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmLocales))
         Me.DGVlocales = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnLocalCerrar = New System.Windows.Forms.Button()
         Me.cbLocalEstado = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.tbLocalAddress = New System.Windows.Forms.TextBox()
@@ -39,7 +40,6 @@ Partial Class FrmLocales
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbLocalPhone = New System.Windows.Forms.TextBox()
         Me.tbLocalMail = New System.Windows.Forms.TextBox()
-        Me.btnLocalCerrar = New System.Windows.Forms.Button()
         CType(Me.DGVlocales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -75,6 +75,15 @@ Partial Class FrmLocales
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Dato de Locales"
+        '
+        'btnLocalCerrar
+        '
+        Me.btnLocalCerrar.Location = New System.Drawing.Point(297, 184)
+        Me.btnLocalCerrar.Name = "btnLocalCerrar"
+        Me.btnLocalCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnLocalCerrar.TabIndex = 18
+        Me.btnLocalCerrar.Text = "Cerrar"
+        Me.btnLocalCerrar.UseVisualStyleBackColor = True
         '
         'cbLocalEstado
         '
@@ -196,20 +205,12 @@ Partial Class FrmLocales
         Me.tbLocalMail.Size = New System.Drawing.Size(266, 20)
         Me.tbLocalMail.TabIndex = 4
         '
-        'btnLocalCerrar
-        '
-        Me.btnLocalCerrar.Location = New System.Drawing.Point(297, 184)
-        Me.btnLocalCerrar.Name = "btnLocalCerrar"
-        Me.btnLocalCerrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnLocalCerrar.TabIndex = 18
-        Me.btnLocalCerrar.Text = "Cerrar"
-        Me.btnLocalCerrar.UseVisualStyleBackColor = True
-        '
         'FrmLocales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1066, 286)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DGVlocales)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

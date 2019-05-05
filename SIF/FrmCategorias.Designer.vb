@@ -25,6 +25,7 @@ Partial Class FrmCategorias
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmCategorias))
         Me.DGVcategoria = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnCatCerrar = New System.Windows.Forms.Button()
         Me.cbCatEstado = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbCatID = New System.Windows.Forms.TextBox()
@@ -33,7 +34,6 @@ Partial Class FrmCategorias
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnCatBorrar = New System.Windows.Forms.Button()
         Me.btnCatGuardar = New System.Windows.Forms.Button()
-        Me.btnCatCerrar = New System.Windows.Forms.Button()
         CType(Me.DGVcategoria, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -63,6 +63,15 @@ Partial Class FrmCategorias
         Me.GroupBox1.TabIndex = 25
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Categoria"
+        '
+        'btnCatCerrar
+        '
+        Me.btnCatCerrar.Location = New System.Drawing.Point(287, 96)
+        Me.btnCatCerrar.Name = "btnCatCerrar"
+        Me.btnCatCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCatCerrar.TabIndex = 20
+        Me.btnCatCerrar.Text = "Cerrar"
+        Me.btnCatCerrar.UseVisualStyleBackColor = True
         '
         'cbCatEstado
         '
@@ -136,20 +145,12 @@ Partial Class FrmCategorias
         Me.btnCatGuardar.Text = "Guardar"
         Me.btnCatGuardar.UseVisualStyleBackColor = True
         '
-        'btnCatCerrar
-        '
-        Me.btnCatCerrar.Location = New System.Drawing.Point(287, 96)
-        Me.btnCatCerrar.Name = "btnCatCerrar"
-        Me.btnCatCerrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCatCerrar.TabIndex = 20
-        Me.btnCatCerrar.Text = "Cerrar"
-        Me.btnCatCerrar.UseVisualStyleBackColor = True
-        '
         'FrmCategorias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(837, 283)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DGVcategoria)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

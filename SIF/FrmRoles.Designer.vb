@@ -24,6 +24,7 @@ Partial Class FrmRoles
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmRoles))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnRolesCerrar = New System.Windows.Forms.Button()
         Me.cbRolEstado = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbID = New System.Windows.Forms.TextBox()
@@ -33,7 +34,6 @@ Partial Class FrmRoles
         Me.btnRolesBorrar = New System.Windows.Forms.Button()
         Me.BTNguardar = New System.Windows.Forms.Button()
         Me.DGVroles = New System.Windows.Forms.DataGridView()
-        Me.btnRolesCerrar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DGVroles, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -55,6 +55,15 @@ Partial Class FrmRoles
         Me.GroupBox1.TabIndex = 19
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Roles"
+        '
+        'btnRolesCerrar
+        '
+        Me.btnRolesCerrar.Location = New System.Drawing.Point(297, 96)
+        Me.btnRolesCerrar.Name = "btnRolesCerrar"
+        Me.btnRolesCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnRolesCerrar.TabIndex = 20
+        Me.btnRolesCerrar.Text = "Cerrar"
+        Me.btnRolesCerrar.UseVisualStyleBackColor = True
         '
         'cbRolEstado
         '
@@ -136,20 +145,12 @@ Partial Class FrmRoles
         Me.DGVroles.Size = New System.Drawing.Size(382, 260)
         Me.DGVroles.TabIndex = 20
         '
-        'btnRolesCerrar
-        '
-        Me.btnRolesCerrar.Location = New System.Drawing.Point(297, 96)
-        Me.btnRolesCerrar.Name = "btnRolesCerrar"
-        Me.btnRolesCerrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnRolesCerrar.TabIndex = 20
-        Me.btnRolesCerrar.Text = "Cerrar"
-        Me.btnRolesCerrar.UseVisualStyleBackColor = True
-        '
         'FrmRoles
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(822, 278)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DGVroles)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

@@ -25,6 +25,7 @@ Partial Class FrmCaja
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmCaja))
         Me.DGVusuarios = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnCajaCerrar = New System.Windows.Forms.Button()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -40,7 +41,6 @@ Partial Class FrmCaja
         Me.CBuserRol = New System.Windows.Forms.ComboBox()
         Me.TBuserPassConf = New System.Windows.Forms.TextBox()
         Me.DirectoryEntry1 = New System.DirectoryServices.DirectoryEntry()
-        Me.btnCajaCerrar = New System.Windows.Forms.Button()
         CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -76,6 +76,15 @@ Partial Class FrmCaja
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Usuarios"
+        '
+        'btnCajaCerrar
+        '
+        Me.btnCajaCerrar.Location = New System.Drawing.Point(426, 127)
+        Me.btnCajaCerrar.Name = "btnCajaCerrar"
+        Me.btnCajaCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCajaCerrar.TabIndex = 20
+        Me.btnCajaCerrar.Text = "Cerrar"
+        Me.btnCajaCerrar.UseVisualStyleBackColor = True
         '
         'ComboBox3
         '
@@ -199,20 +208,12 @@ Partial Class FrmCaja
         Me.TBuserPassConf.Size = New System.Drawing.Size(191, 20)
         Me.TBuserPassConf.TabIndex = 4
         '
-        'btnCajaCerrar
-        '
-        Me.btnCajaCerrar.Location = New System.Drawing.Point(426, 127)
-        Me.btnCajaCerrar.Name = "btnCajaCerrar"
-        Me.btnCajaCerrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCajaCerrar.TabIndex = 20
-        Me.btnCajaCerrar.Text = "Cerrar"
-        Me.btnCajaCerrar.UseVisualStyleBackColor = True
-        '
         'FrmCaja
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(533, 634)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DGVusuarios)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

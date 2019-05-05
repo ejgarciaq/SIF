@@ -25,6 +25,7 @@ Partial Class FrmProductos
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmProductos))
         Me.DGVprodutos = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnProdCerrar = New System.Windows.Forms.Button()
         Me.cbProdEst = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TBprodCan = New System.Windows.Forms.TextBox()
@@ -41,7 +42,6 @@ Partial Class FrmProductos
         Me.TBprodNom = New System.Windows.Forms.TextBox()
         Me.TBprodUni = New System.Windows.Forms.ComboBox()
         Me.CBprodPre = New System.Windows.Forms.TextBox()
-        Me.btnProdCerrar = New System.Windows.Forms.Button()
         CType(Me.DGVprodutos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -81,6 +81,15 @@ Partial Class FrmProductos
         Me.GroupBox1.TabIndex = 20
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Productos"
+        '
+        'btnProdCerrar
+        '
+        Me.btnProdCerrar.Location = New System.Drawing.Point(435, 153)
+        Me.btnProdCerrar.Name = "btnProdCerrar"
+        Me.btnProdCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnProdCerrar.TabIndex = 18
+        Me.btnProdCerrar.Text = "Cerrar"
+        Me.btnProdCerrar.UseVisualStyleBackColor = True
         '
         'cbProdEst
         '
@@ -225,20 +234,12 @@ Partial Class FrmProductos
         Me.CBprodPre.Size = New System.Drawing.Size(214, 20)
         Me.CBprodPre.TabIndex = 4
         '
-        'btnProdCerrar
-        '
-        Me.btnProdCerrar.Location = New System.Drawing.Point(435, 153)
-        Me.btnProdCerrar.Name = "btnProdCerrar"
-        Me.btnProdCerrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnProdCerrar.TabIndex = 18
-        Me.btnProdCerrar.Text = "Cerrar"
-        Me.btnProdCerrar.UseVisualStyleBackColor = True
-        '
         'FrmProductos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1231, 350)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DGVprodutos)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

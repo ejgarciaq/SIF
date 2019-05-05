@@ -25,6 +25,7 @@ Partial Class FrmClientes
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmClientes))
         Me.DGVclientes = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnClienCerrar = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -43,7 +44,6 @@ Partial Class FrmClientes
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TBclienteDIreccion = New System.Windows.Forms.TextBox()
         Me.TBclienteTelefono = New System.Windows.Forms.TextBox()
-        Me.btnClienCerrar = New System.Windows.Forms.Button()
         CType(Me.DGVclientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -83,6 +83,15 @@ Partial Class FrmClientes
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos de Clientes"
+        '
+        'btnClienCerrar
+        '
+        Me.btnClienCerrar.Location = New System.Drawing.Point(297, 228)
+        Me.btnClienCerrar.Name = "btnClienCerrar"
+        Me.btnClienCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnClienCerrar.TabIndex = 23
+        Me.btnClienCerrar.Text = "Cerrar"
+        Me.btnClienCerrar.UseVisualStyleBackColor = True
         '
         'TextBox2
         '
@@ -230,20 +239,12 @@ Partial Class FrmClientes
         Me.TBclienteTelefono.Size = New System.Drawing.Size(276, 20)
         Me.TBclienteTelefono.TabIndex = 4
         '
-        'btnClienCerrar
-        '
-        Me.btnClienCerrar.Location = New System.Drawing.Point(297, 228)
-        Me.btnClienCerrar.Name = "btnClienCerrar"
-        Me.btnClienCerrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnClienCerrar.TabIndex = 23
-        Me.btnClienCerrar.Text = "Cerrar"
-        Me.btnClienCerrar.UseVisualStyleBackColor = True
-        '
         'FrmClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1075, 284)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DGVclientes)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

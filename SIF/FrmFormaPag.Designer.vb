@@ -25,6 +25,7 @@ Partial Class FrmFormaPag
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmFormaPag))
         Me.DGVformPago = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnFormPagCerrar = New System.Windows.Forms.Button()
         Me.cbFormPagEstado = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbFormPagID = New System.Windows.Forms.TextBox()
@@ -33,7 +34,6 @@ Partial Class FrmFormaPag
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnFormPagBorrar = New System.Windows.Forms.Button()
         Me.btnFormPagGuardar = New System.Windows.Forms.Button()
-        Me.btnFormPagCerrar = New System.Windows.Forms.Button()
         CType(Me.DGVformPago, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -63,6 +63,15 @@ Partial Class FrmFormaPag
         Me.GroupBox1.TabIndex = 27
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Forma Pago"
+        '
+        'btnFormPagCerrar
+        '
+        Me.btnFormPagCerrar.Location = New System.Drawing.Point(297, 96)
+        Me.btnFormPagCerrar.Name = "btnFormPagCerrar"
+        Me.btnFormPagCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnFormPagCerrar.TabIndex = 20
+        Me.btnFormPagCerrar.Text = "Cerrar"
+        Me.btnFormPagCerrar.UseVisualStyleBackColor = True
         '
         'cbFormPagEstado
         '
@@ -136,20 +145,12 @@ Partial Class FrmFormaPag
         Me.btnFormPagGuardar.Text = "Guardar"
         Me.btnFormPagGuardar.UseVisualStyleBackColor = True
         '
-        'btnFormPagCerrar
-        '
-        Me.btnFormPagCerrar.Location = New System.Drawing.Point(297, 96)
-        Me.btnFormPagCerrar.Name = "btnFormPagCerrar"
-        Me.btnFormPagCerrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnFormPagCerrar.TabIndex = 20
-        Me.btnFormPagCerrar.Text = "Cerrar"
-        Me.btnFormPagCerrar.UseVisualStyleBackColor = True
-        '
         'FrmFormaPag
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(840, 285)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DGVformPago)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

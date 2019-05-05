@@ -33,6 +33,7 @@ Partial Class FrmUsuarios
         Me.BTNguardar = New System.Windows.Forms.Button()
         Me.btnUserBorrar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnUserCerrar = New System.Windows.Forms.Button()
         Me.tbUserName = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.tbApellido2 = New System.Windows.Forms.TextBox()
@@ -44,7 +45,6 @@ Partial Class FrmUsuarios
         Me.Label6 = New System.Windows.Forms.Label()
         Me.cbRol = New System.Windows.Forms.ComboBox()
         Me.DGVusuarios = New System.Windows.Forms.DataGridView()
-        Me.btnUserCerrar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -153,6 +153,15 @@ Partial Class FrmUsuarios
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos de Usuarios"
         '
+        'btnUserCerrar
+        '
+        Me.btnUserCerrar.Location = New System.Drawing.Point(15, 275)
+        Me.btnUserCerrar.Name = "btnUserCerrar"
+        Me.btnUserCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnUserCerrar.TabIndex = 25
+        Me.btnUserCerrar.Text = "Cerrar"
+        Me.btnUserCerrar.UseVisualStyleBackColor = True
+        '
         'tbUserName
         '
         Me.tbUserName.Location = New System.Drawing.Point(106, 118)
@@ -247,20 +256,12 @@ Partial Class FrmUsuarios
         Me.DGVusuarios.Size = New System.Drawing.Size(693, 297)
         Me.DGVusuarios.TabIndex = 10
         '
-        'btnUserCerrar
-        '
-        Me.btnUserCerrar.Location = New System.Drawing.Point(15, 275)
-        Me.btnUserCerrar.Name = "btnUserCerrar"
-        Me.btnUserCerrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnUserCerrar.TabIndex = 25
-        Me.btnUserCerrar.Text = "Cerrar"
-        Me.btnUserCerrar.UseVisualStyleBackColor = True
-        '
         'FrmUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1121, 335)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DGVusuarios)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)

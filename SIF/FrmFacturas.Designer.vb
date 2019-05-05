@@ -25,6 +25,7 @@ Partial Class FrmFacturas
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmFacturas))
         Me.DGVfacturas = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnFactCerrar = New System.Windows.Forms.Button()
         Me.tbFacTotal = New System.Windows.Forms.TextBox()
         Me.cbFacEstado = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -41,7 +42,6 @@ Partial Class FrmFacturas
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TBfacIdClient = New System.Windows.Forms.TextBox()
         Me.tbFacClientName = New System.Windows.Forms.TextBox()
-        Me.btnFactCerrar = New System.Windows.Forms.Button()
         CType(Me.DGVfacturas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -79,6 +79,15 @@ Partial Class FrmFacturas
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Usuarios"
+        '
+        'btnFactCerrar
+        '
+        Me.btnFactCerrar.Location = New System.Drawing.Point(297, 236)
+        Me.btnFactCerrar.Name = "btnFactCerrar"
+        Me.btnFactCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnFactCerrar.TabIndex = 19
+        Me.btnFactCerrar.Text = "Cerrar"
+        Me.btnFactCerrar.UseVisualStyleBackColor = True
         '
         'tbFacTotal
         '
@@ -216,20 +225,12 @@ Partial Class FrmFacturas
         Me.tbFacClientName.Size = New System.Drawing.Size(266, 20)
         Me.tbFacClientName.TabIndex = 4
         '
-        'btnFactCerrar
-        '
-        Me.btnFactCerrar.Location = New System.Drawing.Point(297, 236)
-        Me.btnFactCerrar.Name = "btnFactCerrar"
-        Me.btnFactCerrar.Size = New System.Drawing.Size(75, 23)
-        Me.btnFactCerrar.TabIndex = 19
-        Me.btnFactCerrar.Text = "Cerrar"
-        Me.btnFactCerrar.UseVisualStyleBackColor = True
-        '
         'FrmFacturas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(928, 286)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DGVfacturas)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
