@@ -1,6 +1,6 @@
 ﻿Public Class FrmCaja
     Dim us As New Logica.Usuario
-    Dim em As New Logica.Empresa
+    Dim em As New Logica.Local
     Dim cl As New Logica.Cliente
     Dim pr As New Logica.Producto
     Dim fc As New Logica.Factura

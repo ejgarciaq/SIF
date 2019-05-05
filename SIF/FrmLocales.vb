@@ -1,5 +1,5 @@
 ﻿Public Class FrmLocales
-    Dim us As New Logica.Empresa
+    Dim us As New Logica.Local
     Private Sub BtnLocalCerrar_Click(sender As Object, e As EventArgs) Handles btnLocalCerrar.Click
         Me.Close()
     End Sub
