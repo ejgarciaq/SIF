@@ -64,6 +64,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categoria.vb" />
     <Compile Include="Cliente.vb" />
     <Compile Include="Empresa.vb" />
     <Compile Include="Estado.vb" />
@@ -85,6 +86,7 @@
     </Compile>
     <Compile Include="Producto.vb" />
     <Compile Include="Roles.vb" />
+    <Compile Include="Unidad.vb" />
     <Compile Include="Usuario.vb" />
   </ItemGroup>
   <ItemGroup>

@@ -8,21 +8,15 @@
         Return con.ObtenerDatos(sql)
     End Function
 
-    Function ConsultaProducto(id As Integer)
-        sql = "select PRO_IDPRODUCTO, PRO_NOMBRE, PRO_CANTIDAD from producto where PRO_IDPRODUCTO = '" + id + "';"
-        Return con.ObtenerDato(sql)
-
-    End Function
-
     'Solicita los Productos existentes y se obtiene una tabla(DataTable) para mostrar
-    Function ConsultaProducto()
-        sql = "SELECT *  FROM Productos_table"
+    Function ConsultaProducto(id As String)
+        sql = "SELECT *  FROM Producto where PRO_IDPRODUCTO = " + id
         Return con.ObtenerDatos(sql)
     End Function
 
     'Ingresa un Producto nuevo con los datos respectivos
-    Function IngresarProducto(id As String, rol As String, nombre As String, intentos As String, pass As String, cambio As Boolean)
-        sql = "INSERT INTO Productos_table VALUES ('" & id & "','" & rol & "','" & nombre & "','" & intentos & "','" & pass & "'," & cambio & ")"
+    Function IngresarProducto(id As String, categoria As String, unidad As String, estado As String, nombre As String, cantidad As Integer, precio As Double)
+        sql = "INSERT INTO `sif_db`.`producto` (`PRO_IDPRODUCTO`, `PRO_IDCATEGORIA`, `PRO_IDUNIDAD`, `PRO_IDESTADO`, `PRO_NOMBRE`, `PRO_CANTIDAD`, `PRO_PRECIO`, `PRO_ACTIVO`) VALUES (" + id + "," + categoria + "," + unidad + "," + estado + "," + nombre + "," + cantidad + "," + precio + "," + True + ");"
         Return con.IngresarDatos(sql)
     End Function
 End Class
