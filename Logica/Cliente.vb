@@ -3,7 +3,7 @@
     Dim sql As String
 
     'Solicita los Clientes existentes y se obtiene una tabla(DataTable) para mostrar
-    Function ConsultaCliente()
+    Function ConsultaClientes()
         sql = "SELECT * FROM cliente"
         Return con.ObtenerDatos(sql)
     End Function

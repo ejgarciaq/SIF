@@ -3,7 +3,7 @@
     Dim sql As String
 
     'Solicita los Facturas existentes y se obtiene una tabla(DataTable) para mostrar
-    Function ConsultaFactura()
+    Function ConsultaFacturas()
         sql = "SELECT *  FROM Facturas_table"
         Return con.ObtenerDatos(sql)
     End Function

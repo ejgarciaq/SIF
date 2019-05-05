@@ -22,233 +22,239 @@ Partial Class FrmCaja
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DGVusuarios = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.cbEstado = New System.Windows.Forms.CheckBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TBuserIntentos = New System.Windows.Forms.TextBox()
-        Me.TBuserID = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TBuserName = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.BTNguardar = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.cbUsuario = New System.Windows.Forms.ComboBox()
+        Me.cbCliente = New System.Windows.Forms.ComboBox()
+        Me.cbEmpresa = New System.Windows.Forms.ComboBox()
+        Me.tbFactura = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TBuserPass = New System.Windows.Forms.TextBox()
-        Me.CBuserRol = New System.Windows.Forms.ComboBox()
-        Me.TBuserPassConf = New System.Windows.Forms.TextBox()
-        CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lbProducto = New System.Windows.Forms.ListBox()
+        Me.tpFecha = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'DGVusuarios
-        '
-        Me.DGVusuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVusuarios.Location = New System.Drawing.Point(411, 11)
-        Me.DGVusuarios.Name = "DGVusuarios"
-        Me.DGVusuarios.Size = New System.Drawing.Size(507, 264)
-        Me.DGVusuarios.TabIndex = 21
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.cbEstado)
-        Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.TBuserIntentos)
-        Me.GroupBox1.Controls.Add(Me.TBuserID)
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TBuserName)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.BTNguardar)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.tpFecha)
+        Me.GroupBox1.Controls.Add(Me.cbUsuario)
+        Me.GroupBox1.Controls.Add(Me.cbCliente)
+        Me.GroupBox1.Controls.Add(Me.cbEmpresa)
+        Me.GroupBox1.Controls.Add(Me.tbFactura)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.TBuserPass)
-        Me.GroupBox1.Controls.Add(Me.CBuserRol)
-        Me.GroupBox1.Controls.Add(Me.TBuserPassConf)
-        Me.GroupBox1.Location = New System.Drawing.Point(10, 10)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 12)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(378, 265)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Size = New System.Drawing.Size(392, 225)
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Usuarios"
+        Me.GroupBox1.Text = "Caja"
         '
-        'cbEstado
+        'cbUsuario
         '
-        Me.cbEstado.AutoSize = True
-        Me.cbEstado.Checked = True
-        Me.cbEstado.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.cbEstado.Location = New System.Drawing.Point(106, 176)
-        Me.cbEstado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.cbEstado.Name = "cbEstado"
-        Me.cbEstado.Size = New System.Drawing.Size(56, 17)
-        Me.cbEstado.TabIndex = 7
-        Me.cbEstado.Text = "Activo"
-        Me.cbEstado.UseVisualStyleBackColor = True
+        Me.cbUsuario.FormattingEnabled = True
+        Me.cbUsuario.Location = New System.Drawing.Point(180, 151)
+        Me.cbUsuario.Name = "cbUsuario"
+        Me.cbUsuario.Size = New System.Drawing.Size(180, 24)
+        Me.cbUsuario.TabIndex = 3
         '
-        'Label7
+        'cbCliente
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(9, 125)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(45, 13)
-        Me.Label7.TabIndex = 15
-        Me.Label7.Text = "Intentos"
+        Me.cbCliente.FormattingEnabled = True
+        Me.cbCliente.Location = New System.Drawing.Point(180, 109)
+        Me.cbCliente.Name = "cbCliente"
+        Me.cbCliente.Size = New System.Drawing.Size(180, 24)
+        Me.cbCliente.TabIndex = 2
         '
-        'TBuserIntentos
+        'cbEmpresa
         '
-        Me.TBuserIntentos.Location = New System.Drawing.Point(106, 122)
-        Me.TBuserIntentos.Name = "TBuserIntentos"
-        Me.TBuserIntentos.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserIntentos.TabIndex = 5
+        Me.cbEmpresa.FormattingEnabled = True
+        Me.cbEmpresa.Location = New System.Drawing.Point(180, 64)
+        Me.cbEmpresa.Name = "cbEmpresa"
+        Me.cbEmpresa.Size = New System.Drawing.Size(180, 24)
+        Me.cbEmpresa.TabIndex = 1
         '
-        'TBuserID
+        'tbFactura
         '
-        Me.TBuserID.Location = New System.Drawing.Point(106, 19)
-        Me.TBuserID.Name = "TBuserID"
-        Me.TBuserID.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserID.TabIndex = 1
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(12, 22)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(18, 13)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "ID"
-        '
-        'TBuserName
-        '
-        Me.TBuserName.Location = New System.Drawing.Point(106, 44)
-        Me.TBuserName.Name = "TBuserName"
-        Me.TBuserName.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserName.TabIndex = 2
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 47)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
-        Me.Label1.TabIndex = 12
-        Me.Label1.Text = "Nombre"
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(106, 228)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Borrar"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 73)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(34, 13)
-        Me.Label2.TabIndex = 13
-        Me.Label2.Text = "Clave"
-        '
-        'BTNguardar
-        '
-        Me.BTNguardar.Location = New System.Drawing.Point(18, 228)
-        Me.BTNguardar.Name = "BTNguardar"
-        Me.BTNguardar.Size = New System.Drawing.Size(75, 23)
-        Me.BTNguardar.TabIndex = 8
-        Me.BTNguardar.Text = "Guardar"
-        Me.BTNguardar.UseVisualStyleBackColor = True
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 99)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(81, 13)
-        Me.Label3.TabIndex = 14
-        Me.Label3.Text = "Confirmar Clave"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 149)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(23, 13)
-        Me.Label4.TabIndex = 16
-        Me.Label4.Text = "Rol"
+        Me.tbFactura.Location = New System.Drawing.Point(180, 22)
+        Me.tbFactura.Name = "tbFactura"
+        Me.tbFactura.Size = New System.Drawing.Size(180, 22)
+        Me.tbFactura.TabIndex = 0
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(12, 176)
+        Me.Label5.Location = New System.Drawing.Point(84, 197)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(40, 13)
-        Me.Label5.TabIndex = 17
-        Me.Label5.Text = "Estado"
+        Me.Label5.Size = New System.Drawing.Size(47, 17)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = "Fecha"
         '
-        'TBuserPass
+        'Label4
         '
-        Me.TBuserPass.Location = New System.Drawing.Point(106, 70)
-        Me.TBuserPass.Name = "TBuserPass"
-        Me.TBuserPass.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserPass.TabIndex = 3
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(57, 154)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(74, 17)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "ID Usuario"
         '
-        'CBuserRol
+        'Label3
         '
-        Me.CBuserRol.FormattingEnabled = True
-        Me.CBuserRol.Items.AddRange(New Object() {"1", "2"})
-        Me.CBuserRol.Location = New System.Drawing.Point(106, 146)
-        Me.CBuserRol.Name = "CBuserRol"
-        Me.CBuserRol.Size = New System.Drawing.Size(266, 21)
-        Me.CBuserRol.TabIndex = 6
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(63, 112)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(68, 17)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "ID Cliente"
         '
-        'TBuserPassConf
+        'Label2
         '
-        Me.TBuserPassConf.Location = New System.Drawing.Point(106, 96)
-        Me.TBuserPassConf.Name = "TBuserPassConf"
-        Me.TBuserPassConf.Size = New System.Drawing.Size(266, 20)
-        Me.TBuserPassConf.TabIndex = 4
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(50, 67)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(81, 17)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "ID Empresa"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(58, 25)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(73, 17)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "ID Factura"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.NumericUpDown1)
+        Me.GroupBox2.Controls.Add(Me.Label7)
+        Me.GroupBox2.Controls.Add(Me.Button2)
+        Me.GroupBox2.Controls.Add(Me.Button1)
+        Me.GroupBox2.Controls.Add(Me.Label6)
+        Me.GroupBox2.Controls.Add(Me.lbProducto)
+        Me.GroupBox2.Location = New System.Drawing.Point(13, 251)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(392, 218)
+        Me.GroupBox2.TabIndex = 23
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Productos"
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.Location = New System.Drawing.Point(180, 116)
+        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {0, 0, 0, 0})
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(61, 22)
+        Me.NumericUpDown1.TabIndex = 1
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(177, 67)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(64, 17)
+        Me.Label7.TabIndex = 4
+        Me.Label7.Text = "Cantidad"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(269, 134)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 3
+        Me.Button2.Text = "Finalizar"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(269, 67)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Agregar"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(8, 29)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(223, 17)
+        Me.Label6.TabIndex = 1
+        Me.Label6.Text = "Seleccione un producto a agregar"
+        '
+        'lbProducto
+        '
+        Me.lbProducto.FormattingEnabled = True
+        Me.lbProducto.ItemHeight = 16
+        Me.lbProducto.Location = New System.Drawing.Point(11, 58)
+        Me.lbProducto.Name = "lbProducto"
+        Me.lbProducto.Size = New System.Drawing.Size(141, 148)
+        Me.lbProducto.TabIndex = 0
+        '
+        'tpFecha
+        '
+        Me.tpFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.tpFecha.Location = New System.Drawing.Point(180, 192)
+        Me.tpFecha.MinDate = New Date(2010, 12, 31, 0, 0, 0, 0)
+        Me.tpFecha.Name = "tpFecha"
+        Me.tpFecha.Size = New System.Drawing.Size(180, 22)
+        Me.tpFecha.TabIndex = 4
+        Me.tpFecha.Value = New Date(2019, 5, 4, 19, 43, 32, 0)
         '
         'FrmCaja
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(928, 286)
-        Me.Controls.Add(Me.DGVusuarios)
+        Me.ClientSize = New System.Drawing.Size(421, 481)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FrmCaja"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "FrmCaja"
-        CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents DGVusuarios As DataGridView
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents cbEstado As CheckBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents TBuserIntentos As TextBox
-    Friend WithEvents TBuserID As TextBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents TBuserName As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents BTNguardar As Button
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents cbUsuario As ComboBox
+    Friend WithEvents cbCliente As ComboBox
+    Friend WithEvents cbEmpresa As ComboBox
+    Friend WithEvents tbFactura As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TBuserPass As TextBox
-    Friend WithEvents CBuserRol As ComboBox
-    Friend WithEvents TBuserPassConf As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Label6 As Label
+    Friend WithEvents lbProducto As ListBox
+    Friend WithEvents tpFecha As DateTimePicker
 End Class
