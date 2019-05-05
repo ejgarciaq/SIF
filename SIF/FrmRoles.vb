@@ -7,15 +7,7 @@
     End Sub
 
     Private Sub BTNguardar_Click(sender As Object, e As EventArgs) Handles BTNguardar.Click
-        Try
-            If us.IngresarRol(tbID.Text, tbRolDescrip.Text, cbRolEstado.Text) > 0 Then
-                MsgBox("Registrado correctamente")
-            End If
-            DGVroles.DataSource = us.ConsultaRoles
-            DGVroles.Refresh()
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
+
 
     End Sub
 
@@ -24,7 +16,7 @@
 
     End Sub
 
-    Private Sub CbRolEstado_CheckedChanged(sender As Object, e As EventArgs) Handles cbRolEstado.CheckedChanged
-
+    Private Sub BtnRolesCerrar_Click(sender As Object, e As EventArgs) Handles btnRolesCerrar.Click
+        Me.Close()
     End Sub
 End Class

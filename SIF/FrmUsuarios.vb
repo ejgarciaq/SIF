@@ -30,4 +30,8 @@ Public Class FrmUsuarios
             MsgBox(ex.Message)
         End Try
     End Sub
+
+    Private Sub BtnUserCerrar_Click(sender As Object, e As EventArgs) Handles btnUserCerrar.Click
+        Me.Close()
+    End Sub
 End Class

@@ -25,6 +25,8 @@ Partial Class FrmFacturas
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmFacturas))
         Me.DGVfacturas = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnFactCerrar = New System.Windows.Forms.Button()
+        Me.tbFacTotal = New System.Windows.Forms.TextBox()
         Me.cbFacEstado = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TBFacFecha = New System.Windows.Forms.TextBox()
@@ -40,7 +42,6 @@ Partial Class FrmFacturas
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TBfacIdClient = New System.Windows.Forms.TextBox()
         Me.tbFacClientName = New System.Windows.Forms.TextBox()
-        Me.tbFacTotal = New System.Windows.Forms.TextBox()
         CType(Me.DGVfacturas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -55,6 +56,7 @@ Partial Class FrmFacturas
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnFactCerrar)
         Me.GroupBox1.Controls.Add(Me.tbFacTotal)
         Me.GroupBox1.Controls.Add(Me.cbFacEstado)
         Me.GroupBox1.Controls.Add(Me.Label7)
@@ -78,13 +80,29 @@ Partial Class FrmFacturas
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Usuarios"
         '
+        'btnFactCerrar
+        '
+        Me.btnFactCerrar.Location = New System.Drawing.Point(297, 236)
+        Me.btnFactCerrar.Name = "btnFactCerrar"
+        Me.btnFactCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnFactCerrar.TabIndex = 19
+        Me.btnFactCerrar.Text = "Cerrar"
+        Me.btnFactCerrar.UseVisualStyleBackColor = True
+        '
+        'tbFacTotal
+        '
+        Me.tbFacTotal.Location = New System.Drawing.Point(106, 151)
+        Me.tbFacTotal.Name = "tbFacTotal"
+        Me.tbFacTotal.Size = New System.Drawing.Size(266, 20)
+        Me.tbFacTotal.TabIndex = 18
+        '
         'cbFacEstado
         '
         Me.cbFacEstado.AutoSize = True
         Me.cbFacEstado.Checked = True
         Me.cbFacEstado.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cbFacEstado.Location = New System.Drawing.Point(106, 176)
-        Me.cbFacEstado.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cbFacEstado.Margin = New System.Windows.Forms.Padding(2)
         Me.cbFacEstado.Name = "cbFacEstado"
         Me.cbFacEstado.Size = New System.Drawing.Size(56, 17)
         Me.cbFacEstado.TabIndex = 7
@@ -207,22 +225,16 @@ Partial Class FrmFacturas
         Me.tbFacClientName.Size = New System.Drawing.Size(266, 20)
         Me.tbFacClientName.TabIndex = 4
         '
-        'tbFacTotal
-        '
-        Me.tbFacTotal.Location = New System.Drawing.Point(106, 151)
-        Me.tbFacTotal.Name = "tbFacTotal"
-        Me.tbFacTotal.Size = New System.Drawing.Size(266, 20)
-        Me.tbFacTotal.TabIndex = 18
-        '
         'FrmFacturas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(928, 286)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DGVfacturas)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmFacturas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Facturas"
@@ -251,4 +263,5 @@ Partial Class FrmFacturas
     Friend WithEvents TBfacIdClient As TextBox
     Friend WithEvents tbFacClientName As TextBox
     Friend WithEvents tbFacTotal As TextBox
+    Friend WithEvents btnFactCerrar As Button
 End Class

@@ -51,6 +51,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -237,6 +238,8 @@
     <None Include="Resources\inventario.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\caja.png" />
+    <None Include="Resources\caja-registradora.png" />
     <Content Include="Resources\categorias.ico" />
     <Content Include="Resources\categorias.png" />
     <None Include="Resources\ud1.png" />

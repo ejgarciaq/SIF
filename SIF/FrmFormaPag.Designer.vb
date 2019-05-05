@@ -25,6 +25,7 @@ Partial Class FrmFormaPag
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmFormaPag))
         Me.DGVformPago = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnFormPagCerrar = New System.Windows.Forms.Button()
         Me.cbFormPagEstado = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbFormPagID = New System.Windows.Forms.TextBox()
@@ -47,6 +48,7 @@ Partial Class FrmFormaPag
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnFormPagCerrar)
         Me.GroupBox1.Controls.Add(Me.cbFormPagEstado)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.tbFormPagID)
@@ -61,6 +63,15 @@ Partial Class FrmFormaPag
         Me.GroupBox1.TabIndex = 27
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Forma Pago"
+        '
+        'btnFormPagCerrar
+        '
+        Me.btnFormPagCerrar.Location = New System.Drawing.Point(297, 96)
+        Me.btnFormPagCerrar.Name = "btnFormPagCerrar"
+        Me.btnFormPagCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnFormPagCerrar.TabIndex = 20
+        Me.btnFormPagCerrar.Text = "Cerrar"
+        Me.btnFormPagCerrar.UseVisualStyleBackColor = True
         '
         'cbFormPagEstado
         '
@@ -127,7 +138,7 @@ Partial Class FrmFormaPag
         '
         'btnFormPagGuardar
         '
-        Me.btnFormPagGuardar.Location = New System.Drawing.Point(15, 96)
+        Me.btnFormPagGuardar.Location = New System.Drawing.Point(6, 96)
         Me.btnFormPagGuardar.Name = "btnFormPagGuardar"
         Me.btnFormPagGuardar.Size = New System.Drawing.Size(75, 23)
         Me.btnFormPagGuardar.TabIndex = 8
@@ -139,6 +150,7 @@ Partial Class FrmFormaPag
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(840, 285)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DGVformPago)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -162,4 +174,5 @@ Partial Class FrmFormaPag
     Friend WithEvents Label1 As Label
     Friend WithEvents btnFormPagBorrar As Button
     Friend WithEvents btnFormPagGuardar As Button
+    Friend WithEvents btnFormPagCerrar As Button
 End Class

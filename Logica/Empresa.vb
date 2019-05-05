@@ -3,7 +3,7 @@
     Dim sql As String
 
     'Solicita los Empresas existentes y se obtiene una tabla(DataTable) para mostrar
-    Function ConsultaEmpresas()
+    Function ConsultaLocal()
         sql = "SELECT *  FROM local"
         Return con.ObtenerDatos(sql)
     End Function

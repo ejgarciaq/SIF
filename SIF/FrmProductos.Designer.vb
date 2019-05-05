@@ -25,6 +25,7 @@ Partial Class FrmProductos
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmProductos))
         Me.DGVprodutos = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnProdCerrar = New System.Windows.Forms.Button()
         Me.cbProdEst = New System.Windows.Forms.CheckBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TBprodCan = New System.Windows.Forms.TextBox()
@@ -56,6 +57,7 @@ Partial Class FrmProductos
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnProdCerrar)
         Me.GroupBox1.Controls.Add(Me.cbProdEst)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.TBprodCan)
@@ -75,10 +77,19 @@ Partial Class FrmProductos
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(520, 142)
+        Me.GroupBox1.Size = New System.Drawing.Size(520, 182)
         Me.GroupBox1.TabIndex = 20
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Productos"
+        '
+        'btnProdCerrar
+        '
+        Me.btnProdCerrar.Location = New System.Drawing.Point(435, 153)
+        Me.btnProdCerrar.Name = "btnProdCerrar"
+        Me.btnProdCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnProdCerrar.TabIndex = 18
+        Me.btnProdCerrar.Text = "Cerrar"
+        Me.btnProdCerrar.UseVisualStyleBackColor = True
         '
         'cbProdEst
         '
@@ -145,7 +156,7 @@ Partial Class FrmProductos
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(123, 101)
+        Me.Button2.Location = New System.Drawing.Point(96, 153)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 9
@@ -163,7 +174,7 @@ Partial Class FrmProductos
         '
         'BTNguardar
         '
-        Me.BTNguardar.Location = New System.Drawing.Point(35, 101)
+        Me.BTNguardar.Location = New System.Drawing.Point(15, 153)
         Me.BTNguardar.Name = "BTNguardar"
         Me.BTNguardar.Size = New System.Drawing.Size(75, 23)
         Me.BTNguardar.TabIndex = 8
@@ -228,6 +239,7 @@ Partial Class FrmProductos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1231, 350)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DGVprodutos)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -260,4 +272,5 @@ Partial Class FrmProductos
     Friend WithEvents TBprodNom As TextBox
     Friend WithEvents TBprodUni As ComboBox
     Friend WithEvents CBprodPre As TextBox
+    Friend WithEvents btnProdCerrar As Button
 End Class
