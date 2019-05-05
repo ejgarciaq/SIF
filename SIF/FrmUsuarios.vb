@@ -5,7 +5,7 @@ Public Class FrmUsuarios
     Dim us As New Logica.Usuario
 
     Private Sub FrmUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        DGVusuarios.DataSource = us.ConsultaUsuario
+        DGVusuarios.DataSource = us.ConsultaUsuarios
         DGVusuarios.Refresh()
     End Sub
 
@@ -24,23 +24,11 @@ Public Class FrmUsuarios
             If us.IngresarUsuario(tbID.Text, tbNombre.Text, tbApellido1.Text, tbApellido2.Text, tbUserName.Text, tbPassword.Text, cbRol.Text) > 0 Then
                 MsgBox("Registrado correctamente")
             End If
-            DGVusuarios.DataSource = us.ConsultaUsuario
+            DGVusuarios.DataSource = us.ConsultaUsuarios
             DGVusuarios.Refresh()
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        'CerraConexion()
-        'TBuserID.Clear()
-        'TBuserName.Clear()
-        'TBuserIntentos.Clear()
-        'TBuserPass.Clear()
-        'TBuserPassConf.Clear()
-        'CBuserRol.Text = ""
-        'CBuserEstado.Text = ""
-    End Sub
-
-    Private Sub TBuserPass_TextChanged(sender As Object, e As EventArgs) Handles tbPassword.TextChanged
-
     End Sub
 
     Private Sub BtnUserCerrar_Click(sender As Object, e As EventArgs) Handles btnUserCerrar.Click

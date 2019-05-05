@@ -5,7 +5,7 @@
     End Sub
 
     Private Sub FrmLocales_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        DGVlocales.DataSource = us.ConsultaLocal
+        DGVlocales.DataSource = us.ConsultaLocales
         DGVlocales.Refresh()
     End Sub
 End Class

@@ -64,10 +64,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categoria.vb" />
     <Compile Include="Cliente.vb" />
-    <Compile Include="Empresa.vb" />
     <Compile Include="Estado.vb" />
     <Compile Include="Factura.vb" />
+    <Compile Include="Local.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

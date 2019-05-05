@@ -93,10 +93,6 @@
         End If
     End Sub
 
-    Private Sub ProductosToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ProductosToolStripMenuItem1.Click
-
-    End Sub
-
     Private Sub UnidadesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UnidadesToolStripMenuItem.Click
         If Unidades.Visible = True Then
             MsgBox("La ventana ya ha sido mostrada.")
@@ -146,4 +142,7 @@
         End If
     End Sub
 
+    Private Sub FrmPrincipal_Closed(sender As Object, e As EventArgs) Handles MyBase.Closed
+        End
+    End Sub
 End Class
