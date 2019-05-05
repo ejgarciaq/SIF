@@ -85,6 +85,7 @@
     </Compile>
     <Compile Include="Producto.vb" />
     <Compile Include="Roles.vb" />
+    <Compile Include="Unidad.vb" />
     <Compile Include="Usuario.vb" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,5 @@
 ﻿Public Class FrmUnidades
+    Dim us As New Logica.Unidad
     Private Sub BTNguardar_Click(sender As Object, e As EventArgs) Handles BTNguardar.Click
 
     End Sub
@@ -8,7 +9,7 @@
     End Sub
 
     Private Sub FrmUnidades_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' DGVunidades.DataSource = us.ConsultaUnidades
-        ' DGVunidades.Refresh()
+        DGVunidades.DataSource = us.ConsultaUnidad
+        DGVunidades.Refresh()
     End Sub
 End Class

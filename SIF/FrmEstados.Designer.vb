@@ -41,9 +41,9 @@ Partial Class FrmEstados
         'DGVestados
         '
         Me.DGVestados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVestados.Location = New System.Drawing.Point(428, 12)
+        Me.DGVestados.Location = New System.Drawing.Point(396, 12)
         Me.DGVestados.Name = "DGVestados"
-        Me.DGVestados.Size = New System.Drawing.Size(401, 260)
+        Me.DGVestados.Size = New System.Drawing.Size(433, 260)
         Me.DGVestados.TabIndex = 24
         '
         'GroupBox1
