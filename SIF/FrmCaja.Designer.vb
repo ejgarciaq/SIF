@@ -23,6 +23,7 @@ Partial Class FrmCaja
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.tpFecha = New System.Windows.Forms.DateTimePicker()
         Me.cbUsuario = New System.Windows.Forms.ComboBox()
         Me.cbCliente = New System.Windows.Forms.ComboBox()
         Me.cbEmpresa = New System.Windows.Forms.ComboBox()
@@ -39,7 +40,6 @@ Partial Class FrmCaja
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.lbProducto = New System.Windows.Forms.ListBox()
-        Me.tpFecha = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -65,6 +65,16 @@ Partial Class FrmCaja
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Caja"
+        '
+        'tpFecha
+        '
+        Me.tpFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.tpFecha.Location = New System.Drawing.Point(180, 192)
+        Me.tpFecha.MinDate = New Date(2010, 12, 31, 0, 0, 0, 0)
+        Me.tpFecha.Name = "tpFecha"
+        Me.tpFecha.Size = New System.Drawing.Size(180, 22)
+        Me.tpFecha.TabIndex = 4
+        Me.tpFecha.Value = New Date(2019, 5, 4, 19, 43, 32, 0)
         '
         'cbUsuario
         '
@@ -210,21 +220,12 @@ Partial Class FrmCaja
         Me.lbProducto.Size = New System.Drawing.Size(141, 148)
         Me.lbProducto.TabIndex = 0
         '
-        'tpFecha
-        '
-        Me.tpFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.tpFecha.Location = New System.Drawing.Point(180, 192)
-        Me.tpFecha.MinDate = New Date(2010, 12, 31, 0, 0, 0, 0)
-        Me.tpFecha.Name = "tpFecha"
-        Me.tpFecha.Size = New System.Drawing.Size(180, 22)
-        Me.tpFecha.TabIndex = 4
-        Me.tpFecha.Value = New Date(2019, 5, 4, 19, 43, 32, 0)
-        '
         'FrmCaja
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(421, 481)
+        Me.ControlBox = False
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)

@@ -10,7 +10,7 @@
         cbUsuario.ValueMember = "USU_IDPERSONA"
         cbUsuario.DisplayMember = "USU_IDPERSONA"
 
-        cbEmpresa.DataSource = em.ConsultaEmpresas
+        cbEmpresa.DataSource = em.ConsultaLocales
         cbEmpresa.ValueMember = "EMP_IDEMPRESA"
         cbEmpresa.DisplayMember = "EMP_IDEMPRESA"
 

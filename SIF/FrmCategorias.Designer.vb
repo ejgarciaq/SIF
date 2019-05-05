@@ -41,7 +41,7 @@ Partial Class FrmCategorias
         '
         Me.DGVcategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGVcategoria.Location = New System.Drawing.Point(528, 15)
-        Me.DGVcategoria.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DGVcategoria.Margin = New System.Windows.Forms.Padding(4)
         Me.DGVcategoria.Name = "DGVcategoria"
         Me.DGVcategoria.Size = New System.Drawing.Size(577, 320)
         Me.DGVcategoria.TabIndex = 26
@@ -57,9 +57,9 @@ Partial Class FrmCategorias
         Me.GroupBox1.Controls.Add(Me.btnCatBorrar)
         Me.GroupBox1.Controls.Add(Me.btnCatGuardar)
         Me.GroupBox1.Location = New System.Drawing.Point(16, 15)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(504, 181)
         Me.GroupBox1.TabIndex = 25
         Me.GroupBox1.TabStop = False
@@ -91,7 +91,7 @@ Partial Class FrmCategorias
         'tbCatID
         '
         Me.tbCatID.Location = New System.Drawing.Point(141, 18)
-        Me.tbCatID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbCatID.Margin = New System.Windows.Forms.Padding(4)
         Me.tbCatID.Name = "tbCatID"
         Me.tbCatID.Size = New System.Drawing.Size(353, 22)
         Me.tbCatID.TabIndex = 1
@@ -109,7 +109,7 @@ Partial Class FrmCategorias
         'tbCatDescrip
         '
         Me.tbCatDescrip.Location = New System.Drawing.Point(141, 49)
-        Me.tbCatDescrip.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tbCatDescrip.Margin = New System.Windows.Forms.Padding(4)
         Me.tbCatDescrip.Name = "tbCatDescrip"
         Me.tbCatDescrip.Size = New System.Drawing.Size(353, 22)
         Me.tbCatDescrip.TabIndex = 2
@@ -127,7 +127,7 @@ Partial Class FrmCategorias
         'btnCatBorrar
         '
         Me.btnCatBorrar.Location = New System.Drawing.Point(137, 118)
-        Me.btnCatBorrar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCatBorrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCatBorrar.Name = "btnCatBorrar"
         Me.btnCatBorrar.Size = New System.Drawing.Size(100, 28)
         Me.btnCatBorrar.TabIndex = 9
@@ -137,7 +137,7 @@ Partial Class FrmCategorias
         'btnCatGuardar
         '
         Me.btnCatGuardar.Location = New System.Drawing.Point(20, 118)
-        Me.btnCatGuardar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCatGuardar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCatGuardar.Name = "btnCatGuardar"
         Me.btnCatGuardar.Size = New System.Drawing.Size(100, 28)
         Me.btnCatGuardar.TabIndex = 8
@@ -149,10 +149,11 @@ Partial Class FrmCategorias
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1116, 348)
+        Me.ControlBox = False
         Me.Controls.Add(Me.DGVcategoria)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmCategorias"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Categorias"
