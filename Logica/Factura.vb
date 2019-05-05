@@ -4,7 +4,7 @@
 
     'Solicita los Facturas existentes y se obtiene una tabla(DataTable) para mostrar
     Function ConsultaFacturas()
-        sql = "SELECT *  FROM Facturas_table"
+        sql = "SELECT *  FROM factura"
         Return con.ObtenerDatos(sql)
     End Function
 

@@ -24,13 +24,11 @@ Partial Class FrmPrincipal
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FacturacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FacturasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsConfiguracion = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FacturacionToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UsuariosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -39,7 +37,9 @@ Partial Class FrmPrincipal
         Me.UnidadesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EstadosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FacturacionToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.FormasDePAgoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -60,11 +60,18 @@ Partial Class FrmPrincipal
         Me.FacturacionToolStripMenuItem.Size = New System.Drawing.Size(81, 20)
         Me.FacturacionToolStripMenuItem.Text = "Facturacion"
         '
+        'CajaToolStripMenuItem
+        '
+        Me.CajaToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.caja_registradora
+        Me.CajaToolStripMenuItem.Name = "CajaToolStripMenuItem"
+        Me.CajaToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
+        Me.CajaToolStripMenuItem.Text = "Caja"
+        '
         'FacturasToolStripMenuItem
         '
         Me.FacturasToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.caja
         Me.FacturasToolStripMenuItem.Name = "FacturasToolStripMenuItem"
-        Me.FacturasToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
+        Me.FacturasToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
         Me.FacturasToolStripMenuItem.Text = "Facturas"
         '
         'InventarioToolStripMenuItem
@@ -78,7 +85,7 @@ Partial Class FrmPrincipal
         '
         Me.ProductosToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.inventario
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
-        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
+        Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(128, 22)
         Me.ProductosToolStripMenuItem.Text = "Productos"
         '
         'tsConfiguracion
@@ -87,27 +94,6 @@ Partial Class FrmPrincipal
         Me.tsConfiguracion.Name = "tsConfiguracion"
         Me.tsConfiguracion.Size = New System.Drawing.Size(95, 20)
         Me.tsConfiguracion.Text = "Configuracion"
-        '
-        'FacturacionToolStripMenuItem1
-        '
-        Me.FacturacionToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FormasDePAgoToolStripMenuItem})
-        Me.FacturacionToolStripMenuItem1.Image = Global.SIF.My.Resources.Resources.caja
-        Me.FacturacionToolStripMenuItem1.Name = "FacturacionToolStripMenuItem1"
-        Me.FacturacionToolStripMenuItem1.Size = New System.Drawing.Size(184, 26)
-        Me.FacturacionToolStripMenuItem1.Text = "Facturacion"
-        '
-        'SalirToolStripMenuItem
-        '
-        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
-        Me.SalirToolStripMenuItem.Text = "Salir"
-        '
-        'CajaToolStripMenuItem
-        '
-        Me.CajaToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.caja_registradora
-        Me.CajaToolStripMenuItem.Name = "CajaToolStripMenuItem"
-        Me.CajaToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
-        Me.CajaToolStripMenuItem.Text = "Caja"
         '
         'UsuariosToolStripMenuItem
         '
@@ -121,7 +107,7 @@ Partial Class FrmPrincipal
         '
         Me.RolToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.roles
         Me.RolToolStripMenuItem.Name = "RolToolStripMenuItem"
-        Me.RolToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
+        Me.RolToolStripMenuItem.Size = New System.Drawing.Size(102, 22)
         Me.RolToolStripMenuItem.Text = "Roles"
         '
         'ClientesToolStripMenuItem
@@ -167,12 +153,26 @@ Partial Class FrmPrincipal
         Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
         Me.CategoriasToolStripMenuItem.Text = "Categorias"
         '
+        'FacturacionToolStripMenuItem1
+        '
+        Me.FacturacionToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FormasDePAgoToolStripMenuItem})
+        Me.FacturacionToolStripMenuItem1.Image = Global.SIF.My.Resources.Resources.caja
+        Me.FacturacionToolStripMenuItem1.Name = "FacturacionToolStripMenuItem1"
+        Me.FacturacionToolStripMenuItem1.Size = New System.Drawing.Size(184, 26)
+        Me.FacturacionToolStripMenuItem1.Text = "Facturacion"
+        '
         'FormasDePAgoToolStripMenuItem
         '
         Me.FormasDePAgoToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.FormasPago
         Me.FormasDePAgoToolStripMenuItem.Name = "FormasDePAgoToolStripMenuItem"
-        Me.FormasDePAgoToolStripMenuItem.Size = New System.Drawing.Size(184, 26)
+        Me.FormasDePAgoToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
         Me.FormasDePAgoToolStripMenuItem.Text = "Formas de Pago"
+        '
+        'SalirToolStripMenuItem
+        '
+        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'FrmPrincipal
         '

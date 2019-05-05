@@ -1,9 +1,9 @@
-﻿Public Class Categoria
+﻿Public Class FormaPago
     Dim con As New Conexion.Funciones
     Dim sql As String
 
-    Function ConsultaCategoria()
-        sql = "select * from categoria;"
+    Function ConsultaFormaPago()
+        sql = "select * from formapago;"
         Return con.ObtenerDatos(sql)
     End Function
 
