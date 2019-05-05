@@ -39,6 +39,7 @@ Partial Class FrmLocales
         Me.Label5 = New System.Windows.Forms.Label()
         Me.tbLocalPhone = New System.Windows.Forms.TextBox()
         Me.tbLocalMail = New System.Windows.Forms.TextBox()
+        Me.btnLocalCerrar = New System.Windows.Forms.Button()
         CType(Me.DGVlocales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -53,6 +54,7 @@ Partial Class FrmLocales
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnLocalCerrar)
         Me.GroupBox1.Controls.Add(Me.cbLocalEstado)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.tbLocalAddress)
@@ -194,6 +196,15 @@ Partial Class FrmLocales
         Me.tbLocalMail.Size = New System.Drawing.Size(266, 20)
         Me.tbLocalMail.TabIndex = 4
         '
+        'btnLocalCerrar
+        '
+        Me.btnLocalCerrar.Location = New System.Drawing.Point(297, 184)
+        Me.btnLocalCerrar.Name = "btnLocalCerrar"
+        Me.btnLocalCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnLocalCerrar.TabIndex = 18
+        Me.btnLocalCerrar.Text = "Cerrar"
+        Me.btnLocalCerrar.UseVisualStyleBackColor = True
+        '
         'FrmLocales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -229,4 +240,5 @@ Partial Class FrmLocales
     Friend WithEvents Label5 As Label
     Friend WithEvents tbLocalPhone As TextBox
     Friend WithEvents tbLocalMail As TextBox
+    Friend WithEvents btnLocalCerrar As Button
 End Class

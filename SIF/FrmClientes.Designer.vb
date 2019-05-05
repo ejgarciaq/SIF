@@ -43,6 +43,7 @@ Partial Class FrmClientes
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TBclienteDIreccion = New System.Windows.Forms.TextBox()
         Me.TBclienteTelefono = New System.Windows.Forms.TextBox()
+        Me.btnClienCerrar = New System.Windows.Forms.Button()
         CType(Me.DGVclientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -57,6 +58,7 @@ Partial Class FrmClientes
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnClienCerrar)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -228,6 +230,15 @@ Partial Class FrmClientes
         Me.TBclienteTelefono.Size = New System.Drawing.Size(276, 20)
         Me.TBclienteTelefono.TabIndex = 4
         '
+        'btnClienCerrar
+        '
+        Me.btnClienCerrar.Location = New System.Drawing.Point(297, 228)
+        Me.btnClienCerrar.Name = "btnClienCerrar"
+        Me.btnClienCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnClienCerrar.TabIndex = 23
+        Me.btnClienCerrar.Text = "Cerrar"
+        Me.btnClienCerrar.UseVisualStyleBackColor = True
+        '
         'FrmClientes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -267,4 +278,5 @@ Partial Class FrmClientes
     Friend WithEvents Label8 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents btnClienCerrar As Button
 End Class

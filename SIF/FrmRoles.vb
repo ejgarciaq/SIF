@@ -16,5 +16,7 @@
 
     End Sub
 
-
+    Private Sub BtnRolesCerrar_Click(sender As Object, e As EventArgs) Handles btnRolesCerrar.Click
+        Me.Close()
+    End Sub
 End Class

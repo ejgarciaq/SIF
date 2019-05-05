@@ -33,6 +33,7 @@ Partial Class FrmCategorias
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnCatBorrar = New System.Windows.Forms.Button()
         Me.btnCatGuardar = New System.Windows.Forms.Button()
+        Me.btnCatCerrar = New System.Windows.Forms.Button()
         CType(Me.DGVcategoria, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -47,6 +48,7 @@ Partial Class FrmCategorias
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnCatCerrar)
         Me.GroupBox1.Controls.Add(Me.cbCatEstado)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.tbCatID)
@@ -134,6 +136,15 @@ Partial Class FrmCategorias
         Me.btnCatGuardar.Text = "Guardar"
         Me.btnCatGuardar.UseVisualStyleBackColor = True
         '
+        'btnCatCerrar
+        '
+        Me.btnCatCerrar.Location = New System.Drawing.Point(287, 96)
+        Me.btnCatCerrar.Name = "btnCatCerrar"
+        Me.btnCatCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCatCerrar.TabIndex = 20
+        Me.btnCatCerrar.Text = "Cerrar"
+        Me.btnCatCerrar.UseVisualStyleBackColor = True
+        '
         'FrmCategorias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -162,4 +173,5 @@ Partial Class FrmCategorias
     Friend WithEvents Label1 As Label
     Friend WithEvents btnCatBorrar As Button
     Friend WithEvents btnCatGuardar As Button
+    Friend WithEvents btnCatCerrar As Button
 End Class

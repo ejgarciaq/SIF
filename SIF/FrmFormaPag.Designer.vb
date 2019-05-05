@@ -33,6 +33,7 @@ Partial Class FrmFormaPag
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnFormPagBorrar = New System.Windows.Forms.Button()
         Me.btnFormPagGuardar = New System.Windows.Forms.Button()
+        Me.btnFormPagCerrar = New System.Windows.Forms.Button()
         CType(Me.DGVformPago, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -47,6 +48,7 @@ Partial Class FrmFormaPag
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnFormPagCerrar)
         Me.GroupBox1.Controls.Add(Me.cbFormPagEstado)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.tbFormPagID)
@@ -127,12 +129,21 @@ Partial Class FrmFormaPag
         '
         'btnFormPagGuardar
         '
-        Me.btnFormPagGuardar.Location = New System.Drawing.Point(15, 96)
+        Me.btnFormPagGuardar.Location = New System.Drawing.Point(6, 96)
         Me.btnFormPagGuardar.Name = "btnFormPagGuardar"
         Me.btnFormPagGuardar.Size = New System.Drawing.Size(75, 23)
         Me.btnFormPagGuardar.TabIndex = 8
         Me.btnFormPagGuardar.Text = "Guardar"
         Me.btnFormPagGuardar.UseVisualStyleBackColor = True
+        '
+        'btnFormPagCerrar
+        '
+        Me.btnFormPagCerrar.Location = New System.Drawing.Point(297, 96)
+        Me.btnFormPagCerrar.Name = "btnFormPagCerrar"
+        Me.btnFormPagCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnFormPagCerrar.TabIndex = 20
+        Me.btnFormPagCerrar.Text = "Cerrar"
+        Me.btnFormPagCerrar.UseVisualStyleBackColor = True
         '
         'FrmFormaPag
         '
@@ -162,4 +173,5 @@ Partial Class FrmFormaPag
     Friend WithEvents Label1 As Label
     Friend WithEvents btnFormPagBorrar As Button
     Friend WithEvents btnFormPagGuardar As Button
+    Friend WithEvents btnFormPagCerrar As Button
 End Class

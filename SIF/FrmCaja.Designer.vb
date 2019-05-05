@@ -40,6 +40,7 @@ Partial Class FrmCaja
         Me.CBuserRol = New System.Windows.Forms.ComboBox()
         Me.TBuserPassConf = New System.Windows.Forms.TextBox()
         Me.DirectoryEntry1 = New System.DirectoryServices.DirectoryEntry()
+        Me.btnCajaCerrar = New System.Windows.Forms.Button()
         CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -54,6 +55,7 @@ Partial Class FrmCaja
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnCajaCerrar)
         Me.GroupBox1.Controls.Add(Me.ComboBox3)
         Me.GroupBox1.Controls.Add(Me.ComboBox2)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
@@ -197,6 +199,15 @@ Partial Class FrmCaja
         Me.TBuserPassConf.Size = New System.Drawing.Size(191, 20)
         Me.TBuserPassConf.TabIndex = 4
         '
+        'btnCajaCerrar
+        '
+        Me.btnCajaCerrar.Location = New System.Drawing.Point(426, 127)
+        Me.btnCajaCerrar.Name = "btnCajaCerrar"
+        Me.btnCajaCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCajaCerrar.TabIndex = 20
+        Me.btnCajaCerrar.Text = "Cerrar"
+        Me.btnCajaCerrar.UseVisualStyleBackColor = True
+        '
         'FrmCaja
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -233,4 +244,5 @@ Partial Class FrmCaja
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents DirectoryEntry1 As DirectoryServices.DirectoryEntry
+    Friend WithEvents btnCajaCerrar As Button
 End Class

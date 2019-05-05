@@ -43,7 +43,7 @@ Public Class FrmUsuarios
 
     End Sub
 
-
-
-
+    Private Sub BtnUserCerrar_Click(sender As Object, e As EventArgs) Handles btnUserCerrar.Click
+        Me.Close()
+    End Sub
 End Class

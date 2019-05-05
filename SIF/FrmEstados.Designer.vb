@@ -33,6 +33,7 @@ Partial Class FrmEstados
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnEstBorrar = New System.Windows.Forms.Button()
         Me.btnEstguardar = New System.Windows.Forms.Button()
+        Me.btnestadoCerrar = New System.Windows.Forms.Button()
         CType(Me.DGVestados, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -47,6 +48,7 @@ Partial Class FrmEstados
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnestadoCerrar)
         Me.GroupBox1.Controls.Add(Me.cbEstEstado)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.tbEstID)
@@ -57,7 +59,7 @@ Partial Class FrmEstados
         Me.GroupBox1.Controls.Add(Me.btnEstguardar)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(378, 147)
+        Me.GroupBox1.Size = New System.Drawing.Size(378, 131)
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Estados"
@@ -134,6 +136,15 @@ Partial Class FrmEstados
         Me.btnEstguardar.Text = "Guardar"
         Me.btnEstguardar.UseVisualStyleBackColor = True
         '
+        'btnestadoCerrar
+        '
+        Me.btnestadoCerrar.Location = New System.Drawing.Point(297, 96)
+        Me.btnestadoCerrar.Name = "btnestadoCerrar"
+        Me.btnestadoCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnestadoCerrar.TabIndex = 20
+        Me.btnestadoCerrar.Text = "Cerrar"
+        Me.btnestadoCerrar.UseVisualStyleBackColor = True
+        '
         'FrmEstados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -162,4 +173,5 @@ Partial Class FrmEstados
     Friend WithEvents Label1 As Label
     Friend WithEvents btnEstBorrar As Button
     Friend WithEvents btnEstguardar As Button
+    Friend WithEvents btnestadoCerrar As Button
 End Class

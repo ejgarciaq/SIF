@@ -44,6 +44,7 @@ Partial Class FrmUsuarios
         Me.Label6 = New System.Windows.Forms.Label()
         Me.cbRol = New System.Windows.Forms.ComboBox()
         Me.DGVusuarios = New System.Windows.Forms.DataGridView()
+        Me.btnUserCerrar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DGVusuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -125,6 +126,7 @@ Partial Class FrmUsuarios
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnUserCerrar)
         Me.GroupBox1.Controls.Add(Me.tbUserName)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.tbApellido2)
@@ -245,6 +247,15 @@ Partial Class FrmUsuarios
         Me.DGVusuarios.Size = New System.Drawing.Size(693, 297)
         Me.DGVusuarios.TabIndex = 10
         '
+        'btnUserCerrar
+        '
+        Me.btnUserCerrar.Location = New System.Drawing.Point(15, 275)
+        Me.btnUserCerrar.Name = "btnUserCerrar"
+        Me.btnUserCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnUserCerrar.TabIndex = 25
+        Me.btnUserCerrar.Text = "Cerrar"
+        Me.btnUserCerrar.UseVisualStyleBackColor = True
+        '
         'FrmUsuarios
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -284,4 +295,5 @@ Partial Class FrmUsuarios
     Friend WithEvents Label8 As Label
     Friend WithEvents tbUserName As TextBox
     Friend WithEvents Label10 As Label
+    Friend WithEvents btnUserCerrar As Button
 End Class

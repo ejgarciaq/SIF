@@ -17,4 +17,8 @@
             MsgBox(ex.Message)
         End Try
     End Sub
+
+    Private Sub BtnestadoCerrar_Click(sender As Object, e As EventArgs) Handles btnestadoCerrar.Click
+        Me.Close()
+    End Sub
 End Class

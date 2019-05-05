@@ -33,12 +33,14 @@ Partial Class FrmRoles
         Me.btnRolesBorrar = New System.Windows.Forms.Button()
         Me.BTNguardar = New System.Windows.Forms.Button()
         Me.DGVroles = New System.Windows.Forms.DataGridView()
+        Me.btnRolesCerrar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DGVroles, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnRolesCerrar)
         Me.GroupBox1.Controls.Add(Me.cbRolEstado)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.tbID)
@@ -134,6 +136,15 @@ Partial Class FrmRoles
         Me.DGVroles.Size = New System.Drawing.Size(382, 260)
         Me.DGVroles.TabIndex = 20
         '
+        'btnRolesCerrar
+        '
+        Me.btnRolesCerrar.Location = New System.Drawing.Point(297, 96)
+        Me.btnRolesCerrar.Name = "btnRolesCerrar"
+        Me.btnRolesCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnRolesCerrar.TabIndex = 20
+        Me.btnRolesCerrar.Text = "Cerrar"
+        Me.btnRolesCerrar.UseVisualStyleBackColor = True
+        '
         'FrmRoles
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -162,4 +173,5 @@ Partial Class FrmRoles
     Friend WithEvents DGVroles As DataGridView
     Friend WithEvents cbRolEstado As CheckBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents btnRolesCerrar As Button
 End Class
