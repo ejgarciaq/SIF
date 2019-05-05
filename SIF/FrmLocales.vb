@@ -8,4 +8,6 @@
         DGVlocales.DataSource = us.ConsultaLocales
         DGVlocales.Refresh()
     End Sub
+
+
 End Class
