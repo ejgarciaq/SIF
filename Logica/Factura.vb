@@ -10,7 +10,7 @@
 
     'Ingresa una factura nueva con los datos respectivos
     Function IngresarUsuario(id As String, nombre As String, apellido1 As String, apellido2 As String, username As String, password As String, rol As Integer)
-        sql = "INSERT INTO `sif_db`.`factura` (`USU_IDPERSONA`, `ROL_IDROL`, `USU_USERNAME`, `USU_PASSWORD`, `USU_INTENTOS`, `USU_ACTIVO`) VALUES (" + id + ", " + rol + ", '" + username + "', '" + password + "', 3, true);"
+        sql = "INSERT INTO `sif_db`.`factura` VALUES (" + id + ", " + rol + ", '" + username + "', '" + password + "', 3, true);"
         Return con.IngresarDatos(sql)
     End Function
 End Class

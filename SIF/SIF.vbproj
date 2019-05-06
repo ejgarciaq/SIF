@@ -92,6 +92,12 @@
     <Compile Include="FrmClientes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmConectividad.Designer.vb">
+      <DependentUpon>FrmConectividad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConectividad.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmEstados.Designer.vb">
       <DependentUpon>FrmEstados.vb</DependentUpon>
     </Compile>
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClientes.resx">
       <DependentUpon>FrmClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConectividad.resx">
+      <DependentUpon>FrmConectividad.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEstados.resx">
       <DependentUpon>FrmEstados.vb</DependentUpon>

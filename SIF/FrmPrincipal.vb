@@ -45,16 +45,6 @@
         End If
     End Sub
 
-    Private Sub ProductosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProductosToolStripMenuItem.Click
-        If Productos.Visible Then
-            MsgBox("La ventana ya ha sido mostrada.")
-        Else
-            Productos = New FrmProductos
-            Productos.MdiParent = Me
-            Productos.Show()
-        End If
-    End Sub
-
     Private Sub CajaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CajaToolStripMenuItem.Click
         If Caja.Visible Then
             MsgBox("La ventana ya ha sido mostrada.")
@@ -144,5 +134,15 @@
 
     Private Sub FrmPrincipal_Closed(sender As Object, e As EventArgs) Handles MyBase.Closed
         End
+    End Sub
+
+    Private Sub ProductosToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ProductosToolStripMenuItem1.Click
+        If Productos.Visible Then
+            MsgBox("La ventana ya ha sido mostrada.")
+        Else
+            Productos = New FrmProductos
+            Productos.MdiParent = Me
+            Productos.Show()
+        End If
     End Sub
 End Class

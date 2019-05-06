@@ -10,9 +10,9 @@
 
     'Ingresa un Cliente nuevo con los datos respectivos
     Function IngresarCliente(id As String, nombre As String, apellido1 As String, apellido2 As String)
-        sql = "INSERT INTO `sif_db`.`persona` (`PER_IDPERSONA`, `PER_NOMBRE`, `PER_APELLIDO1`, `PER_APELLIDO2`, `PER_ACTIVO`) VALUES (" + id + ", '" + nombre + "', '" + apellido1 + "', '" + apellido2 + "', true);"
+        sql = "INSERT INTO `sif_db`.`persona` VALUES (" + id + ", '" + nombre + "', '" + apellido1 + "', '" + apellido2 + "', true);"
         con.IngresarDatos(sql)
-        sql = "INSERT INTO `sif_db`.`cliente` (`USU_IDPERSONA`, `CLI_TOTALCOMPRADO`, `CLI_ACTIVO`) VALUES (" + id + ", 0, true);"
+        sql = "INSERT INTO `sif_db`.`cliente` VALUES (" + id + ", 0, true);"
         Return con.IngresarDatos(sql)
     End Function
 End Class

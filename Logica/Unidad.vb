@@ -10,7 +10,7 @@
 
     'Ingresa un rol nuevo con los datos respectivos
     Function IngresarUnidad(id As String, rolDes As String)
-        sql = "INSERT INTO `sif_db`.`unidad` (`UNI_IDUNIDAD`, `UNI_DESCRIPCION`, `UNI_ACTIVO`) VALUES (" + id + ", '" + rolDes + "', true);"
+        sql = "INSERT INTO `sif_db`.`unidad` VALUES (" + id + ", '" + rolDes + "', true);"
         con.IngresarDatos(sql)
         Return con.IngresarDatos(sql)
     End Function
