@@ -9,8 +9,8 @@
     End Function
 
     'Solicita los Empresas existentes y se obtiene una tabla(DataTable) para mostrar
-    Function ConsultaLocales(id As String)
-        sql = "SELECT *  FROM local where EMP_IDEMPRESA = " + id
+    Function ConsultaLocal(id As String)
+        sql = "SELECT *  FROM local where LOC_IDLOCAL = " + id
         Return con.ObtenerDatos(sql)
     End Function
 

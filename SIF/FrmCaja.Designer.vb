@@ -40,6 +40,7 @@ Partial Class FrmCaja
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.lbProducto = New System.Windows.Forms.ListBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -156,13 +157,12 @@ Partial Class FrmCaja
         '
         Me.GroupBox2.Controls.Add(Me.NumericUpDown1)
         Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.lbProducto)
         Me.GroupBox2.Location = New System.Drawing.Point(13, 251)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(392, 218)
+        Me.GroupBox2.Size = New System.Drawing.Size(260, 218)
         Me.GroupBox2.TabIndex = 23
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Productos"
@@ -186,16 +186,16 @@ Partial Class FrmCaja
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(269, 134)
+        Me.Button2.Location = New System.Drawing.Point(279, 304)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(130, 45)
         Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Finalizar"
+        Me.Button2.Text = "Finalizar Facturación"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(269, 67)
+        Me.Button1.Location = New System.Drawing.Point(166, 158)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 2
@@ -220,14 +220,25 @@ Partial Class FrmCaja
         Me.lbProducto.Size = New System.Drawing.Size(141, 148)
         Me.lbProducto.TabIndex = 0
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(279, 367)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(130, 45)
+        Me.Button3.TabIndex = 24
+        Me.Button3.Text = "Cerrar"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'FrmCaja
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(421, 481)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Button2)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FrmCaja"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
@@ -258,4 +269,5 @@ Partial Class FrmCaja
     Friend WithEvents Label6 As Label
     Friend WithEvents lbProducto As ListBox
     Friend WithEvents tpFecha As DateTimePicker
+    Friend WithEvents Button3 As Button
 End Class

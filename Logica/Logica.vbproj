@@ -68,6 +68,7 @@
     <Compile Include="Cliente.vb" />
     <Compile Include="Estado.vb" />
     <Compile Include="Factura.vb" />
+    <Compile Include="FormaPago.vb" />
     <Compile Include="Local.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

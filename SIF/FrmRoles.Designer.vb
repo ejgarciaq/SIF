@@ -25,11 +25,9 @@ Partial Class FrmRoles
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmRoles))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnRolesCerrar = New System.Windows.Forms.Button()
-        Me.cbRolEstado = New System.Windows.Forms.CheckBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.tbID = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.tbRolDescrip = New System.Windows.Forms.TextBox()
+        Me.tbDescripcion = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnRolesBorrar = New System.Windows.Forms.Button()
         Me.BTNguardar = New System.Windows.Forms.Button()
@@ -41,98 +39,83 @@ Partial Class FrmRoles
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.btnRolesCerrar)
-        Me.GroupBox1.Controls.Add(Me.cbRolEstado)
-        Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.tbID)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.tbRolDescrip)
+        Me.GroupBox1.Controls.Add(Me.tbDescripcion)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.btnRolesBorrar)
         Me.GroupBox1.Controls.Add(Me.BTNguardar)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 15)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(378, 147)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Size = New System.Drawing.Size(420, 136)
         Me.GroupBox1.TabIndex = 19
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Roles"
         '
         'btnRolesCerrar
         '
-        Me.btnRolesCerrar.Location = New System.Drawing.Point(297, 96)
+        Me.btnRolesCerrar.Location = New System.Drawing.Point(310, 100)
+        Me.btnRolesCerrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRolesCerrar.Name = "btnRolesCerrar"
-        Me.btnRolesCerrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnRolesCerrar.Size = New System.Drawing.Size(100, 28)
         Me.btnRolesCerrar.TabIndex = 20
         Me.btnRolesCerrar.Text = "Cerrar"
         Me.btnRolesCerrar.UseVisualStyleBackColor = True
         '
-        'cbRolEstado
-        '
-        Me.cbRolEstado.AutoSize = True
-        Me.cbRolEstado.Checked = True
-        Me.cbRolEstado.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.cbRolEstado.Location = New System.Drawing.Point(106, 66)
-        Me.cbRolEstado.Margin = New System.Windows.Forms.Padding(2)
-        Me.cbRolEstado.Name = "cbRolEstado"
-        Me.cbRolEstado.Size = New System.Drawing.Size(56, 17)
-        Me.cbRolEstado.TabIndex = 18
-        Me.cbRolEstado.Text = "Activo"
-        Me.cbRolEstado.UseVisualStyleBackColor = True
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(12, 66)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(40, 13)
-        Me.Label5.TabIndex = 19
-        Me.Label5.Text = "Estado"
-        '
         'tbID
         '
-        Me.tbID.Location = New System.Drawing.Point(106, 15)
+        Me.tbID.Location = New System.Drawing.Point(102, 23)
+        Me.tbID.Margin = New System.Windows.Forms.Padding(4)
         Me.tbID.Name = "tbID"
-        Me.tbID.Size = New System.Drawing.Size(266, 20)
+        Me.tbID.Size = New System.Drawing.Size(200, 22)
         Me.tbID.TabIndex = 1
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(12, 18)
+        Me.Label6.Location = New System.Drawing.Point(73, 26)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(18, 13)
+        Me.Label6.Size = New System.Drawing.Size(21, 17)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "ID"
         '
-        'tbRolDescrip
+        'tbDescripcion
         '
-        Me.tbRolDescrip.Location = New System.Drawing.Point(106, 40)
-        Me.tbRolDescrip.Name = "tbRolDescrip"
-        Me.tbRolDescrip.Size = New System.Drawing.Size(266, 20)
-        Me.tbRolDescrip.TabIndex = 2
+        Me.tbDescripcion.Location = New System.Drawing.Point(102, 64)
+        Me.tbDescripcion.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbDescripcion.Name = "tbDescripcion"
+        Me.tbDescripcion.Size = New System.Drawing.Size(200, 22)
+        Me.tbDescripcion.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 43)
+        Me.Label1.Location = New System.Drawing.Point(12, 67)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 13)
+        Me.Label1.Size = New System.Drawing.Size(82, 17)
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Descripción"
         '
         'btnRolesBorrar
         '
-        Me.btnRolesBorrar.Location = New System.Drawing.Point(103, 96)
+        Me.btnRolesBorrar.Location = New System.Drawing.Point(310, 61)
+        Me.btnRolesBorrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRolesBorrar.Name = "btnRolesBorrar"
-        Me.btnRolesBorrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnRolesBorrar.Size = New System.Drawing.Size(100, 28)
         Me.btnRolesBorrar.TabIndex = 9
         Me.btnRolesBorrar.Text = "Borrar"
         Me.btnRolesBorrar.UseVisualStyleBackColor = True
         '
         'BTNguardar
         '
-        Me.BTNguardar.Location = New System.Drawing.Point(15, 96)
+        Me.BTNguardar.Location = New System.Drawing.Point(310, 20)
+        Me.BTNguardar.Margin = New System.Windows.Forms.Padding(4)
         Me.BTNguardar.Name = "BTNguardar"
-        Me.BTNguardar.Size = New System.Drawing.Size(75, 23)
+        Me.BTNguardar.Size = New System.Drawing.Size(100, 28)
         Me.BTNguardar.TabIndex = 8
         Me.BTNguardar.Text = "Guardar"
         Me.BTNguardar.UseVisualStyleBackColor = True
@@ -140,20 +123,22 @@ Partial Class FrmRoles
         'DGVroles
         '
         Me.DGVroles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVroles.Location = New System.Drawing.Point(428, 12)
+        Me.DGVroles.Location = New System.Drawing.Point(16, 159)
+        Me.DGVroles.Margin = New System.Windows.Forms.Padding(4)
         Me.DGVroles.Name = "DGVroles"
-        Me.DGVroles.Size = New System.Drawing.Size(382, 260)
+        Me.DGVroles.Size = New System.Drawing.Size(420, 283)
         Me.DGVroles.TabIndex = 20
         '
         'FrmRoles
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(822, 278)
+        Me.ClientSize = New System.Drawing.Size(451, 458)
         Me.ControlBox = False
         Me.Controls.Add(Me.DGVroles)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmRoles"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Roles"
@@ -167,12 +152,10 @@ Partial Class FrmRoles
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents tbID As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents tbRolDescrip As TextBox
+    Friend WithEvents tbDescripcion As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents btnRolesBorrar As Button
     Friend WithEvents BTNguardar As Button
     Friend WithEvents DGVroles As DataGridView
-    Friend WithEvents cbRolEstado As CheckBox
-    Friend WithEvents Label5 As Label
     Friend WithEvents btnRolesCerrar As Button
 End Class

@@ -9,8 +9,8 @@
     End Function
 
     'Ingresa un rol nuevo con los datos respectivos
-    Function IngresarRol(id As String, rolDes As String, cbRol As Boolean)
-        sql = "INSERT INTO `sif_db`.`rol` (`ROL_IDROL`, `ROL_DESCRIPCION`, `ROL_ACTIVO`) VALUES (" + id + ", '" + rolDes + "', '" + cbRol + "');"
+    Function IngresarRol(id As String, rolDes As String)
+        sql = "INSERT INTO `sif_db`.`rol` (`ROL_IDROL`, `ROL_DESCRIPCION`, `ROL_ACTIVO`) VALUES (" + id + ", '" + rolDes + "', true);"
         con.IngresarDatos(sql)
         Return con.IngresarDatos(sql)
     End Function

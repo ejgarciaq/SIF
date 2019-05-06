@@ -3,10 +3,15 @@ Imports System.Data.OleDb
 
 Public Class FrmUsuarios
     Dim us As New Logica.Usuario
+    Dim ro As New Logica.Roles
 
     Private Sub FrmUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DGVusuarios.DataSource = us.ConsultaUsuarios
         DGVusuarios.Refresh()
+
+        cbRol.DataSource = ro.ConsultaRoles
+        cbRol.DisplayMember = "ROL_DESCRIPCION"
+        cbRol.ValueMember = "ROL_IDROL"
     End Sub
 
     Private Sub BTNguardar_Click(sender As Object, e As EventArgs) Handles BTNguardar.Click
