@@ -10,7 +10,7 @@
 
     'Ingresa un estado nuevo con los datos respectivos
     Function IngresarEstado(id As String, EstDes As String)
-        sql = "INSERT INTO `sif_db`.`estado` VALUES (" + id + ", " + EstDes + ", true);"
+        sql = "INSERT INTO `sif_db`.`estado` VALUES (" + id + ", '" + EstDes + "', true);"
         Return con.IngresarDatos(sql)
     End Function
 

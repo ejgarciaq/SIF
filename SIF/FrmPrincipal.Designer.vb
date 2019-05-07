@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmPrincipal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FrmPrincipal
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FacturacionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -38,7 +38,6 @@ Partial Class FrmPrincipal
         Me.FacturacionToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.FormasDePAgoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ConectividadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -64,19 +63,19 @@ Partial Class FrmPrincipal
         '
         Me.CajaToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.caja_registradora
         Me.CajaToolStripMenuItem.Name = "CajaToolStripMenuItem"
-        Me.CajaToolStripMenuItem.Size = New System.Drawing.Size(137, 26)
+        Me.CajaToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.CajaToolStripMenuItem.Text = "Caja"
         '
         'FacturasToolStripMenuItem
         '
         Me.FacturasToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.caja
         Me.FacturasToolStripMenuItem.Name = "FacturasToolStripMenuItem"
-        Me.FacturasToolStripMenuItem.Size = New System.Drawing.Size(137, 26)
+        Me.FacturasToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.FacturasToolStripMenuItem.Text = "Facturas"
         '
         'tsConfiguracion
         '
-        Me.tsConfiguracion.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.EmpresaToolStripMenuItem, Me.ProductosToolStripMenuItem1, Me.FacturacionToolStripMenuItem1, Me.ConectividadToolStripMenuItem})
+        Me.tsConfiguracion.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsuariosToolStripMenuItem, Me.ClientesToolStripMenuItem, Me.EmpresaToolStripMenuItem, Me.ProductosToolStripMenuItem1, Me.FacturacionToolStripMenuItem1})
         Me.tsConfiguracion.Name = "tsConfiguracion"
         Me.tsConfiguracion.Size = New System.Drawing.Size(114, 24)
         Me.tsConfiguracion.Text = "Configuracion"
@@ -93,7 +92,7 @@ Partial Class FrmPrincipal
         '
         Me.RolToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.roles
         Me.RolToolStripMenuItem.Name = "RolToolStripMenuItem"
-        Me.RolToolStripMenuItem.Size = New System.Drawing.Size(120, 26)
+        Me.RolToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.RolToolStripMenuItem.Text = "Roles"
         '
         'ClientesToolStripMenuItem
@@ -122,21 +121,21 @@ Partial Class FrmPrincipal
         '
         Me.UnidadesToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.ud
         Me.UnidadesToolStripMenuItem.Name = "UnidadesToolStripMenuItem"
-        Me.UnidadesToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.UnidadesToolStripMenuItem.Size = New System.Drawing.Size(155, 26)
         Me.UnidadesToolStripMenuItem.Text = "Unidades"
         '
         'EstadosToolStripMenuItem
         '
         Me.EstadosToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.Estado
         Me.EstadosToolStripMenuItem.Name = "EstadosToolStripMenuItem"
-        Me.EstadosToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.EstadosToolStripMenuItem.Size = New System.Drawing.Size(155, 26)
         Me.EstadosToolStripMenuItem.Text = "Estados"
         '
         'CategoriasToolStripMenuItem
         '
         Me.CategoriasToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.categorias
         Me.CategoriasToolStripMenuItem.Name = "CategoriasToolStripMenuItem"
-        Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(155, 26)
         Me.CategoriasToolStripMenuItem.Text = "Categorias"
         '
         'FacturacionToolStripMenuItem1
@@ -151,7 +150,7 @@ Partial Class FrmPrincipal
         '
         Me.FormasDePAgoToolStripMenuItem.Image = Global.SIF.My.Resources.Resources.FormasPago
         Me.FormasDePAgoToolStripMenuItem.Name = "FormasDePAgoToolStripMenuItem"
-        Me.FormasDePAgoToolStripMenuItem.Size = New System.Drawing.Size(190, 26)
+        Me.FormasDePAgoToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.FormasDePAgoToolStripMenuItem.Text = "Formas de Pago"
         '
         'SalirToolStripMenuItem
@@ -159,12 +158,6 @@ Partial Class FrmPrincipal
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(50, 24)
         Me.SalirToolStripMenuItem.Text = "Salir"
-        '
-        'ConectividadToolStripMenuItem
-        '
-        Me.ConectividadToolStripMenuItem.Name = "ConectividadToolStripMenuItem"
-        Me.ConectividadToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
-        Me.ConectividadToolStripMenuItem.Text = "Conectividad"
         '
         'FrmPrincipal
         '
@@ -175,7 +168,7 @@ Partial Class FrmPrincipal
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmPrincipal"
         Me.ShowIcon = False
         Me.Text = "Sistema de Inventario y Facturación"
@@ -203,5 +196,4 @@ Partial Class FrmPrincipal
     Friend WithEvents EstadosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CategoriasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FormasDePAgoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ConectividadToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -15,8 +15,13 @@ Public Class Funciones
         con.Conectar()
         Dim da As New MySqlDataAdapter(conString, con.Conex)
         Dim dt As New DataTable
-        da.Fill(dt)
-        con.Desconectar()
+        Try
+            da.Fill(dt)
+            con.Desconectar()
+        Catch ex As MySqlException
+            MsgBox(ex.Message)
+            con.Desconectar()
+        End Try
         Return dt
     End Function
 

@@ -26,7 +26,7 @@
 
     Private Sub BTNguardar_Click(sender As Object, e As EventArgs) Handles BTNguardar.Click
         Try
-            If pr.IngresarProducto(tbId.Text, cbCategoria.Text, cbUnidad.Text, cbEstado.Text, tbNombre.Text, tbCantidad.Text, tbPrecio.Text) > 0 Then
+            If pr.IngresarProducto(tbId.Text, cbCategoria.SelectedValue, cbUnidad.SelectedValue, cbEstado.SelectedValue, tbNombre.Text, tbCantidad.Text, tbPrecio.Text) > 0 Then
                 MsgBox("Registrado correctamente")
             End If
             DGVproductos.DataSource = pr.ConsultaProductos

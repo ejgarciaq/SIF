@@ -26,7 +26,6 @@
                 TBclave.Clear()
             End If
         End If
-
     End Sub
 
     Private Sub CB1_CheckedChanged(sender As Object, e As EventArgs) Handles CB1.CheckedChanged
@@ -44,4 +43,58 @@
     Function obtenerAdmin()
         Return admin
     End Function
+
+    Private Sub TBclave_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TBclave.KeyPress
+        If e.KeyChar = Convert.ToChar(Keys.Enter) Then
+            Dim Rsdatos As New DataSet
+            If Trim(TBusuario.Text) = "" Or Trim(TBclave.Text) = "" Then
+                MsgBox("Por favor ingrese sus datos de acceso!", vbExclamation, "Campos vacíos encontrados")
+            Else
+                Dim rol As Int16
+                rol = us.VerificarUsuario(TBusuario.Text, TBclave.Text.ToString)
+                If (rol = 1) Then
+                    admin = True
+                    principal.isAdmin(admin)
+                    principal.Show()
+                    Me.Hide()
+                ElseIf (rol = 2) Then
+                    admin = False
+                    principal.isAdmin(admin)
+                    principal.Show()
+                    Me.Hide()
+                Else
+                    MsgBox("acceso fallido! No Registrado", vbCritical, "inicio de sesión fallido")
+                    TBusuario.Clear()
+                    TBclave.Clear()
+                End If
+            End If
+        End If
+    End Sub
+
+    Private Sub TBusuario_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TBusuario.KeyPress
+        If e.KeyChar = Convert.ToChar(Keys.Enter) Then
+            Dim Rsdatos As New DataSet
+            If Trim(TBusuario.Text) = "" Or Trim(TBclave.Text) = "" Then
+                MsgBox("Por favor ingrese sus datos de acceso!", vbExclamation, "Campos vacíos encontrados")
+            Else
+                Dim rol As Int16
+                rol = us.VerificarUsuario(TBusuario.Text, TBclave.Text.ToString)
+                If (rol = 1) Then
+                    admin = True
+                    principal.isAdmin(admin)
+                    principal.Show()
+                    Me.Hide()
+                ElseIf (rol = 2) Then
+                    admin = False
+                    principal.isAdmin(admin)
+                    principal.Show()
+                    Me.Hide()
+                Else
+                    MsgBox("acceso fallido! No Registrado", vbCritical, "inicio de sesión fallido")
+                    TBusuario.Clear()
+                    TBclave.Clear()
+                End If
+            End If
+        End If
+    End Sub
 End Class

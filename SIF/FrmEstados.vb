@@ -7,7 +7,7 @@
 
     Private Sub BtnEstguardar_Click(sender As Object, e As EventArgs) Handles btnEstguardar.Click
         Try
-            If us.IngresarEstado(tbID.Text, tbDescrip.Text) > 0 Then
+            If us.IngresarEstado(tbId.Text, tbDescripcion.Text) > 0 Then
                 MsgBox("Registrado correctamente")
             End If
             DGVestados.DataSource = us.ConsultaEstados

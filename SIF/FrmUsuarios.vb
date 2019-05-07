@@ -26,7 +26,7 @@ Public Class FrmUsuarios
             End If
         End If
         Try
-            If us.IngresarUsuario(tbID.Text, tbNombre.Text, tbApellido1.Text, tbApellido2.Text, tbUserName.Text, tbPassword.Text, cbRol.Text) > 0 Then
+            If us.IngresarUsuario(tbID.Text, tbNombre.Text, tbApellido1.Text, tbApellido2.Text, tbUserName.Text, tbPassword.Text, cbRol.SelectedValue) > 0 Then
                 MsgBox("Registrado correctamente")
             End If
             DGVusuarios.DataSource = us.ConsultaUsuarios

@@ -29,7 +29,7 @@
     End Function
 
     'Ingresa un usuario nuevo con los datos respectivos
-    Function IngresarUsuario(id As String, nombre As String, apellido1 As String, apellido2 As String, username As String, password As String, rol As Integer)
+    Function IngresarUsuario(id As String, nombre As String, apellido1 As String, apellido2 As String, username As String, password As String, rol As String)
         sql = "INSERT INTO `sif_db`.`persona` VALUES (" + id + ", '" + nombre + "', '" + apellido1 + "', '" + apellido2 + "', true);"
         con.IngresarDatos(sql)
         sql = "INSERT INTO `sif_db`.`usuario` VALUES (" + id + ", " + rol + ", '" + username + "', '" + password + "', 3, true);"
@@ -55,9 +55,9 @@
             Return False
         End If
 
-        Dim existeNumero As Boolean
-        Dim existeLetraMayuscula As Boolean
-        Dim caracteresEspeciales As Boolean
+        Dim existeNumero As Boolean = False
+        Dim existeLetraMayuscula As Boolean = False
+        Dim caracteresEspeciales As Boolean = False
         Dim caracteres As String = "@!/*-+.,%$#?¿"
 
         ' Ya solo queda verificar si al menos hay
@@ -65,7 +65,6 @@
 
         'Verifica que la contraseña contenga aunque sea una letra mayuscula,un numero y un caracter especial.
         For Each c As Char In password
-
             For Each ch As Char In caracteres
                 If (c = ch) Then
                     caracteresEspeciales = True
@@ -74,13 +73,13 @@
             Next
 
             If (Char.IsDigit(c)) Then
-                    existeNumero = True
-                    Continue For
-                End If
+                existeNumero = True
+                Continue For
+            End If
 
-                If (c = c.ToString().ToUpper()) Then
-                    existeLetraMayuscula = True
-                End If
+            If (c = c.ToString().ToUpper()) Then
+                existeLetraMayuscula = True
+            End If
 
         Next
         If (existeNumero) And (existeLetraMayuscula) And (caracteresEspeciales) Then

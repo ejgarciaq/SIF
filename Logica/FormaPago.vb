@@ -11,7 +11,6 @@
     'Ingresa un rol nuevo con los datos respectivos
     Function IngresarFormaPago(id As String, Des As String)
         sql = "INSERT INTO `sif_db`.`formapago` VALUES (" + id + ", '" + Des + "', true);"
-        con.IngresarDatos(sql)
         Return con.IngresarDatos(sql)
     End Function
 
