@@ -4,7 +4,7 @@
 
     'Solicita los Clientes existentes y se obtiene una tabla(DataTable) para mostrar
     Function ConsultaClientes()
-        sql = "SELECT * FROM cliente"
+        sql = "SELECT t1.PER_IDPERSONA,t1.PER_NOMBRE,t1.PER_APELLIDO1,t1.PER_APELLIDO2,t2.CLI_TOTALCOMPRADO,t2.CLI_ACTIVO FROM persona t1 inner join cliente t2 on t1.PER_IDPERSONA = t2.CLI_IDPERSONA"
         Return con.ObtenerDatos(sql)
     End Function
 

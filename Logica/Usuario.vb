@@ -16,6 +16,49 @@
         End If
     End Function
 
+    'Se utiliza para validar si un usuario existe utilizando el nombre y la contraseña
+    Function VerificarUsuarios(usuario As String)
+        sql = "select t2.ROL_DESCRIPCION from usuario t1 join rol t2 on t1.ROL_IDROL = t2.ROL_IDROL where t1.USU_USERNAME = '" + usuario + "' and t2.ROL_DESCRIPCION = 'Administrador';"
+        If (con.VerificarDatos(sql)) Then
+            Return 1
+        End If
+        sql = "select t2.ROL_DESCRIPCION from usuario t1 join rol t2 on t1.ROL_IDROL = t2.ROL_IDROL where t1.USU_USERNAME = '" + usuario + "' and t2.ROL_DESCRIPCION = 'Vendedor';"
+        If (con.VerificarDatos(sql)) Then
+            Return 2
+        Else
+            Return 3
+        End If
+    End Function
+
+    'Se utiliza para validar si un usuario existe utilizando el nombre y la contraseña
+    Function VerificarContrasena(usuario As String, contrasena As String)
+        sql = "select t2.ROL_DESCRIPCION from usuario t1 join rol t2 on t1.ROL_IDROL = t2.ROL_IDROL where t1.USU_USERNAME = '" + usuario + "' and t1.USU_PASSWORD = '" + contrasena + "' and t2.ROL_DESCRIPCION = 'Administrador';"
+        If (con.VerificarDatos(sql)) Then
+            Return True
+        End If
+        sql = "select t2.ROL_DESCRIPCION from usuario t1 join rol t2 on t1.ROL_IDROL = t2.ROL_IDROL where t1.USU_USERNAME = '" + usuario + "' and t1.USU_PASSWORD = '" + contrasena + "' and t2.ROL_DESCRIPCION = 'Vendedor';"
+        If (con.VerificarDatos(sql)) Then
+            Return False
+        End If
+        Return False
+    End Function
+
+    Function BajarIntentos(usuario As String)
+        sql = "select * from usuario where USU_USERNAME = '" + usuario + "';"
+        Dim dt As DataTable = con.ObtenerDato(sql)
+        If Convert.ToInt32(dt.Rows(0).Item(4).ToString) = 0 Then
+            sql = "UPDATE usuario SET USU_INTENTOS = 3"
+            con.IngresarDatos(sql)
+            Return False
+        Else
+            Dim intentos = Convert.ToInt32(dt.Rows(0).Item(4).ToString) - 1
+            sql = "UPDATE usuario SET USU_INTENTOS = " + intentos
+            con.IngresarDatos(sql)
+            Return True
+        End If
+
+    End Function
+
     'Solicita los usuarios existentes y se obtiene una tabla(DataTable) para mostrar
     Function ConsultaUsuarios()
         sql = "select USU_IDPERSONA,USU_USERNAME,USU_PASSWORD,t2.ROL_DESCRIPCION,USU_INTENTOS,USU_ACTIVO from usuario t1 join rol t2 on t1.ROL_IDROL = t2.ROL_IDROL;"

@@ -12,7 +12,8 @@
     Dim FormasPago As New FrmFormaPag
 
     Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
-        End
+        login.Show()
+        Me.Hide()
     End Sub
 
     Private Sub UsuariosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsuariosToolStripMenuItem.Click
@@ -130,10 +131,6 @@
             FormasPago.MdiParent = Me
             FormasPago.Show()
         End If
-    End Sub
-
-    Private Sub FrmPrincipal_Closed(sender As Object, e As EventArgs) Handles MyBase.Closed
-        End
     End Sub
 
     Private Sub ProductosToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ProductosToolStripMenuItem1.Click

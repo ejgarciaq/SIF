@@ -14,17 +14,47 @@
                 admin = True
                 principal.isAdmin(admin)
                 principal.Show()
+                TBusuario.Text = ""
+                TBclave.Text = ""
                 Me.Hide()
             ElseIf (rol = 2) Then
                 admin = False
                 principal.isAdmin(admin)
                 principal.Show()
+                TBusuario.Text = ""
+                TBclave.Text = ""
                 Me.Hide()
             Else
                 MsgBox("acceso fallido! No Registrado", vbCritical, "inicio de sesión fallido")
                 TBusuario.Clear()
                 TBclave.Clear()
+                Return
             End If
+            'If admin Then
+            '    If us.VerificarContrasena(TBusuario.Text, TBclave.Text.ToString) Then
+            '        principal.isAdmin(admin)
+            '        principal.Show()
+            '        TBusuario.Text = ""
+            '        TBclave.Text = ""
+            '        Me.Hide()
+            '    Else
+            '        MsgBox("Contraseña incorrecta.")
+            '    End If
+            'Else
+            '    If us.VerificarContrasena(TBusuario.Text, TBclave.Text.ToString) Then
+            '        principal.isAdmin(admin)
+            '        principal.Show()
+            '        TBusuario.Text = ""
+            '        TBclave.Text = ""
+            '        Me.Hide()
+            '    Else
+            '        MsgBox("Contraseña incorrecta.")
+            '        If Not us.BajarIntentos(TBusuario.Text) Then
+            '            MsgBox("Se alcanzo el limite de intentos.")
+            '            End
+            '        End If
+            '    End If
+            'End If
         End If
     End Sub
 

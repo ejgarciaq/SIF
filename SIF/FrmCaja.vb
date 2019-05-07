@@ -17,8 +17,8 @@
         cbLocal.DisplayMember = "EMP_IDEMPRESA"
 
         cbCliente.DataSource = cl.ConsultaClientes
-        cbCliente.ValueMember = "CLI_IDPERSONA"
-        cbCliente.DisplayMember = "CLI_IDPERSONA"
+        cbCliente.ValueMember = "PER_IDPERSONA"
+        cbCliente.DisplayMember = "PER_IDPERSONA"
 
         lbProducto.DataSource = pr.ConsultaProductos
         lbProducto.DisplayMember = "PRO_NOMBRE"
