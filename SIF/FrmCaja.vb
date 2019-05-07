@@ -157,6 +157,8 @@
             fc.ModificarPrecio(tbFactura.Text, precio)
             pr.ModificarCantidad(id, cantidad)
             i = i + 1
+            btnFinalizar.Enabled = True
+            Button3.Enabled = False
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -165,6 +167,8 @@
     Private Sub btnFinalizar_Click(sender As Object, e As EventArgs) Handles btnFinalizar.Click
         DesActElementos()
         i = 0
+        btnFinalizar.Enabled = False
+        Button3.Enabled = True
     End Sub
 
 End Class
